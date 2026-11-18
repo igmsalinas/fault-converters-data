@@ -1,0 +1,39 @@
+{
+  "model_dir": "experiments/dataset_01_run_05/carla_lstm",
+  "backend": "keras-gpu",
+  "precision": "fp32",
+  "policy": "float32",
+  "protocol": {
+    "batch_size": 1,
+    "warmup_runs": 15,
+    "timed_runs": 150,
+    "consistency_samples": 32
+  },
+  "timing": {
+    "latency_mean_ms": 118.26258631388346,
+    "latency_std_ms": 9.439201780331205,
+    "latency_min_ms": 102.96217346191406,
+    "latency_max_ms": 160.87142944335938,
+    "timing_source": "cuda_event",
+    "end_to_end_latency_mean_ms": 124.16132151332931,
+    "end_to_end_latency_std_ms": 10.885962625546709,
+    "end_to_end_latency_min_ms": 105.59496299993043,
+    "end_to_end_latency_max_ms": 160.9283109999069,
+    "timing_batch_size": 1,
+    "timing_warmup_runs": 15,
+    "timing_runs": 150
+  },
+  "consistency": {
+    "consistency_samples": 32,
+    "reconstruction_mse_vs_baseline": 0.0,
+    "reconstruction_mean_abs_error_vs_baseline": 0.0,
+    "reconstruction_max_abs_error_vs_baseline": 0.0,
+    "reconstruction_relative_l2_vs_baseline": 0.0,
+    "reconstruction_within_tolerance": true,
+    "anomaly_disagreement_rate_vs_baseline": 0.0
+  },
+  "tensorflow_gpu_memory": {
+    "current_mb": 4.7412109375,
+    "peak_mb": 24.607421875
+  }
+}

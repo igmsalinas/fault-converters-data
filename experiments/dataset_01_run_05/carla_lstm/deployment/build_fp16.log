@@ -1,0 +1,113 @@
+&&&& RUNNING TensorRT.trtexec [TensorRT v8201] # /usr/src/tensorrt/bin/trtexec --onnx=experiments/dataset_01_run_05/carla_lstm/deployment/model.onnx --saveEngine=experiments/dataset_01_run_05/carla_lstm/deployment/model_fp16.engine --workspace=512 --buildOnly --fp16
+[08/24/2026-10:52:51] [I] === Model Options ===
+[08/24/2026-10:52:51] [I] Format: ONNX
+[08/24/2026-10:52:51] [I] Model: experiments/dataset_01_run_05/carla_lstm/deployment/model.onnx
+[08/24/2026-10:52:51] [I] Output:
+[08/24/2026-10:52:51] [I] === Build Options ===
+[08/24/2026-10:52:51] [I] Max batch: explicit batch
+[08/24/2026-10:52:51] [I] Workspace: 512 MiB
+[08/24/2026-10:52:51] [I] minTiming: 1
+[08/24/2026-10:52:51] [I] avgTiming: 8
+[08/24/2026-10:52:51] [I] Precision: FP32+FP16
+[08/24/2026-10:52:51] [I] Calibration:
+[08/24/2026-10:52:51] [I] Refit: Disabled
+[08/24/2026-10:52:51] [I] Sparsity: Disabled
+[08/24/2026-10:52:51] [I] Safe mode: Disabled
+[08/24/2026-10:52:51] [I] DirectIO mode: Disabled
+[08/24/2026-10:52:51] [I] Restricted mode: Disabled
+[08/24/2026-10:52:51] [I] Save engine: experiments/dataset_01_run_05/carla_lstm/deployment/model_fp16.engine
+[08/24/2026-10:52:51] [I] Load engine:
+[08/24/2026-10:52:51] [I] Profiling verbosity: 0
+[08/24/2026-10:52:51] [I] Tactic sources: Using default tactic sources
+[08/24/2026-10:52:51] [I] timingCacheMode: local
+[08/24/2026-10:52:51] [I] timingCacheFile:
+[08/24/2026-10:52:51] [I] Input(s)s format: fp32:CHW
+[08/24/2026-10:52:51] [I] Output(s)s format: fp32:CHW
+[08/24/2026-10:52:51] [I] Input build shapes: model
+[08/24/2026-10:52:51] [I] Input calibration shapes: model
+[08/24/2026-10:52:51] [I] === System Options ===
+[08/24/2026-10:52:51] [I] Device: 0
+[08/24/2026-10:52:51] [I] DLACore:
+[08/24/2026-10:52:51] [I] Plugins:
+[08/24/2026-10:52:51] [I] === Inference Options ===
+[08/24/2026-10:52:51] [I] Batch: Explicit
+[08/24/2026-10:52:51] [I] Input inference shapes: model
+[08/24/2026-10:52:51] [I] Iterations: 10
+[08/24/2026-10:52:51] [I] Duration: 3s (+ 200ms warm up)
+[08/24/2026-10:52:51] [I] Sleep time: 0ms
+[08/24/2026-10:52:51] [I] Idle time: 0ms
+[08/24/2026-10:52:51] [I] Streams: 1
+[08/24/2026-10:52:51] [I] ExposeDMA: Disabled
+[08/24/2026-10:52:51] [I] Data transfers: Enabled
+[08/24/2026-10:52:51] [I] Spin-wait: Disabled
+[08/24/2026-10:52:51] [I] Multithreading: Disabled
+[08/24/2026-10:52:51] [I] CUDA Graph: Disabled
+[08/24/2026-10:52:51] [I] Separate profiling: Disabled
+[08/24/2026-10:52:51] [I] Time Deserialize: Disabled
+[08/24/2026-10:52:51] [I] Time Refit: Disabled
+[08/24/2026-10:52:51] [I] Skip inference: Enabled
+[08/24/2026-10:52:51] [I] Inputs:
+[08/24/2026-10:52:51] [I] === Reporting Options ===
+[08/24/2026-10:52:51] [I] Verbose: Disabled
+[08/24/2026-10:52:51] [I] Averages: 10 inferences
+[08/24/2026-10:52:51] [I] Percentile: 99
+[08/24/2026-10:52:51] [I] Dump refittable layers:Disabled
+[08/24/2026-10:52:51] [I] Dump output: Disabled
+[08/24/2026-10:52:51] [I] Profile: Disabled
+[08/24/2026-10:52:51] [I] Export timing to JSON file:
+[08/24/2026-10:52:51] [I] Export output to JSON file:
+[08/24/2026-10:52:51] [I] Export profile to JSON file:
+[08/24/2026-10:52:51] [I]
+[08/24/2026-10:52:51] [I] === Device Information ===
+[08/24/2026-10:52:51] [I] Selected Device: NVIDIA Tegra X1
+[08/24/2026-10:52:51] [I] Compute Capability: 5.3
+[08/24/2026-10:52:51] [I] SMs: 1
+[08/24/2026-10:52:51] [I] Compute Clock Rate: 0.9216 GHz
+[08/24/2026-10:52:51] [I] Device Global Memory: 3963 MiB
+[08/24/2026-10:52:51] [I] Shared Memory per SM: 64 KiB
+[08/24/2026-10:52:51] [I] Memory Bus Width: 64 bits (ECC disabled)
+[08/24/2026-10:52:51] [I] Memory Clock Rate: 0.01275 GHz
+[08/24/2026-10:52:51] [I]
+[08/24/2026-10:52:51] [I] TensorRT version: 8.2.1
+[08/24/2026-10:52:52] [I] [TRT] [MemUsageChange] Init CUDA: CPU +229, GPU +0, now: CPU 248, GPU 3060 (MiB)
+[08/24/2026-10:52:53] [I] [TRT] [MemUsageSnapshot] Begin constructing builder kernel library: CPU 248 MiB, GPU 3060 MiB
+[08/24/2026-10:52:53] [I] [TRT] [MemUsageSnapshot] End constructing builder kernel library: CPU 277 MiB, GPU 3089 MiB
+[08/24/2026-10:52:53] [I] Start parsing network model
+[08/24/2026-10:52:53] [I] [TRT] ----------------------------------------------------------------
+[08/24/2026-10:52:53] [I] [TRT] Input filename:   experiments/dataset_01_run_05/carla_lstm/deployment/model.onnx
+[08/24/2026-10:52:53] [I] [TRT] ONNX IR version:  0.0.7
+[08/24/2026-10:52:53] [I] [TRT] Opset version:    13
+[08/24/2026-10:52:53] [I] [TRT] Producer name:    fault_converters_native_recurrent_export
+[08/24/2026-10:52:53] [I] [TRT] Producer version:
+[08/24/2026-10:52:53] [I] [TRT] Domain:
+[08/24/2026-10:52:53] [I] [TRT] Model version:    0
+[08/24/2026-10:52:53] [I] [TRT] Doc string:
+[08/24/2026-10:52:53] [I] [TRT] ----------------------------------------------------------------
+[08/24/2026-10:52:53] [W] [TRT] onnx2trt_utils.cpp:366: Your ONNX model has been generated with INT64 weights, while TensorRT does not natively support INT64. Attempting to cast down to INT32.
+[08/24/2026-10:52:53] [W] [TRT] ShapedWeights.cpp:173: Weights encoder_6_latent_kernel has been transposed with permutation of (1, 0)! If you plan on overwriting the weights with the Refitter API, the new weights must be pre-transposed.
+[08/24/2026-10:52:53] [I] [TRT] decoder_5_time_distributed_1_matmul: broadcasting input1 to make tensors conform, dims(input0)=[101,1,256][NONE] dims(input1)=[1,256,2][NONE].
+[08/24/2026-10:52:53] [I] Finish parsing network model
+[08/24/2026-10:52:53] [I] [TRT] decoder_5_time_distributed_1_matmul: broadcasting input1 to make tensors conform, dims(input0)=[101,1,256][NONE] dims(input1)=[1,256,2][NONE].
+[08/24/2026-10:52:53] [I] [TRT] ---------- Layers Running on DLA ----------
+[08/24/2026-10:52:53] [I] [TRT] ---------- Layers Running on GPU ----------
+[08/24/2026-10:52:53] [I] [TRT] [GpuLayer] {ForeignNode[encoder_0_enc_lstm_0_kernel...output_batch_major]}
+[08/24/2026-10:52:54] [I] [TRT] [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +158, GPU +151, now: CPU 440, GPU 3252 (MiB)
+[08/24/2026-10:52:55] [I] [TRT] [MemUsageChange] Init cuDNN: CPU +241, GPU +246, now: CPU 681, GPU 3498 (MiB)
+[08/24/2026-10:52:55] [I] [TRT] Local timing cache in use. Profiling results in this builder pass will not be stored.
+[08/24/2026-10:53:13] [I] [TRT] Detected 1 inputs and 1 output network tensors.
+[08/24/2026-10:53:15] [I] [TRT] Total Host Persistent Memory: 32
+[08/24/2026-10:53:15] [I] [TRT] Total Device Persistent Memory: 0
+[08/24/2026-10:53:15] [I] [TRT] Total Scratch Memory: 2012160
+[08/24/2026-10:53:15] [I] [TRT] [MemUsageStats] Peak memory usage of TRT CPU/GPU memory allocators: CPU 0 MiB, GPU 5 MiB
+[08/24/2026-10:53:15] [I] [TRT] [BlockAssignment] Algorithm ShiftNTopDown took 0.005365ms to assign 1 blocks to 1 nodes requiring 2012160 bytes.
+[08/24/2026-10:53:15] [I] [TRT] Total Activation Memory: 2012160
+[08/24/2026-10:53:15] [I] [TRT] [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +1, GPU +0, now: CPU 700, GPU 3597 (MiB)
+[08/24/2026-10:53:15] [I] [TRT] [MemUsageChange] Init cuDNN: CPU +0, GPU +0, now: CPU 700, GPU 3597 (MiB)
+[08/24/2026-10:53:15] [I] [TRT] [MemUsageChange] TensorRT-managed allocation in building engine: CPU +0, GPU +4, now: CPU 0, GPU 4 (MiB)
+[08/24/2026-10:53:15] [I] [TRT] [MemUsageChange] Init CUDA: CPU +0, GPU +0, now: CPU 703, GPU 3597 (MiB)
+[08/24/2026-10:53:15] [I] [TRT] Loaded engine size: 12 MiB
+[08/24/2026-10:53:15] [I] [TRT] [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +0, GPU +0, now: CPU 712, GPU 3597 (MiB)
+[08/24/2026-10:53:15] [I] [TRT] [MemUsageChange] Init cuDNN: CPU +0, GPU +0, now: CPU 712, GPU 3597 (MiB)
+[08/24/2026-10:53:15] [I] [TRT] [MemUsageChange] TensorRT-managed allocation in engine deserialization: CPU +0, GPU +3, now: CPU 0, GPU 3 (MiB)
+[08/24/2026-10:53:15] [I] Engine built in 23.7878 sec.
+&&&& PASSED TensorRT.trtexec [TensorRT v8201] # /usr/src/tensorrt/bin/trtexec --onnx=experiments/dataset_01_run_05/carla_lstm/deployment/model.onnx --saveEngine=experiments/dataset_01_run_05/carla_lstm/deployment/model_fp16.engine --workspace=512 --buildOnly --fp16

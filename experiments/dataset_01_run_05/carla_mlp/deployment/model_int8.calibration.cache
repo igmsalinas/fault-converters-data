@@ -1,0 +1,50 @@
+TRT-8201-EntropyCalibration2
+input_1: 3d06f838
+carla_mlp_1/encoder_1/flatten_1/Reshape:0: 3d06f838
+(Unnamed Layer* 1) [Shuffle]_output: 3d06f838
+(Unnamed Layer* 2) [Fully Connected]_output: 3ca7f673
+carla_mlp_1/encoder_1/enc_mlp_0_1/MatMul_Gemm__6:0: 3ca7f673
+(Unnamed Layer* 4) [Constant]_output: 3e200ec1
+(Unnamed Layer* 5) [Shuffle]_output: 3e200ec1
+carla_mlp_1/encoder_1/batch_normalization_1/batchnorm/mul_1:0: 3de14ad4
+(Unnamed Layer* 7) [Constant]_output: 3dc84289
+(Unnamed Layer* 8) [Shuffle]_output: 3dc84289
+carla_mlp_1/encoder_1/batch_normalization_1/batchnorm/add_1:0: 3c5ffa1b
+carla_mlp_1/encoder_1/re_lu_1/Relu:0: 3c6e70c5
+(Unnamed Layer* 11) [Shuffle]_output: 3c6e70c5
+(Unnamed Layer* 12) [Fully Connected]_output: 3ca2af74
+carla_mlp_1/encoder_1/enc_mlp_1_1/MatMul_Gemm__7:0: 3ca2af74
+(Unnamed Layer* 14) [Constant]_output: 3c4fb2c4
+(Unnamed Layer* 15) [Shuffle]_output: 3c4fb2c4
+carla_mlp_1/encoder_1/batch_normalization_1_2/batchnorm/mul_1:0: 3c8d620f
+(Unnamed Layer* 17) [Constant]_output: 3c3410c6
+(Unnamed Layer* 18) [Shuffle]_output: 3c3410c6
+carla_mlp_1/encoder_1/batch_normalization_1_2/batchnorm/add_1:0: 3c49e11e
+carla_mlp_1/encoder_1/re_lu_1_2/Relu:0: 3c48caf6
+(Unnamed Layer* 22) [Shuffle]_output: 3c48caf6
+(Unnamed Layer* 23) [Fully Connected]_output: 3c989649
+carla_mlp_1/encoder_1/latent_1/MatMul_Gemm__8:0: 3c989649
+(Unnamed Layer* 25) [Shuffle]_output: 3c989649
+(Unnamed Layer* 26) [Fully Connected]_output: 3c9acde7
+carla_mlp_1/decoder_1/dec_mlp_0_1/MatMul_Gemm__9:0: 3c9acde7
+(Unnamed Layer* 28) [Constant]_output: 3c04547f
+(Unnamed Layer* 29) [Shuffle]_output: 3c04547f
+carla_mlp_1/decoder_1/batch_normalization_2_1/batchnorm/mul_1:0: 3c1ac422
+(Unnamed Layer* 31) [Constant]_output: 3ba6076d
+(Unnamed Layer* 32) [Shuffle]_output: 3ba6076d
+carla_mlp_1/decoder_1/batch_normalization_2_1/batchnorm/add_1:0: 3c10624b
+carla_mlp_1/decoder_1/re_lu_2_1/Relu:0: 3c02c5ec
+(Unnamed Layer* 35) [Shuffle]_output: 3c02c5ec
+(Unnamed Layer* 36) [Fully Connected]_output: 3c6742dc
+carla_mlp_1/decoder_1/dec_mlp_1_1/MatMul_Gemm__10:0: 3c6742dc
+(Unnamed Layer* 38) [Constant]_output: 3c006747
+(Unnamed Layer* 39) [Shuffle]_output: 3c006747
+carla_mlp_1/decoder_1/batch_normalization_3_1/batchnorm/mul_1:0: 3c0b0f95
+(Unnamed Layer* 41) [Constant]_output: 3bae855c
+(Unnamed Layer* 42) [Shuffle]_output: 3bae855c
+carla_mlp_1/decoder_1/batch_normalization_3_1/batchnorm/add_1:0: 3bed79c1
+carla_mlp_1/decoder_1/re_lu_3_1/Relu:0: 3bedaf01
+(Unnamed Layer* 45) [Shuffle]_output: 3bedaf01
+(Unnamed Layer* 46) [Fully Connected]_output: 3d1a6f78
+carla_mlp_1/decoder_1/dense_1/MatMul_Gemm__11:0: 3d1a6f78
+decoder: 3d1a6f78

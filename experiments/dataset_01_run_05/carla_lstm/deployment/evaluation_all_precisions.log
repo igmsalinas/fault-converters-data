@@ -1,0 +1,72 @@
+2026-08-24 14:01:15.284020: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1019] ARM64 does not support NUMA - returning NUMA node zero
+2026-08-24 14:01:15.301581: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1019] ARM64 does not support NUMA - returning NUMA node zero
+2026-08-24 14:01:15.301913: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1019] ARM64 does not support NUMA - returning NUMA node zero
+2026-08-24 14:01:15 | __main__ | INFO | Deployment evaluation for: experiments/dataset_01_run_05/carla_lstm/deployment
+2026-08-24 14:01:15 | src.inference.predictor | INFO | Loaded config from experiments/dataset_01_run_05/carla_lstm/model_config.json
+2026-08-24 14:01:15 | src.inference.predictor | INFO | Loaded threshold: 0.076596
+2026-08-24 14:01:15 | src.inference.predictor | INFO | Loaded preprocessor
+2026-08-24 14:01:15 | src.inference.predictor | INFO | Loading CARLA checkpoint from experiments/dataset_01_run_05/carla_lstm/checkpoints/best
+2026-08-24 14:01:15 | src.models.base | INFO | Building carla_lstm with input shape (101, 2)
+2026-08-24 14:01:15.446548: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1019] ARM64 does not support NUMA - returning NUMA node zero
+2026-08-24 14:01:15.446909: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1019] ARM64 does not support NUMA - returning NUMA node zero
+2026-08-24 14:01:15.447213: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1019] ARM64 does not support NUMA - returning NUMA node zero
+2026-08-24 14:01:17.829154: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1019] ARM64 does not support NUMA - returning NUMA node zero
+2026-08-24 14:01:17.829518: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1019] ARM64 does not support NUMA - returning NUMA node zero
+2026-08-24 14:01:17.829805: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1019] ARM64 does not support NUMA - returning NUMA node zero
+2026-08-24 14:01:17.829984: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 803 MB memory:  -> device: 0, name: NVIDIA Tegra X1, pci bus id: 0000:00:00.0, compute capability: 5.3
+2026-08-24 14:01:29 | src.models.base | INFO | Model built. Parameters: 1,005,186
+2026-08-24 14:01:30 | src.models.contrastive_ae | INFO | Projection head parameters: 33,536
+2026-08-24 14:01:30 | src.models.contrastive_ae | INFO | Model loaded from experiments/dataset_01_run_05/carla_lstm/checkpoints/best
+2026-08-24 14:01:30 | __main__ | INFO | Loaded baseline predictor successfully.
+2026-08-24 14:01:30 | src.deployment.utils | INFO | Loading dataset from data/buck/buck_data/dataset_01 for deployment...
+2026-08-24 14:01:30 | src.data.loader | INFO | Loading from cache: cache/simulations_3828ac063c98.npz
+2026-08-24 14:01:30 | src.data.dataset | INFO | Loaded 100 samples
+2026-08-24 14:01:30 | src.data.dataset | INFO | Preprocessed data shape: (100, 101, 2)
+2026-08-24 14:01:30 | src.data.dataset | INFO | Normal samples: 50, Anomaly samples: 50
+2026-08-24 14:01:30 | src.data.dataset | INFO | Splits - Train: 35, Val: 7, Fit Val: 14 (Normal: 7, Anomaly: 7), Test: 51 (Normal: 8, Anomaly: 43)
+2026-08-24 14:01:30 | __main__ | INFO | --- Running CPU-only Benchmark via Subprocess ---
+2026-08-24 14:01:30 | __main__ | INFO | Reusing the existing isolated CPU baseline.
+2026-08-24 14:01:30 | __main__ | INFO | --- Study 1: Consistency, Classification, and Timing Evaluation ---
+2026-08-24 14:01:30 | src.deployment.timing_evaluation | INFO | Starting unified deployment evaluation benchmark...
+2026-08-24 14:01:30 | src.deployment.timing_evaluation | INFO | Running cross-backend consistency preflight...
+2026-08-24 14:01:32.400302: I tensorflow/stream_executor/cuda/cuda_dnn.cc:377] Loaded cuDNN version 8201
+2026-08-24 14:01:39 | src.deployment.timing_evaluation | WARNING | TFLite FP32 differs from the Keras baseline on 87.50% of preflight anomaly decisions.
+2026-08-24 14:01:39 | src.deployment.timing_evaluation | WARNING | TFLite FP32 reconstruction is outside the standard numerical tolerance (atol=0.001, rtol=0.01).
+2026-08-24 14:01:39 | src.deployment.timing_evaluation | ERROR | Rejecting TFLite FP32: decision discordance exceeds the 1.00% safety limit.
+2026-08-24 14:01:47 | src.deployment.timing_evaluation | WARNING | TFLite FP16 differs from the Keras baseline on 87.50% of preflight anomaly decisions.
+2026-08-24 14:01:47 | src.deployment.timing_evaluation | WARNING | TFLite FP16 reconstruction is outside the standard numerical tolerance (atol=0.001, rtol=0.01).
+2026-08-24 14:01:47 | src.deployment.timing_evaluation | ERROR | Rejecting TFLite FP16: decision discordance exceeds the 1.00% safety limit.
+2026-08-24 14:01:57 | src.deployment.timing_evaluation | WARNING | ONNX FP16 (CPU) reconstruction is outside the standard numerical tolerance (atol=0.001, rtol=0.01).
+2026-08-24 14:02:01 | src.deployment.timing_evaluation | WARNING | ONNX INT8 (CPU) differs from the Keras baseline on 9.38% of preflight anomaly decisions.
+2026-08-24 14:02:01 | src.deployment.timing_evaluation | WARNING | ONNX INT8 (CPU) reconstruction is outside the standard numerical tolerance (atol=0.001, rtol=0.01).
+2026-08-24 14:02:01 | src.deployment.timing_evaluation | ERROR | Rejecting ONNX INT8 (CPU): decision discordance exceeds the 1.00% safety limit.
+2026-08-24 14:02:14 | src.deployment.timing_evaluation | INFO | Saved cross-backend preflight report to experiments/dataset_01_run_05/carla_lstm/deployment/cross_backend_consistency.json
+2026-08-24 14:02:14 | src.deployment.timing_evaluation | INFO | Evaluating ONNX (experiments/dataset_01_run_05/carla_lstm/deployment/model.onnx)...
+2026-08-24 14:02:20 | src.deployment.timing_evaluation | INFO | Evaluating ONNX (experiments/dataset_01_run_05/carla_lstm/deployment/model_fp16.onnx)...
+2026-08-24 14:02:35 | src.deployment.timing_evaluation | INFO | Evaluating TensorRT (experiments/dataset_01_run_05/carla_lstm/deployment/model_fp16.engine)...
+2026-08-24 14:02:45 | src.deployment.timing_evaluation | INFO | Evaluating TensorRT (experiments/dataset_01_run_05/carla_lstm/deployment/model_fp32.engine)...
+2026-08-24 14:02:53 | src.deployment.timing_evaluation | INFO | ================================== CLASSIFICATION & TIMING EVALUATION SUMMARY ==================================
+2026-08-24 14:02:53 | src.deployment.timing_evaluation | INFO | Model Format           | Size (MB)  | Latency/S Mean ± Std (ms)    | F1-Score   | ROC-AUC    | Recall    
+2026-08-24 14:02:53 | src.deployment.timing_evaluation | INFO | --------------------------------------------------------------------------------------------------------------
+2026-08-24 14:02:53 | src.deployment.timing_evaluation | INFO | ONNX FP32 (CPU)        | 3.850      | 25.9524 ± 0.6372       | 0.2449     | 0.9826     | 0.1395    
+2026-08-24 14:02:53 | src.deployment.timing_evaluation | INFO | ONNX FP16 (CPU)        | 1.928      | 67.4992 ± 0.8636       | 0.2449     | 0.9826     | 0.1395    
+2026-08-24 14:02:53 | src.deployment.timing_evaluation | INFO | TensorRT FP16 (GPU)    | 12.938     | 36.4477 ± 0.0793       | 0.2449     | 0.9826     | 0.1395    
+2026-08-24 14:02:53 | src.deployment.timing_evaluation | INFO | TensorRT FP32 (GPU)    | 12.938     | 36.5282 ± 0.0881       | 0.2449     | 0.9826     | 0.1395    
+2026-08-24 14:02:53 | src.deployment.timing_evaluation | INFO | ================================================================================================================
+2026-08-24 14:02:53 | __main__ | INFO | --- Study 2: Timing and Memory Performance (single input, n=1) ---
+2026-08-24 14:02:53 | src.deployment.timing_memory_benchmark | INFO | Measuring Timing & Memory for: ONNX FP32 (CPU)...
+2026-08-24 14:02:59 | src.deployment.timing_memory_benchmark | INFO | Measuring Timing & Memory for: ONNX FP16 (CPU)...
+2026-08-24 14:03:12 | src.deployment.timing_memory_benchmark | INFO | Measuring Timing & Memory for: TensorRT FP16 (GPU)...
+2026-08-24 14:03:21 | src.deployment.timing_memory_benchmark | INFO | Measuring Timing & Memory for: TensorRT FP32 (GPU)...
+2026-08-24 14:03:29 | src.deployment.timing_memory_benchmark | INFO | ================================= PERFORMANCE SUITE SUMMARY =================================
+2026-08-24 14:03:29 | src.deployment.timing_memory_benchmark | INFO | Model Format           | Mean Latency    | Min / Max (ms)     | Net RAM (MB) | Net VRAM (MB)
+2026-08-24 14:03:29 | src.deployment.timing_memory_benchmark | INFO | --------------------------------------------------------------------------------------------
+2026-08-24 14:03:29 | src.deployment.timing_memory_benchmark | INFO | ONNX FP32 (CPU)        | 26.387±0.477  ms | 26.03/30.82 ms | 0.000        | 0.000       
+2026-08-24 14:03:29 | src.deployment.timing_memory_benchmark | INFO | ONNX FP16 (CPU)        | 67.740±0.961  ms | 66.81/72.45 ms | 0.012        | 0.000       
+2026-08-24 14:03:29 | src.deployment.timing_memory_benchmark | INFO | TensorRT FP16 (GPU)    | 36.489±0.181  ms | 36.21/37.57 ms | 0.008        | 0.000       
+2026-08-24 14:03:29 | src.deployment.timing_memory_benchmark | INFO | TensorRT FP32 (GPU)    | 36.558±0.172  ms | 36.41/37.81 ms | 0.000        | 0.000       
+2026-08-24 14:03:29 | src.deployment.timing_memory_benchmark | INFO | =============================================================================================
+2026-08-24 14:03:29 | __main__ | INFO | --- Generating Unified Deployment Report ---
+2026-08-24 14:03:29 | __main__ | INFO | Saved unified deployment JSON report to experiments/dataset_01_run_05/carla_lstm/deployment/unified_deployment_report.json
+2026-08-24 14:03:29 | __main__ | INFO | Saved unified benchmark report to experiments/dataset_01_run_05/carla_lstm/deployment/unified_deployment_report.md
+2026-08-24 14:03:29 | __main__ | INFO | Deployment evaluation complete! All reports in: experiments/dataset_01_run_05/carla_lstm/deployment

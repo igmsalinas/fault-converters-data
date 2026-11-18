@@ -1,0 +1,101 @@
+{
+  "model_dir": "experiments/dataset_01_run_05/carla_lstm",
+  "checkpoint_selection": "checkpoints/best",
+  "threshold": 0.07659647613763809,
+  "autoencoder_parameter_count": 1005186,
+  "autoencoder_weight_tensor_count": 16,
+  "autoencoder_loaded_weights_sha256": "9ec96eb1c89c391760cc10f729cd8131b2b6eea66607ba45019dd2500d3e39ff",
+  "autoencoder_weight_shapes": [
+    [
+      2,
+      1024
+    ],
+    [
+      256,
+      1024
+    ],
+    [
+      1024
+    ],
+    [
+      256,
+      512
+    ],
+    [
+      128,
+      512
+    ],
+    [
+      512
+    ],
+    [
+      128,
+      128
+    ],
+    [
+      128
+    ],
+    [
+      128,
+      512
+    ],
+    [
+      128,
+      512
+    ],
+    [
+      512
+    ],
+    [
+      128,
+      1024
+    ],
+    [
+      256,
+      1024
+    ],
+    [
+      1024
+    ],
+    [
+      256,
+      2
+    ],
+    [
+      2
+    ]
+  ],
+  "zero_probe_output_sha256": "c9c9731fdbb01f4d45427e9b2dc18ab02373bb55a3a010d12bdd87b694c25eb9",
+  "tracked_files": [
+    {
+      "path": "checkpoints/best/autoencoder.weights.h5",
+      "size_bytes": 4080088,
+      "sha256": "c756be3537ec64a2ca2eb003bb51299976970ad88369702874e6f86ac8a3f0e8"
+    },
+    {
+      "path": "checkpoints/best/autoencoder.weights.npz",
+      "size_bytes": 4027480,
+      "sha256": "938b9a12006ded07ca0eb6bccf0da051ef60f264ac430da6e107c496fd15bb5c"
+    },
+    {
+      "path": "model_config.json",
+      "size_bytes": 493,
+      "sha256": "4ffe34a98f9315b277b5e9462901cfa9585aa42287d2c737cfa6fb15153f42de"
+    },
+    {
+      "path": "threshold.json",
+      "size_bytes": 97,
+      "sha256": "b5628c892f5190c1d78ae25f20f0da4b2418b55df21d505543787f1da2c570f6"
+    },
+    {
+      "path": "preprocessor/config.json",
+      "size_bytes": 95,
+      "sha256": "35a39c02147122b3d2caca1b8c5e29b5677622046e088a097a50b7cdfa7711c1"
+    },
+    {
+      "path": "preprocessor/scaler.json",
+      "size_bytes": 173,
+      "sha256": "c3ac6b3c4a571abf9cf6d7ac05e738c5418a187fdea93aa80aeacd85220706a4"
+    }
+  ]
+}

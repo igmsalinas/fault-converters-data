@@ -1,0 +1,93 @@
+[
+  {
+    "model_name": "TFLite FP32",
+    "backend": "tflite",
+    "path": "experiments/dataset_01_run_05/carla_lstm/deployment/model_fp32.tflite",
+    "consistency_samples": 32,
+    "reconstruction_mse_vs_baseline": 1.2860831022262573,
+    "reconstruction_mean_abs_error_vs_baseline": 0.6716591715812683,
+    "reconstruction_max_abs_error_vs_baseline": 4.643744468688965,
+    "reconstruction_relative_l2_vs_baseline": 1.1279550937593232,
+    "reconstruction_within_tolerance": false,
+    "anomaly_disagreement_rate_vs_baseline": 0.875,
+    "preflight_passed": false
+  },
+  {
+    "model_name": "TFLite FP16",
+    "backend": "tflite",
+    "path": "experiments/dataset_01_run_05/carla_lstm/deployment/model_float16.tflite",
+    "consistency_samples": 32,
+    "reconstruction_mse_vs_baseline": 1.2859184741973877,
+    "reconstruction_mean_abs_error_vs_baseline": 0.6714898943901062,
+    "reconstruction_max_abs_error_vs_baseline": 4.643256664276123,
+    "reconstruction_relative_l2_vs_baseline": 1.1278828902507614,
+    "reconstruction_within_tolerance": false,
+    "anomaly_disagreement_rate_vs_baseline": 0.875,
+    "preflight_passed": false
+  },
+  {
+    "model_name": "ONNX FP32 (CPU)",
+    "backend": "onnx",
+    "path": "experiments/dataset_01_run_05/carla_lstm/deployment/model.onnx",
+    "consistency_samples": 32,
+    "reconstruction_mse_vs_baseline": 2.945605565018994e-11,
+    "reconstruction_mean_abs_error_vs_baseline": 2.097176547977142e-06,
+    "reconstruction_max_abs_error_vs_baseline": 3.9249658584594727e-05,
+    "reconstruction_relative_l2_vs_baseline": 5.3981458764385284e-06,
+    "reconstruction_within_tolerance": true,
+    "anomaly_disagreement_rate_vs_baseline": 0.0,
+    "preflight_passed": true
+  },
+  {
+    "model_name": "ONNX FP16 (CPU)",
+    "backend": "onnx",
+    "path": "experiments/dataset_01_run_05/carla_lstm/deployment/model_fp16.onnx",
+    "consistency_samples": 32,
+    "reconstruction_mse_vs_baseline": 1.3769753195447265e-06,
+    "reconstruction_mean_abs_error_vs_baseline": 0.0005867696600034833,
+    "reconstruction_max_abs_error_vs_baseline": 0.007913380861282349,
+    "reconstruction_relative_l2_vs_baseline": 0.0011671337321295136,
+    "reconstruction_within_tolerance": false,
+    "anomaly_disagreement_rate_vs_baseline": 0.0,
+    "preflight_passed": true
+  },
+  {
+    "model_name": "ONNX INT8 (CPU)",
+    "backend": "onnx",
+    "path": "experiments/dataset_01_run_05/carla_lstm/deployment/model_int8.onnx",
+    "consistency_samples": 32,
+    "reconstruction_mse_vs_baseline": 0.003945072181522846,
+    "reconstruction_mean_abs_error_vs_baseline": 0.030346611514687538,
+    "reconstruction_max_abs_error_vs_baseline": 0.7700013518333435,
+    "reconstruction_relative_l2_vs_baseline": 0.062471903160843084,
+    "reconstruction_within_tolerance": false,
+    "anomaly_disagreement_rate_vs_baseline": 0.09375,
+    "preflight_passed": false
+  },
+  {
+    "model_name": "TensorRT FP16 (GPU)",
+    "backend": "tensorrt",
+    "path": "experiments/dataset_01_run_05/carla_lstm/deployment/model_fp16.engine",
+    "consistency_samples": 32,
+    "reconstruction_mse_vs_baseline": 8.395257687816848e-13,
+    "reconstruction_mean_abs_error_vs_baseline": 3.4238323110002966e-07,
+    "reconstruction_max_abs_error_vs_baseline": 9.775161743164062e-06,
+    "reconstruction_relative_l2_vs_baseline": 9.113275180871854e-07,
+    "reconstruction_within_tolerance": true,
+    "anomaly_disagreement_rate_vs_baseline": 0.0,
+    "preflight_passed": true
+  },
+  {
+    "model_name": "TensorRT FP32 (GPU)",
+    "backend": "tensorrt",
+    "path": "experiments/dataset_01_run_05/carla_lstm/deployment/model_fp32.engine",
+    "consistency_samples": 32,
+    "reconstruction_mse_vs_baseline": 8.395257687816848e-13,
+    "reconstruction_mean_abs_error_vs_baseline": 3.4238323110002966e-07,
+    "reconstruction_max_abs_error_vs_baseline": 9.775161743164062e-06,
+    "reconstruction_relative_l2_vs_baseline": 9.113275180871854e-07,
+    "reconstruction_within_tolerance": true,
+    "anomaly_disagreement_rate_vs_baseline": 0.0,
+    "preflight_passed": true
+  }
+]

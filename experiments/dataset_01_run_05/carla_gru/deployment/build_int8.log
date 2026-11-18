@@ -1,0 +1,28 @@
+2026-08-24 12:20:26.664009: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1019] ARM64 does not support NUMA - returning NUMA node zero
+2026-08-24 12:20:26.681881: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1019] ARM64 does not support NUMA - returning NUMA node zero
+2026-08-24 12:20:26.682217: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1019] ARM64 does not support NUMA - returning NUMA node zero
+2026-08-24 12:20:26 | src.inference.predictor | INFO | Loaded config from experiments/dataset_01_run_05/carla_gru/model_config.json
+2026-08-24 12:20:26 | src.inference.predictor | INFO | Loaded threshold: 0.000968
+2026-08-24 12:20:26 | src.inference.predictor | INFO | Loaded preprocessor
+2026-08-24 12:20:26 | src.inference.predictor | INFO | Loading CARLA checkpoint from experiments/dataset_01_run_05/carla_gru/checkpoints/best
+2026-08-24 12:20:26 | src.models.base | INFO | Building carla_gru with input shape (101, 2)
+2026-08-24 12:20:38 | src.models.base | INFO | Model built. Parameters: 2,831,426
+2026-08-24 12:20:38 | src.models.contrastive_ae | INFO | Projection head parameters: 25,344
+2026-08-24 12:20:39 | src.models.contrastive_ae | INFO | Model loaded from experiments/dataset_01_run_05/carla_gru/checkpoints/best
+2026-08-24 12:20:39 | src.deployment.utils | INFO | Loading dataset from data/buck/buck_data/dataset_01 for deployment...
+2026-08-24 12:20:39 | src.data.loader | INFO | Loading from cache: cache/simulations_3828ac063c98.npz
+2026-08-24 12:20:39 | src.data.dataset | INFO | Loaded 100 samples
+2026-08-24 12:20:39 | src.data.dataset | INFO | Preprocessed data shape: (100, 101, 2)
+2026-08-24 12:20:39 | src.data.dataset | INFO | Normal samples: 50, Anomaly samples: 50
+2026-08-24 12:20:39 | src.data.dataset | INFO | Splits - Train: 35, Val: 7, Fit Val: 14 (Normal: 7, Anomaly: 7), Test: 51 (Normal: 8, Anomaly: 43)
+2026-08-24 12:20:39 | src.deployment.utils | INFO | Generated calibration dataset with 35 samples.
+2026-08-24 12:20:39 | src.deployment.onnx_trt | INFO | Initiating ONNX to TensorRT compilation (precision: INT8)...
+[08/24/2026-12:20:41] [TRT] [W] onnx2trt_utils.cpp:366: Your ONNX model has been generated with INT64 weights, while TensorRT does not natively support INT64. Attempting to cast down to INT32.
+[08/24/2026-12:20:41] [TRT] [W] ShapedWeights.cpp:173: Weights encoder_6_latent_kernel has been transposed with permutation of (1, 0)! If you plan on overwriting the weights with the Refitter API, the new weights must be pre-transposed.
+2026-08-24 12:20:41 | src.deployment.onnx_trt | INFO | INT8 entropy calibration enabled with 35 representative samples.
+2026-08-24 12:20:41 | src.deployment.onnx_trt | INFO | Building and serializing TensorRT engine (this may take a few minutes)...
+[08/24/2026-12:20:41] [TRT] [W] Int8 support requested on hardware without native Int8 support, performance will be negatively affected.
+[08/24/2026-12:20:44] [TRT] [W] Skipping tactic 0 due to Myelin error: myelinTargetSetPropertyMemorySize called with invalid memory size (0).
+[08/24/2026-12:20:44] [TRT] [E] 10: [optimizer.cpp::computeCosts::2011] Error Code 10: Internal Error (Could not find any implementation for node {ForeignNode[(Unnamed Layer* 26) [TripLimit]...(Unnamed Layer* 59) [LoopOutput]]}.)
+[08/24/2026-12:20:44] [TRT] [E] 2: [builder.cpp::buildSerializedNetwork::609] Error Code 2: Internal Error (Assertion enginePtr != nullptr failed. )
+2026-08-24 12:20:44 | src.deployment.onnx_trt | ERROR | Failed to build serialized network engine.

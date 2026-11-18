@@ -1,0 +1,11 @@
+{
+  "regime": "physics_exact_ssa_fra_denoising",
+  "seed": 200044,
+  "fra_jitter_db": 0.35,
+  "fra_jitter_deg": 1.75,
+  "fra_clean_prob": 0.25,
+  "initial_model_weights_sha256": "d82a3e34274f986a63a54ef5e3aff0a08a815c444cfc0c50f5811191ea709f37",
+  "final_best_weights_sha256": "66233214ab3f7a9b68a2a43ebe32487154a040ffc30018c3e6433befc8a003a3",
+  "training_seconds": 222.1130066879996,
+  "epochs_trained": 150
+}

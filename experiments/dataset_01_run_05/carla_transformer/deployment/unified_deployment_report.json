@@ -1,0 +1,200 @@
+{
+  "TensorRT FP16 (GPU)": {
+    "size_mb": 3.4990854263305664,
+    "performance": {
+      "latency_mean_ms": 5.510869414011637,
+      "latency_std_ms": 0.06429190900433623,
+      "latency_min_ms": 5.411718845367432,
+      "latency_max_ms": 5.70437479019165,
+      "timing_source": "cuda_event",
+      "end_to_end_latency_mean_ms": 6.57540551314014,
+      "end_to_end_latency_std_ms": 0.07912150391254998,
+      "net_ram_mb": 0.0,
+      "net_vram_mb": 0.0,
+      "peak_ram_mb": 2416.875,
+      "peak_vram_mb": 5.66357421875
+    },
+    "evaluation": {
+      "latency_per_sample_mean_ms": 5.518529144922892,
+      "latency_per_sample_std_ms": 0.06598337578545177,
+      "timing_source": "cuda_event",
+      "end_to_end_latency_mean_ms": 6.578335746889934,
+      "end_to_end_latency_std_ms": 0.08038192479134838,
+      "accuracy": 0.7450980392156863,
+      "precision": 1.0,
+      "recall": 0.6976744186046512,
+      "f1": 0.8219178082191781,
+      "auc_roc": 1.0,
+      "reconstruction_mse_vs_baseline": 2.6458130832907045e-06,
+      "reconstruction_max_abs_error_vs_baseline": 0.006249189376831055,
+      "reconstruction_relative_l2_vs_baseline": 0.0015996955846985586,
+      "reconstruction_within_tolerance": false,
+      "anomaly_disagreement_rate_vs_baseline": 0.0
+    }
+  },
+  "Keras FP32 (CPU)": {
+    "size_mb": 0.0,
+    "performance": {
+      "latency_mean_ms": 172.62237314658705,
+      "latency_std_ms": 1.5628706132309649,
+      "latency_min_ms": 169.23325900097552,
+      "latency_max_ms": 183.34199199853174,
+      "timing_source": "perf_counter",
+      "end_to_end_latency_mean_ms": 172.62237314658705,
+      "end_to_end_latency_std_ms": 1.5628706132309649,
+      "net_ram_mb": 5.11328125,
+      "net_vram_mb": 0.0,
+      "peak_ram_mb": 398.16015625,
+      "peak_vram_mb": 0.0
+    },
+    "evaluation": {
+      "latency_per_sample_mean_ms": 168.00554319333364,
+      "latency_per_sample_std_ms": 2.4490354747259433,
+      "timing_source": "perf_counter",
+      "end_to_end_latency_mean_ms": 168.00554319333364,
+      "end_to_end_latency_std_ms": 2.4490354747259433,
+      "accuracy": 0.7450980392156863,
+      "precision": 1.0,
+      "recall": 0.6976744186046512,
+      "f1": 0.8219178082191781,
+      "auc_roc": 1.0,
+      "reconstruction_mse_vs_baseline": null,
+      "reconstruction_max_abs_error_vs_baseline": null,
+      "reconstruction_relative_l2_vs_baseline": null,
+      "reconstruction_within_tolerance": null,
+      "anomaly_disagreement_rate_vs_baseline": null
+    }
+  },
+  "TensorRT FP32 (GPU)": {
+    "size_mb": 5.9472150802612305,
+    "performance": {
+      "latency_mean_ms": 4.756366984049479,
+      "latency_std_ms": 0.055870341027516555,
+      "latency_min_ms": 4.666040897369385,
+      "latency_max_ms": 4.970417022705078,
+      "timing_source": "cuda_event",
+      "end_to_end_latency_mean_ms": 5.784730960028052,
+      "end_to_end_latency_std_ms": 0.07099831850897692,
+      "net_ram_mb": 0.0,
+      "net_vram_mb": 0.0,
+      "peak_ram_mb": 2416.875,
+      "peak_vram_mb": 5.66357421875
+    },
+    "evaluation": {
+      "latency_per_sample_mean_ms": 4.773683274586995,
+      "latency_per_sample_std_ms": 0.04996743176003796,
+      "timing_source": "cuda_event",
+      "end_to_end_latency_mean_ms": 5.807149853232356,
+      "end_to_end_latency_std_ms": 0.06585381024866344,
+      "accuracy": 0.7450980392156863,
+      "precision": 1.0,
+      "recall": 0.6976744186046512,
+      "f1": 0.8219178082191781,
+      "auc_roc": 1.0,
+      "reconstruction_mse_vs_baseline": 1.1664239994886583e-13,
+      "reconstruction_max_abs_error_vs_baseline": 3.0994415283203125e-06,
+      "reconstruction_relative_l2_vs_baseline": 3.358813500560144e-07,
+      "reconstruction_within_tolerance": true,
+      "anomaly_disagreement_rate_vs_baseline": 0.0
+    }
+  },
+  "ONNX FP32 (CPU)": {
+    "size_mb": 5.329115867614746,
+    "performance": {
+      "latency_mean_ms": 14.892089739781417,
+      "latency_std_ms": 0.1255805102103218,
+      "latency_min_ms": 14.752090999536449,
+      "latency_max_ms": 15.97149599911063,
+      "timing_source": "perf_counter",
+      "end_to_end_latency_mean_ms": 14.892089739781417,
+      "end_to_end_latency_std_ms": 0.1255805102103218,
+      "net_ram_mb": 0.2421875,
+      "net_vram_mb": 0.0,
+      "peak_ram_mb": 2416.875,
+      "peak_vram_mb": 5.66357421875
+    },
+    "evaluation": {
+      "latency_per_sample_mean_ms": 15.015840446721995,
+      "latency_per_sample_std_ms": 0.0692557386513588,
+      "timing_source": "perf_counter",
+      "end_to_end_latency_mean_ms": 15.015840446721995,
+      "end_to_end_latency_std_ms": 0.0692557386513588,
+      "accuracy": 0.7450980392156863,
+      "precision": 1.0,
+      "recall": 0.6976744186046512,
+      "f1": 0.8219178082191781,
+      "auc_roc": 1.0,
+      "reconstruction_mse_vs_baseline": 1.9853621513726133e-13,
+      "reconstruction_max_abs_error_vs_baseline": 2.384185791015625e-06,
+      "reconstruction_relative_l2_vs_baseline": 4.382052254471793e-07,
+      "reconstruction_within_tolerance": true,
+      "anomaly_disagreement_rate_vs_baseline": 0.0
+    }
+  },
+  "ONNX FP16 (CPU)": {
+    "size_mb": 2.7143564224243164,
+    "performance": {
+      "latency_mean_ms": 23.823467079952632,
+      "latency_std_ms": 0.17598505626005356,
+      "latency_min_ms": 23.68236799884471,
+      "latency_max_ms": 25.33303499876638,
+      "timing_source": "perf_counter",
+      "end_to_end_latency_mean_ms": 23.823467079952632,
+      "end_to_end_latency_std_ms": 0.17598505626005356,
+      "net_ram_mb": 0.0,
+      "net_vram_mb": 0.0,
+      "peak_ram_mb": 2416.875,
+      "peak_vram_mb": 5.66357421875
+    },
+    "evaluation": {
+      "latency_per_sample_mean_ms": 23.80662041992764,
+      "latency_per_sample_std_ms": 0.14265217786989032,
+      "timing_source": "perf_counter",
+      "end_to_end_latency_mean_ms": 23.80662041992764,
+      "end_to_end_latency_std_ms": 0.14265217786989032,
+      "accuracy": 0.7450980392156863,
+      "precision": 1.0,
+      "recall": 0.6976744186046512,
+      "f1": 0.8219178082191781,
+      "auc_roc": 1.0,
+      "reconstruction_mse_vs_baseline": 4.5992121044946543e-07,
+      "reconstruction_max_abs_error_vs_baseline": 0.0021811723709106445,
+      "reconstruction_relative_l2_vs_baseline": 0.0006669596974357377,
+      "reconstruction_within_tolerance": false,
+      "anomaly_disagreement_rate_vs_baseline": 0.0
+    }
+  },
+  "TensorRT INT8 (GPU)": {
+    "size_mb": 6.411370277404785,
+    "performance": {
+      "latency_mean_ms": 4.8289646212259925,
+      "latency_std_ms": 0.05936208162663528,
+      "latency_min_ms": 4.710521221160889,
+      "latency_max_ms": 5.020625114440918,
+      "timing_source": "cuda_event",
+      "end_to_end_latency_mean_ms": 5.862460986536462,
+      "end_to_end_latency_std_ms": 0.07551588400995879,
+      "net_ram_mb": 0.0,
+      "net_vram_mb": 0.0,
+      "peak_ram_mb": 2416.875,
+      "peak_vram_mb": 5.66357421875
+    },
+    "evaluation": {
+      "latency_per_sample_mean_ms": 4.81671909014384,
+      "latency_per_sample_std_ms": 0.055718518478808765,
+      "timing_source": "cuda_event",
+      "end_to_end_latency_mean_ms": 5.852090553259283,
+      "end_to_end_latency_std_ms": 0.07046907148914375,
+      "accuracy": 0.7450980392156863,
+      "precision": 1.0,
+      "recall": 0.6976744186046512,
+      "f1": 0.8219178082191781,
+      "auc_roc": 1.0,
+      "reconstruction_mse_vs_baseline": 1.1664239994886583e-13,
+      "reconstruction_max_abs_error_vs_baseline": 3.0994415283203125e-06,
+      "reconstruction_relative_l2_vs_baseline": 3.358813500560144e-07,
+      "reconstruction_within_tolerance": true,
+      "anomaly_disagreement_rate_vs_baseline": 0.0
+    }
+  }
+}

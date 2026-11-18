@@ -1,0 +1,32 @@
+{
+  "variants": [
+    {
+      "variant": "original",
+      "opset": 13,
+      "nodes": 395,
+      "softmax_nodes": 4,
+      "exp_nodes": 0,
+      "size_mb": 5.336761474609375,
+      "latency_mean_ms": 1.4105159133411387,
+      "latency_std_ms": 0.09480487004205575,
+      "timing_source": "perf_counter",
+      "warmup_runs": 15,
+      "timed_runs": 150
+    },
+    {
+      "variant": "optimized",
+      "opset": 13,
+      "nodes": 263,
+      "softmax_nodes": 0,
+      "exp_nodes": 4,
+      "size_mb": 5.329115867614746,
+      "latency_mean_ms": 1.491152693344399,
+      "latency_std_ms": 0.21562220971955767,
+      "timing_source": "perf_counter",
+      "warmup_runs": 15,
+      "timed_runs": 150
+    }
+  ],
+  "output_mse": 1.5610780626073434e-13,
+  "output_max_abs_error": 1.430511474609375e-06
+}

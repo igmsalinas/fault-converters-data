@@ -1,0 +1,163 @@
+&&&& RUNNING TensorRT.trtexec [TensorRT v8201] # /usr/src/tensorrt/bin/trtexec --onnx=experiments/dataset_01_run_05/carla_conv1d/deployment/model.onnx --saveEngine=experiments/dataset_01_run_05/carla_conv1d/deployment/model_fp16.engine --workspace=512 --buildOnly --fp16
+[08/23/2026-19:06:00] [I] === Model Options ===
+[08/23/2026-19:06:00] [I] Format: ONNX
+[08/23/2026-19:06:00] [I] Model: experiments/dataset_01_run_05/carla_conv1d/deployment/model.onnx
+[08/23/2026-19:06:00] [I] Output:
+[08/23/2026-19:06:00] [I] === Build Options ===
+[08/23/2026-19:06:00] [I] Max batch: explicit batch
+[08/23/2026-19:06:00] [I] Workspace: 512 MiB
+[08/23/2026-19:06:00] [I] minTiming: 1
+[08/23/2026-19:06:00] [I] avgTiming: 8
+[08/23/2026-19:06:00] [I] Precision: FP32+FP16
+[08/23/2026-19:06:00] [I] Calibration:
+[08/23/2026-19:06:00] [I] Refit: Disabled
+[08/23/2026-19:06:00] [I] Sparsity: Disabled
+[08/23/2026-19:06:00] [I] Safe mode: Disabled
+[08/23/2026-19:06:00] [I] DirectIO mode: Disabled
+[08/23/2026-19:06:00] [I] Restricted mode: Disabled
+[08/23/2026-19:06:00] [I] Save engine: experiments/dataset_01_run_05/carla_conv1d/deployment/model_fp16.engine
+[08/23/2026-19:06:00] [I] Load engine:
+[08/23/2026-19:06:00] [I] Profiling verbosity: 0
+[08/23/2026-19:06:00] [I] Tactic sources: Using default tactic sources
+[08/23/2026-19:06:00] [I] timingCacheMode: local
+[08/23/2026-19:06:00] [I] timingCacheFile:
+[08/23/2026-19:06:00] [I] Input(s)s format: fp32:CHW
+[08/23/2026-19:06:00] [I] Output(s)s format: fp32:CHW
+[08/23/2026-19:06:00] [I] Input build shapes: model
+[08/23/2026-19:06:00] [I] Input calibration shapes: model
+[08/23/2026-19:06:00] [I] === System Options ===
+[08/23/2026-19:06:00] [I] Device: 0
+[08/23/2026-19:06:00] [I] DLACore:
+[08/23/2026-19:06:00] [I] Plugins:
+[08/23/2026-19:06:00] [I] === Inference Options ===
+[08/23/2026-19:06:00] [I] Batch: Explicit
+[08/23/2026-19:06:00] [I] Input inference shapes: model
+[08/23/2026-19:06:00] [I] Iterations: 10
+[08/23/2026-19:06:00] [I] Duration: 3s (+ 200ms warm up)
+[08/23/2026-19:06:00] [I] Sleep time: 0ms
+[08/23/2026-19:06:00] [I] Idle time: 0ms
+[08/23/2026-19:06:00] [I] Streams: 1
+[08/23/2026-19:06:00] [I] ExposeDMA: Disabled
+[08/23/2026-19:06:00] [I] Data transfers: Enabled
+[08/23/2026-19:06:00] [I] Spin-wait: Disabled
+[08/23/2026-19:06:00] [I] Multithreading: Disabled
+[08/23/2026-19:06:00] [I] CUDA Graph: Disabled
+[08/23/2026-19:06:00] [I] Separate profiling: Disabled
+[08/23/2026-19:06:00] [I] Time Deserialize: Disabled
+[08/23/2026-19:06:00] [I] Time Refit: Disabled
+[08/23/2026-19:06:00] [I] Skip inference: Enabled
+[08/23/2026-19:06:00] [I] Inputs:
+[08/23/2026-19:06:00] [I] === Reporting Options ===
+[08/23/2026-19:06:00] [I] Verbose: Disabled
+[08/23/2026-19:06:00] [I] Averages: 10 inferences
+[08/23/2026-19:06:00] [I] Percentile: 99
+[08/23/2026-19:06:00] [I] Dump refittable layers:Disabled
+[08/23/2026-19:06:00] [I] Dump output: Disabled
+[08/23/2026-19:06:00] [I] Profile: Disabled
+[08/23/2026-19:06:00] [I] Export timing to JSON file:
+[08/23/2026-19:06:00] [I] Export output to JSON file:
+[08/23/2026-19:06:00] [I] Export profile to JSON file:
+[08/23/2026-19:06:00] [I]
+[08/23/2026-19:06:00] [I] === Device Information ===
+[08/23/2026-19:06:00] [I] Selected Device: NVIDIA Tegra X1
+[08/23/2026-19:06:00] [I] Compute Capability: 5.3
+[08/23/2026-19:06:00] [I] SMs: 1
+[08/23/2026-19:06:00] [I] Compute Clock Rate: 0.9216 GHz
+[08/23/2026-19:06:00] [I] Device Global Memory: 3963 MiB
+[08/23/2026-19:06:00] [I] Shared Memory per SM: 64 KiB
+[08/23/2026-19:06:00] [I] Memory Bus Width: 64 bits (ECC disabled)
+[08/23/2026-19:06:00] [I] Memory Clock Rate: 0.01275 GHz
+[08/23/2026-19:06:00] [I]
+[08/23/2026-19:06:00] [I] TensorRT version: 8.2.1
+[08/23/2026-19:06:02] [I] [TRT] [MemUsageChange] Init CUDA: CPU +229, GPU +0, now: CPU 248, GPU 2480 (MiB)
+[08/23/2026-19:06:02] [I] [TRT] [MemUsageSnapshot] Begin constructing builder kernel library: CPU 248 MiB, GPU 2480 MiB
+[08/23/2026-19:06:02] [I] [TRT] [MemUsageSnapshot] End constructing builder kernel library: CPU 278 MiB, GPU 2510 MiB
+[08/23/2026-19:06:02] [I] Start parsing network model
+[08/23/2026-19:06:02] [I] [TRT] ----------------------------------------------------------------
+[08/23/2026-19:06:02] [I] [TRT] Input filename:   experiments/dataset_01_run_05/carla_conv1d/deployment/model.onnx
+[08/23/2026-19:06:02] [I] [TRT] ONNX IR version:  0.0.7
+[08/23/2026-19:06:02] [I] [TRT] Opset version:    13
+[08/23/2026-19:06:02] [I] [TRT] Producer name:    tf2onnx
+[08/23/2026-19:06:02] [I] [TRT] Producer version: 1.17.0 None
+[08/23/2026-19:06:02] [I] [TRT] Domain:
+[08/23/2026-19:06:02] [I] [TRT] Model version:    0
+[08/23/2026-19:06:02] [I] [TRT] Doc string:
+[08/23/2026-19:06:02] [I] [TRT] ----------------------------------------------------------------
+[08/23/2026-19:06:02] [W] [TRT] onnx2trt_utils.cpp:366: Your ONNX model has been generated with INT64 weights, while TensorRT does not natively support INT64. Attempting to cast down to INT32.
+[08/23/2026-19:06:02] [W] [TRT] ShapedWeights.cpp:173: Weights carla_conv1d_1/encoder_1/latent_1/Cast/ReadVariableOp:0 has been transposed with permutation of (1, 0)! If you plan on overwriting the weights with the Refitter API, the new weights must be pre-transposed.
+[08/23/2026-19:06:02] [W] [TRT] ShapedWeights.cpp:173: Weights carla_conv1d_1/decoder_1/dense_1/Cast/ReadVariableOp:0 has been transposed with permutation of (1, 0)! If you plan on overwriting the weights with the Refitter API, the new weights must be pre-transposed.
+[08/23/2026-19:06:02] [I] Finish parsing network model
+[08/23/2026-19:06:02] [I] [TRT] ---------- Layers Running on DLA ----------
+[08/23/2026-19:06:02] [I] [TRT] ---------- Layers Running on GPU ----------
+[08/23/2026-19:06:02] [I] [TRT] [GpuLayer] const_fold_opt__174
+[08/23/2026-19:06:02] [I] [TRT] [GpuLayer] carla_conv1d_1/encoder_1/batch_normalization_1/batchnorm/mul:0
+[08/23/2026-19:06:02] [I] [TRT] [GpuLayer] const_fold_opt__187
+[08/23/2026-19:06:02] [I] [TRT] [GpuLayer] const_fold_opt__183
+[08/23/2026-19:06:02] [I] [TRT] [GpuLayer] carla_conv1d_1/encoder_1/batch_normalization_1_2/batchnorm/mul:0
+[08/23/2026-19:06:02] [I] [TRT] [GpuLayer] const_fold_opt__168
+[08/23/2026-19:06:02] [I] [TRT] [GpuLayer] const_fold_opt__192
+[08/23/2026-19:06:02] [I] [TRT] [GpuLayer] carla_conv1d_1/encoder_1/batch_normalization_2_1/batchnorm/mul:0
+[08/23/2026-19:06:02] [I] [TRT] [GpuLayer] const_fold_opt__169
+[08/23/2026-19:06:02] [I] [TRT] [GpuLayer] const_fold_opt__184
+[08/23/2026-19:06:02] [I] [TRT] [GpuLayer] carla_conv1d_1/decoder_1/batch_normalization_3_1/batchnorm/mul:0
+[08/23/2026-19:06:02] [I] [TRT] [GpuLayer] const_fold_opt__189
+[08/23/2026-19:06:02] [I] [TRT] [GpuLayer] const_fold_opt__185
+[08/23/2026-19:06:02] [I] [TRT] [GpuLayer] carla_conv1d_1/decoder_1/batch_normalization_4_1/batchnorm/mul:0
+[08/23/2026-19:06:02] [I] [TRT] [GpuLayer] const_fold_opt__190
+[08/23/2026-19:06:02] [I] [TRT] [GpuLayer] const_fold_opt__163
+[08/23/2026-19:06:02] [I] [TRT] [GpuLayer] carla_conv1d_1/decoder_1/batch_normalization_5_1/batchnorm/mul:0
+[08/23/2026-19:06:02] [I] [TRT] [GpuLayer] const_fold_opt__191
+[08/23/2026-19:06:02] [I] [TRT] [GpuLayer] const_fold_opt__164
+[08/23/2026-19:06:02] [I] [TRT] [GpuLayer] carla_conv1d_1/encoder_1/enc_conv_0_1/convolution/ExpandDims + carla_conv1d_1/encoder_1/enc_conv_0_1/convolution__11
+[08/23/2026-19:06:02] [I] [TRT] [GpuLayer] carla_conv1d_1/encoder_1/enc_conv_0_1/convolution
+[08/23/2026-19:06:02] [I] [TRT] [GpuLayer] carla_conv1d_1/encoder_1/enc_conv_0_1/convolution/Squeeze
+[08/23/2026-19:06:02] [I] [TRT] [GpuLayer] PWN(PWN(carla_conv1d_1/encoder_1/enc_conv_0_1/BiasAdd, carla_conv1d_1/encoder_1/batch_normalization_1/batchnorm/mul_1), carla_conv1d_1/encoder_1/batch_normalization_1/batchnorm/add_1 + carla_conv1d_1/encoder_1/re_lu_1/Relu)
+[08/23/2026-19:06:02] [I] [TRT] [GpuLayer] carla_conv1d_1/encoder_1/enc_conv_1_1/convolution/ExpandDims
+[08/23/2026-19:06:02] [I] [TRT] [GpuLayer] carla_conv1d_1/encoder_1/enc_conv_1_1/convolution
+[08/23/2026-19:06:02] [I] [TRT] [GpuLayer] carla_conv1d_1/encoder_1/enc_conv_1_1/convolution/Squeeze
+[08/23/2026-19:06:02] [I] [TRT] [GpuLayer] PWN(PWN(carla_conv1d_1/encoder_1/enc_conv_1_1/BiasAdd, carla_conv1d_1/encoder_1/batch_normalization_1_2/batchnorm/mul_1), carla_conv1d_1/encoder_1/batch_normalization_1_2/batchnorm/add_1 + carla_conv1d_1/encoder_1/re_lu_1_2/Relu)
+[08/23/2026-19:06:02] [I] [TRT] [GpuLayer] carla_conv1d_1/encoder_1/enc_conv_2_1/convolution/ExpandDims
+[08/23/2026-19:06:02] [I] [TRT] [GpuLayer] carla_conv1d_1/encoder_1/enc_conv_2_1/convolution
+[08/23/2026-19:06:02] [I] [TRT] [GpuLayer] carla_conv1d_1/encoder_1/enc_conv_2_1/convolution/Squeeze
+[08/23/2026-19:06:02] [I] [TRT] [GpuLayer] PWN(PWN(carla_conv1d_1/encoder_1/enc_conv_2_1/BiasAdd, carla_conv1d_1/encoder_1/batch_normalization_2_1/batchnorm/mul_1), carla_conv1d_1/encoder_1/batch_normalization_2_1/batchnorm/add_1 + carla_conv1d_1/encoder_1/re_lu_2_1/Relu)
+[08/23/2026-19:06:02] [I] [TRT] [GpuLayer] Transpose__119 + carla_conv1d_1/encoder_1/flatten_1/Reshape + (Unnamed Layer* 33) [Shuffle]
+[08/23/2026-19:06:02] [I] [TRT] [GpuLayer] carla_conv1d_1/encoder_1/latent_1/MatMul_Gemm__6
+[08/23/2026-19:06:02] [I] [TRT] [GpuLayer] carla_conv1d_1/decoder_1/dense_1/MatMul_Gemm__7
+[08/23/2026-19:06:02] [I] [TRT] [GpuLayer] (Unnamed Layer* 38) [Shuffle] + carla_conv1d_1/decoder_1/reshape_1/Reshape + carla_conv1d_1/decoder_1/dec_conv_0_1/conv_transpose/ExpandDims + carla_conv1d_1/decoder_1/dec_conv_0_1/conv_transpose__31
+[08/23/2026-19:06:02] [I] [TRT] [GpuLayer] carla_conv1d_1/decoder_1/dec_conv_0_1/conv_transpose
+[08/23/2026-19:06:02] [I] [TRT] [GpuLayer] carla_conv1d_1/decoder_1/dec_conv_0_1/conv_transpose/Squeeze
+[08/23/2026-19:06:02] [I] [TRT] [GpuLayer] PWN(PWN(carla_conv1d_1/decoder_1/dec_conv_0_1/BiasAdd, carla_conv1d_1/decoder_1/batch_normalization_3_1/batchnorm/mul_1), carla_conv1d_1/decoder_1/batch_normalization_3_1/batchnorm/add_1 + carla_conv1d_1/decoder_1/re_lu_3_1/Relu)
+[08/23/2026-19:06:02] [I] [TRT] [GpuLayer] carla_conv1d_1/decoder_1/dec_conv_1_1/conv_transpose/ExpandDims
+[08/23/2026-19:06:02] [I] [TRT] [GpuLayer] carla_conv1d_1/decoder_1/dec_conv_1_1/conv_transpose
+[08/23/2026-19:06:02] [I] [TRT] [GpuLayer] carla_conv1d_1/decoder_1/dec_conv_1_1/conv_transpose/Squeeze
+[08/23/2026-19:06:02] [I] [TRT] [GpuLayer] PWN(PWN(carla_conv1d_1/decoder_1/dec_conv_1_1/BiasAdd, carla_conv1d_1/decoder_1/batch_normalization_4_1/batchnorm/mul_1), carla_conv1d_1/decoder_1/batch_normalization_4_1/batchnorm/add_1 + carla_conv1d_1/decoder_1/re_lu_4_1/Relu)
+[08/23/2026-19:06:02] [I] [TRT] [GpuLayer] carla_conv1d_1/decoder_1/dec_conv_2_1/conv_transpose/ExpandDims
+[08/23/2026-19:06:02] [I] [TRT] [GpuLayer] carla_conv1d_1/decoder_1/dec_conv_2_1/conv_transpose
+[08/23/2026-19:06:02] [I] [TRT] [GpuLayer] carla_conv1d_1/decoder_1/dec_conv_2_1/conv_transpose/Squeeze
+[08/23/2026-19:06:02] [I] [TRT] [GpuLayer] PWN(PWN(carla_conv1d_1/decoder_1/dec_conv_2_1/BiasAdd, carla_conv1d_1/decoder_1/batch_normalization_5_1/batchnorm/mul_1), carla_conv1d_1/decoder_1/batch_normalization_5_1/batchnorm/add_1 + carla_conv1d_1/decoder_1/re_lu_5_1/Relu)
+[08/23/2026-19:06:02] [I] [TRT] [GpuLayer] carla_conv1d_1/decoder_1/conv1d_1/convolution/ExpandDims
+[08/23/2026-19:06:02] [I] [TRT] [GpuLayer] carla_conv1d_1/decoder_1/conv1d_1/convolution
+[08/23/2026-19:06:02] [I] [TRT] [GpuLayer] carla_conv1d_1/decoder_1/conv1d_1/convolution/Squeeze
+[08/23/2026-19:06:02] [I] [TRT] [GpuLayer] carla_conv1d_1/decoder_1/conv1d_1/BiasAdd
+[08/23/2026-19:06:02] [I] [TRT] [GpuLayer] carla_conv1d_1/decoder_1/zero_padding1d_1/Pad
+[08/23/2026-19:06:02] [I] [TRT] [GpuLayer] Transpose__101
+[08/23/2026-19:06:03] [I] [TRT] [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +158, GPU +149, now: CPU 450, GPU 2701 (MiB)
+[08/23/2026-19:06:05] [I] [TRT] [MemUsageChange] Init cuDNN: CPU +241, GPU +238, now: CPU 691, GPU 2939 (MiB)
+[08/23/2026-19:06:05] [I] [TRT] Local timing cache in use. Profiling results in this builder pass will not be stored.
+[08/23/2026-19:07:19] [I] [TRT] Detected 1 inputs and 1 output network tensors.
+[08/23/2026-19:07:19] [I] [TRT] Total Host Persistent Memory: 10832
+[08/23/2026-19:07:19] [I] [TRT] Total Device Persistent Memory: 1643008
+[08/23/2026-19:07:19] [I] [TRT] Total Scratch Memory: 133120
+[08/23/2026-19:07:19] [I] [TRT] [MemUsageStats] Peak memory usage of TRT CPU/GPU memory allocators: CPU 8 MiB, GPU 487 MiB
+[08/23/2026-19:07:19] [I] [TRT] [BlockAssignment] Algorithm ShiftNTopDown took 4.51828ms to assign 3 blocks to 47 nodes requiring 206848 bytes.
+[08/23/2026-19:07:19] [I] [TRT] Total Activation Memory: 206848
+[08/23/2026-19:07:19] [I] [TRT] [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +0, GPU +0, now: CPU 942, GPU 3433 (MiB)
+[08/23/2026-19:07:19] [I] [TRT] [MemUsageChange] Init cuDNN: CPU +0, GPU +0, now: CPU 942, GPU 3433 (MiB)
+[08/23/2026-19:07:19] [I] [TRT] [MemUsageChange] TensorRT-managed allocation in building engine: CPU +3, GPU +16, now: CPU 3, GPU 16 (MiB)
+[08/23/2026-19:07:19] [I] [TRT] [MemUsageChange] Init CUDA: CPU +0, GPU +0, now: CPU 942, GPU 3439 (MiB)
+[08/23/2026-19:07:19] [I] [TRT] Loaded engine size: 10 MiB
+[08/23/2026-19:07:19] [I] [TRT] [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +0, GPU +0, now: CPU 943, GPU 3439 (MiB)
+[08/23/2026-19:07:19] [I] [TRT] [MemUsageChange] Init cuDNN: CPU +0, GPU +0, now: CPU 943, GPU 3439 (MiB)
+[08/23/2026-19:07:19] [I] [TRT] [MemUsageChange] TensorRT-managed allocation in engine deserialization: CPU +0, GPU +10, now: CPU 0, GPU 10 (MiB)
+[08/23/2026-19:07:19] [I] Engine built in 79.3418 sec.
+&&&& PASSED TensorRT.trtexec [TensorRT v8201] # /usr/src/tensorrt/bin/trtexec --onnx=experiments/dataset_01_run_05/carla_conv1d/deployment/model.onnx --saveEngine=experiments/dataset_01_run_05/carla_conv1d/deployment/model_fp16.engine --workspace=512 --buildOnly --fp16

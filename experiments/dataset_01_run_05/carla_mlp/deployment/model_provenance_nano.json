@@ -1,0 +1,133 @@
+{
+  "model_dir": "experiments/dataset_01_run_05/carla_mlp",
+  "checkpoint_selection": "checkpoints/best",
+  "threshold": 0.04375553876161575,
+  "autoencoder_parameter_count": 509706,
+  "autoencoder_weight_tensor_count": 28,
+  "autoencoder_loaded_weights_sha256": "739dcb3806a1fa8e31851322f030d7574a6f5fd49ae7fd02e4e495df61974e5d",
+  "autoencoder_weight_shapes": [
+    [
+      202,
+      512
+    ],
+    [
+      512
+    ],
+    [
+      512
+    ],
+    [
+      512
+    ],
+    [
+      512
+    ],
+    [
+      512
+    ],
+    [
+      512,
+      256
+    ],
+    [
+      256
+    ],
+    [
+      256
+    ],
+    [
+      256
+    ],
+    [
+      256
+    ],
+    [
+      256
+    ],
+    [
+      256,
+      64
+    ],
+    [
+      64
+    ],
+    [
+      64,
+      256
+    ],
+    [
+      256
+    ],
+    [
+      256
+    ],
+    [
+      256
+    ],
+    [
+      256
+    ],
+    [
+      256
+    ],
+    [
+      256,
+      512
+    ],
+    [
+      512
+    ],
+    [
+      512
+    ],
+    [
+      512
+    ],
+    [
+      512
+    ],
+    [
+      512
+    ],
+    [
+      512,
+      202
+    ],
+    [
+      202
+    ]
+  ],
+  "zero_probe_output_sha256": "7aff4e7bd07ae5263b2e87745f022a75ea0b8638dc65c2e2fd1aebb0d7ce590d",
+  "tracked_files": [
+    {
+      "path": "checkpoints/best/autoencoder.weights.h5",
+      "size_bytes": 2111744,
+      "sha256": "d0c17cd1882a940a4e7365ace253ee21e0a65ea4d4ee0063d5949385b3ff4e76"
+    },
+    {
+      "path": "checkpoints/best/autoencoder.weights.npz",
+      "size_bytes": 2050408,
+      "sha256": "b11640e1d34b9e7073bf862e7ece0577f88451ebcbc24ddacd53c0c2f30552e0"
+    },
+    {
+      "path": "model_config.json",
+      "size_bytes": 491,
+      "sha256": "f03f6f1a9d3eba64828ec56324afd79ef35c4fe0f41e83e71ddc41635382ddd7"
+    },
+    {
+      "path": "threshold.json",
+      "size_bytes": 96,
+      "sha256": "cba24b76cafabcb892227dc71fe94ddb09535af945e9d99199dbbee47bbacdd6"
+    },
+    {
+      "path": "preprocessor/config.json",
+      "size_bytes": 95,
+      "sha256": "35a39c02147122b3d2caca1b8c5e29b5677622046e088a097a50b7cdfa7711c1"
+    },
+    {
+      "path": "preprocessor/scaler.json",
+      "size_bytes": 173,
+      "sha256": "c3ac6b3c4a571abf9cf6d7ac05e738c5418a187fdea93aa80aeacd85220706a4"
+    }
+  ]
+}

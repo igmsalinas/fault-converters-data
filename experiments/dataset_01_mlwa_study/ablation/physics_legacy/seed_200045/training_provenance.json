@@ -1,0 +1,9 @@
+{
+  "regime": "physics_legacy",
+  "seed": 200045,
+  "reused_readonly_checkpoint": null,
+  "initial_model_weights_sha256": "153f2b491d664affc06fde100b6207171be5123e329fbc6b720896bc2cbdcb7c",
+  "final_best_weights_sha256": "710079c1c2ab7b75451d4d4b3cd4fe6ef21cf5a950a2bf1af5a881c477611f91",
+  "training_seconds": 167.31757592899976,
+  "epochs_trained": 122
+}

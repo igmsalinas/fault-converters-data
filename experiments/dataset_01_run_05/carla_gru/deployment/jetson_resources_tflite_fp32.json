@@ -1,0 +1,174 @@
+{
+  "model_dir": "experiments/dataset_01_run_05/carla_gru",
+  "backend": "tflite",
+  "model_file": "experiments/dataset_01_run_05/carla_gru/deployment/model_fp32.tflite",
+  "protocol": {
+    "batch_size": 1,
+    "warmup_runs": 15,
+    "timed_runs": 150,
+    "resource_sample_interval_ms": 100,
+    "idle_seconds": 5.0,
+    "sustained_active_seconds": 15.0
+  },
+  "timing": {
+    "latency_mean_ms": 453.787905553351,
+    "latency_std_ms": 1.1793139439211864,
+    "latency_min_ms": 451.7581820000487,
+    "latency_max_ms": 458.1614909984637,
+    "timing_source": "perf_counter",
+    "end_to_end_latency_mean_ms": 453.787905553351,
+    "end_to_end_latency_std_ms": 1.1793139439211864,
+    "end_to_end_latency_min_ms": 451.7581820000487,
+    "end_to_end_latency_max_ms": 458.1614909984637,
+    "timing_batch_size": 1,
+    "timing_warmup_runs": 15,
+    "timing_runs": 150
+  },
+  "sustained_throughput_inferences_per_second": 2.205998403914092,
+  "sustained_inference_count": 34,
+  "system_shared_memory": {
+    "idle_mean_mb": 948.0,
+    "active_mean_mb": 1118.0064516129032,
+    "active_peak_mb": 1119.0,
+    "active_mean_delta_mb": 170.00645161290322,
+    "active_peak_delta_mb": 171.0
+  },
+  "process_ram": {
+    "method": "/proc/self/status VmRSS/VmHWM",
+    "baseline_rss_mb": 30.78125,
+    "peak_rss_mb": 353.03515625,
+    "peak_delta_mb": 322.25390625,
+    "samples": [
+      {
+        "peak_rss_mb": 30.78125,
+        "rss_mb": 30.78125,
+        "phase": "pre_load_baseline"
+      },
+      {
+        "peak_rss_mb": 336.21875,
+        "rss_mb": 336.21875,
+        "phase": "runner_loaded"
+      },
+      {
+        "peak_rss_mb": 352.67578125,
+        "rss_mb": 352.67578125,
+        "phase": "timing_complete"
+      },
+      {
+        "peak_rss_mb": 353.03515625,
+        "rss_mb": 353.03515625,
+        "phase": "active_complete"
+      }
+    ]
+  },
+  "cuda_memory": {
+    "available": false,
+    "method": "pycuda.driver.mem_get_info",
+    "samples": []
+  },
+  "utilization": {
+    "cpu_active_mean_percent": 26.64677419354839,
+    "gpu_active_mean_percent": 0.0,
+    "emc_active_mean_percent": 0.0
+  },
+  "temperatures": {
+    "ao": {
+      "mean_c": 58.325806451612905,
+      "max_c": 58.5
+    },
+    "cpu": {
+      "mean_c": 51.71935483870968,
+      "max_c": 52.5
+    },
+    "gpu": {
+      "mean_c": 46.16451612903226,
+      "max_c": 46.5
+    },
+    "pll": {
+      "mean_c": 47.964516129032255,
+      "max_c": 48.5
+    },
+    "pmic": {
+      "mean_c": 50.0,
+      "max_c": 50.0
+    },
+    "thermal": {
+      "mean_c": 48.91290322580645,
+      "max_c": 49.25
+    }
+  },
+  "power": {
+    "sensor_available": true,
+    "source": "PMLib INA3221 daemon",
+    "idle": {
+      "source": "PMLib INA3221 daemon",
+      "sample_count": 50,
+      "sample_period_mean_s": 0.10214495658874512,
+      "measured_duration_s": 5.005102872848511,
+      "rails": {
+        "POM_5V_IN": {
+          "mean_w": 2.40894,
+          "std_w": 0.15418734189290642,
+          "min_w": 2.368,
+          "max_w": 3.169,
+          "energy_j": 12.020214201450349
+        },
+        "POM_5V_GPU": {
+          "mean_w": 0.20392,
+          "std_w": 0.0002712931993250035,
+          "min_w": 0.203,
+          "max_w": 0.204,
+          "energy_j": 1.0206834787130357
+        },
+        "POM_5V_CPU": {
+          "mean_w": 0.52142,
+          "std_w": 0.132808597613257,
+          "min_w": 0.489,
+          "max_w": 1.217,
+          "energy_j": 2.573797543644905
+        }
+      }
+    },
+    "active": {
+      "source": "PMLib INA3221 daemon",
+      "sample_count": 154,
+      "sample_period_mean_s": 0.10073598693398868,
+      "measured_duration_s": 15.412606000900269,
+      "rails": {
+        "POM_5V_IN": {
+          "mean_w": 3.7340974025974023,
+          "std_w": 0.06104083894596741,
+          "min_w": 3.327,
+          "max_w": 3.883,
+          "energy_j": 57.57711398029328
+        },
+        "POM_5V_GPU": {
+          "mean_w": 0.202,
+          "std_w": 0.0,
+          "min_w": 0.202,
+          "max_w": 0.202,
+          "energy_j": 3.1133464121818544
+        },
+        "POM_5V_CPU": {
+          "mean_w": 1.3957272727272727,
+          "std_w": 0.033442191394842176,
+          "min_w": 1.217,
+          "max_w": 1.496,
+          "energy_j": 21.51564540553093
+        }
+      }
+    },
+    "idle_input_mean_w": 2.40894,
+    "active_input_mean_w": 3.7340974025974023,
+    "dynamic_input_mean_w": 1.3251574025974024,
+    "total_energy_per_inference_mj": 1692.7017698526038,
+    "dynamic_energy_per_inference_mj": 600.7064194816198,
+    "gpu_rail_active_mean_w": 0.202,
+    "gpu_rail_energy_per_inference_mj": 91.56851593436895,
+    "cpu_rail_active_mean_w": 1.3957272727272727,
+    "cpu_rail_energy_per_inference_mj": 632.6964109542603,
+    "throughput_per_input_watt": 0.5907715214872598,
+    "note": "POM_5V_IN is total module input power. GPU/CPU rails are reported separately and are not added to it."
+  },
+  "tegrastats_sample_count": 1034
+}

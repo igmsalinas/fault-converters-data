@@ -1,0 +1,412 @@
+TRT-8201-EntropyCalibration2
+input_1: 3d06f838
+(Unnamed Layer* 0) [Constant]_output: 3b22761f
+(Unnamed Layer* 1) [Shuffle]_output: 3b22761f
+contrastive_ae_1/encoder_1/dense_1/MatMul:0: 3c569561
+(Unnamed Layer* 3) [Constant]_output: 38360c98
+(Unnamed Layer* 4) [Shuffle]_output: 38360c98
+contrastive_ae_1/encoder_1/dense_1/BiasAdd:0: 3c345373
+(Unnamed Layer* 6) [Constant]_output: 3c010a14
+(Unnamed Layer* 7) [Shuffle]_output: 3c010a14
+contrastive_ae_1/encoder_1/positional_encoding_1/add:0: 3cac56e3
+(Unnamed Layer* 9) [Constant]_output: 3a56daba
+(Unnamed Layer* 10) [Shuffle]_output: 3a56daba
+contrastive_ae_1/encoder_1/enc_mha_0_1/MatMul_2:0: 3c19e0cd
+(Unnamed Layer* 12) [Constant]_output: 38565066
+(Unnamed Layer* 13) [Shuffle]_output: 38565066
+contrastive_ae_1/encoder_1/enc_mha_0_1/add_2:0: 3bee8e9c
+(Unnamed Layer* 15) [Constant]_output: 3a8222ff
+(Unnamed Layer* 16) [Shuffle]_output: 3a8222ff
+contrastive_ae_1/encoder_1/enc_mha_0_1/MatMul_1:0: 3c7d61d2
+(Unnamed Layer* 18) [Constant]_output: 35b97e6b
+(Unnamed Layer* 19) [Shuffle]_output: 35b97e6b
+contrastive_ae_1/encoder_1/enc_mha_0_1/add_1:0: 3c7d612b
+(Unnamed Layer* 21) [Constant]_output: 3a6c865d
+(Unnamed Layer* 22) [Shuffle]_output: 3a6c865d
+contrastive_ae_1/encoder_1/enc_mha_0_1/MatMul:0: 3c7eb359
+(Unnamed Layer* 24) [Constant]_output: 39cde918
+(Unnamed Layer* 25) [Shuffle]_output: 39cde918
+contrastive_ae_1/encoder_1/enc_mha_0_1/add:0: 3c8e4ebc
+contrastive_ae_1/encoder_1/enc_mha_0_1/Reshape_8:0: 3bee8e9c
+contrastive_ae_1/encoder_1/enc_mha_0_1/transpose_2:0: 3bee8e9c
+contrastive_ae_1/encoder_1/enc_mha_0_1/Reshape_5:0: 3c7d612b
+contrastive_ae_1/encoder_1/enc_mha_0_1/transpose_1:0: 3c7d612b
+contrastive_ae_1/encoder_1/enc_mha_0_1/Reshape_2:0: 3c8e4ebc
+contrastive_ae_1/encoder_1/enc_mha_0_1/transpose:0: 3c8e4ebc
+contrastive_ae_1/encoder_1/enc_mha_0_1/Reshape_9:0: 3c8e4ebc
+contrastive_ae_1/encoder_1/enc_mha_0_1/Reshape_11:0: 3bee8e9c
+contrastive_ae_1/encoder_1/enc_mha_0_1/Reshape_10:0: 3c7d612b
+contrastive_ae_1/encoder_1/enc_mha_0_1/MatMul_3__14:0: 3c7d612b
+contrastive_ae_1/encoder_1/enc_mha_0_1/MatMul_3:0: 3e5398e4
+(Unnamed Layer* 39) [Shuffle]_output: 3b010a14
+contrastive_ae_1/encoder_1/enc_mha_0_1/mul:0: 3d5398e4
+contrastive_ae_1/encoder_1/enc_mha_0_1/Max:0: 3d850bc3
+contrastive_ae_1/encoder_1/enc_mha_0_1/sub:0: 3d7ccad2
+contrastive_ae_1/encoder_1/enc_mha_0_1/Exp:0: 3c010a14
+contrastive_ae_1/encoder_1/enc_mha_0_1/Sum:0: 3f41b319
+contrastive_ae_1/encoder_1/enc_mha_0_1/truediv:0: 3abc408c
+contrastive_ae_1/encoder_1/enc_mha_0_1/MatMul_4:0: 3bc89d60
+contrastive_ae_1/encoder_1/enc_mha_0_1/Reshape_12:0: 3bc89d60
+contrastive_ae_1/encoder_1/enc_mha_0_1/transpose_3:0: 3bc89d60
+contrastive_ae_1/encoder_1/enc_mha_0_1/Reshape_13:0: 3bc89d60
+(Unnamed Layer* 50) [Constant]_output: 3aa6aba0
+(Unnamed Layer* 51) [Shuffle]_output: 3aa6aba0
+contrastive_ae_1/encoder_1/enc_mha_0_1/MatMul_5:0: 3b9dff93
+(Unnamed Layer* 53) [Constant]_output: 384c21d2
+(Unnamed Layer* 54) [Shuffle]_output: 384c21d2
+contrastive_ae_1/encoder_1/enc_mha_0_1/add_3:0: 3b9e6270
+contrastive_ae_1/encoder_1/Add:0: 3cb34bed
+contrastive_ae_1/encoder_1/layer_normalization_1/moments/mean:0: 3b8c90c5
+contrastive_ae_1/encoder_1/layer_normalization_1/Neg:0: 3b8c90c5
+contrastive_ae_1/encoder_1/layer_normalization_1/moments/SquaredDifference:0: 3caa40bb
+contrastive_ae_1/encoder_1/layer_normalization_1/moments/SquaredDifference__20:0: 3d344309
+contrastive_ae_1/encoder_1/layer_normalization_1/moments/variance:0: 3c0f7104
+(Unnamed Layer* 63) [Shuffle]_output: 370422e6
+contrastive_ae_1/encoder_1/layer_normalization_1/add:0: 3c1720c2
+contrastive_ae_1/encoder_1/layer_normalization_1/Rsqrt:0: 3c13b12f
+contrastive_ae_1/encoder_1/layer_normalization_1/Rsqrt__21:0: 3c8dedb3
+(Unnamed Layer* 67) [Constant]_output: 3c01923f
+contrastive_ae_1/encoder_1/layer_normalization_1/mul:0: 3c8425e2
+contrastive_ae_1/encoder_1/layer_normalization_1/mul_2:0: 3cb55914
+contrastive_ae_1/encoder_1/layer_normalization_1/mul_1:0: 3c0c0608
+(Unnamed Layer* 71) [Constant]_output: 381e2c70
+contrastive_ae_1/encoder_1/layer_normalization_1/add_1:0: 3c0c0e82
+contrastive_ae_1/encoder_1/layer_normalization_1/add_2:0: 3ccc2eee
+(Unnamed Layer* 74) [Constant]_output: 3a9f6fa6
+(Unnamed Layer* 75) [Shuffle]_output: 3a9f6fa6
+contrastive_ae_1/encoder_1/dense_1_2/MatMul:0: 3cb6b203
+(Unnamed Layer* 77) [Constant]_output: 38e7549d
+(Unnamed Layer* 78) [Shuffle]_output: 38e7549d
+contrastive_ae_1/encoder_1/dense_1_2/BiasAdd:0: 3cb6ab5d
+contrastive_ae_1/encoder_1/dense_1_2/Relu:0: 3ca6189c
+(Unnamed Layer* 81) [Constant]_output: 3aa129ec
+(Unnamed Layer* 82) [Shuffle]_output: 3aa129ec
+contrastive_ae_1/encoder_1/dense_2_1/MatMul:0: 3c8ff982
+(Unnamed Layer* 84) [Constant]_output: 381dfcbf
+(Unnamed Layer* 85) [Shuffle]_output: 381dfcbf
+contrastive_ae_1/encoder_1/dense_2_1/BiasAdd:0: 3c82538e
+contrastive_ae_1/encoder_1/Add_1:0: 3ceba9b3
+contrastive_ae_1/encoder_1/layer_normalization_1_2/moments/mean:0: 3ac860c7
+contrastive_ae_1/encoder_1/layer_normalization_1_2/Neg:0: 3ac860c7
+contrastive_ae_1/encoder_1/layer_normalization_1_2/moments/SquaredDifference:0: 3cf4ba75
+contrastive_ae_1/encoder_1/layer_normalization_1_2/moments/SquaredDifference__22:0: 3dc7b308
+contrastive_ae_1/encoder_1/layer_normalization_1_2/moments/variance:0: 3c3f968b
+(Unnamed Layer* 94) [Shuffle]_output: 370422e6
+contrastive_ae_1/encoder_1/layer_normalization_1_2/add:0: 3c3fb865
+contrastive_ae_1/encoder_1/layer_normalization_1_2/Rsqrt:0: 3c1ff92b
+contrastive_ae_1/encoder_1/layer_normalization_1_2/Rsqrt__23:0: 3c26888a
+(Unnamed Layer* 98) [Constant]_output: 3c018bb3
+contrastive_ae_1/encoder_1/layer_normalization_1_2/mul:0: 3c0e468e
+contrastive_ae_1/encoder_1/layer_normalization_1_2/mul_2:0: 3cdb3fe9
+contrastive_ae_1/encoder_1/layer_normalization_1_2/mul_1:0: 3aba4897
+(Unnamed Layer* 102) [Constant]_output: 37c1d431
+contrastive_ae_1/encoder_1/layer_normalization_1_2/add_1:0: 3abd4ae0
+contrastive_ae_1/encoder_1/layer_normalization_1_2/add_2:0: 3cd621d3
+(Unnamed Layer* 105) [Constant]_output: 3abf18b6
+(Unnamed Layer* 106) [Shuffle]_output: 3abf18b6
+contrastive_ae_1/encoder_1/dense_3_1/MatMul:0: 3cc125a0
+(Unnamed Layer* 108) [Constant]_output: 380498a9
+(Unnamed Layer* 109) [Shuffle]_output: 380498a9
+contrastive_ae_1/encoder_1/dense_3_1/BiasAdd:0: 3cbeddf7
+(Unnamed Layer* 111) [Constant]_output: 3a024e64
+(Unnamed Layer* 112) [Shuffle]_output: 3a024e64
+contrastive_ae_1/encoder_1/enc_mha_1_1/MatMul_2:0: 3c28c619
+(Unnamed Layer* 114) [Constant]_output: 37f269b0
+(Unnamed Layer* 115) [Shuffle]_output: 37f269b0
+contrastive_ae_1/encoder_1/enc_mha_1_1/add_2:0: 3c3784ec
+contrastive_ae_1/encoder_1/enc_mha_1_1/Reshape_8:0: 3c3784ec
+contrastive_ae_1/encoder_1/enc_mha_1_1/transpose_2:0: 3c3784ec
+contrastive_ae_1/encoder_1/enc_mha_1_1/Reshape_11:0: 3c3784ec
+(Unnamed Layer* 120) [Constant]_output: 3a4caa3d
+(Unnamed Layer* 121) [Shuffle]_output: 3a4caa3d
+contrastive_ae_1/encoder_1/enc_mha_1_1/MatMul_1:0: 3c5e3209
+(Unnamed Layer* 123) [Constant]_output: 33356593
+(Unnamed Layer* 124) [Shuffle]_output: 33356593
+contrastive_ae_1/encoder_1/enc_mha_1_1/add_1:0: 3c5e31eb
+contrastive_ae_1/encoder_1/enc_mha_1_1/Reshape_5:0: 3c5e31eb
+contrastive_ae_1/encoder_1/enc_mha_1_1/transpose_1:0: 3c5e31eb
+contrastive_ae_1/encoder_1/enc_mha_1_1/Reshape_10:0: 3c5e31eb
+contrastive_ae_1/encoder_1/enc_mha_1_1/MatMul_3__30:0: 3c5e31eb
+(Unnamed Layer* 130) [Constant]_output: 3a21f204
+(Unnamed Layer* 131) [Shuffle]_output: 3a21f204
+contrastive_ae_1/encoder_1/enc_mha_1_1/MatMul:0: 3cba6ad7
+(Unnamed Layer* 133) [Constant]_output: 3995c36c
+(Unnamed Layer* 134) [Shuffle]_output: 3995c36c
+contrastive_ae_1/encoder_1/enc_mha_1_1/add:0: 3cbb8475
+contrastive_ae_1/encoder_1/enc_mha_1_1/Reshape_2:0: 3cbb8475
+contrastive_ae_1/encoder_1/enc_mha_1_1/transpose:0: 3cbb8475
+contrastive_ae_1/encoder_1/enc_mha_1_1/Reshape_9:0: 3cbb8475
+contrastive_ae_1/encoder_1/enc_mha_1_1/MatMul_3:0: 3e959801
+(Unnamed Layer* 141) [Shuffle]_output: 3ab67d3d
+contrastive_ae_1/encoder_1/enc_mha_1_1/mul:0: 3d538eba
+contrastive_ae_1/encoder_1/enc_mha_1_1/Max:0: 3d644763
+contrastive_ae_1/encoder_1/enc_mha_1_1/sub:0: 3db52e70
+contrastive_ae_1/encoder_1/enc_mha_1_1/Exp:0: 3c010a14
+contrastive_ae_1/encoder_1/enc_mha_1_1/Sum:0: 3f20e6c1
+contrastive_ae_1/encoder_1/enc_mha_1_1/truediv:0: 3aee9311
+contrastive_ae_1/encoder_1/enc_mha_1_1/MatMul_4:0: 3c2f7e00
+contrastive_ae_1/encoder_1/enc_mha_1_1/Reshape_12:0: 3c2f7e00
+contrastive_ae_1/encoder_1/enc_mha_1_1/transpose_3:0: 3c2f7e00
+contrastive_ae_1/encoder_1/enc_mha_1_1/Reshape_13:0: 3c2f7e00
+(Unnamed Layer* 152) [Constant]_output: 3a7d0e78
+(Unnamed Layer* 153) [Shuffle]_output: 3a7d0e78
+contrastive_ae_1/encoder_1/enc_mha_1_1/MatMul_5:0: 3c0a7711
+(Unnamed Layer* 155) [Constant]_output: 37ed1972
+(Unnamed Layer* 156) [Shuffle]_output: 37ed1972
+contrastive_ae_1/encoder_1/enc_mha_1_1/add_3:0: 3c061047
+contrastive_ae_1/encoder_1/Add_2:0: 3cca7674
+contrastive_ae_1/encoder_1/layer_normalization_2_1/moments/mean:0: 3aaba643
+contrastive_ae_1/encoder_1/layer_normalization_2_1/Neg:0: 3aaba643
+contrastive_ae_1/encoder_1/layer_normalization_2_1/moments/SquaredDifference:0: 3cca940b
+contrastive_ae_1/encoder_1/layer_normalization_2_1/moments/SquaredDifference__36:0: 3d6fdca6
+contrastive_ae_1/encoder_1/layer_normalization_2_1/moments/variance:0: 3c074120
+(Unnamed Layer* 165) [Shuffle]_output: 370422e6
+contrastive_ae_1/encoder_1/layer_normalization_2_1/add:0: 3c076602
+contrastive_ae_1/encoder_1/layer_normalization_2_1/Rsqrt:0: 3bfbf7eb
+contrastive_ae_1/encoder_1/layer_normalization_2_1/Rsqrt__37:0: 3c4663b1
+(Unnamed Layer* 169) [Constant]_output: 3c0177f3
+contrastive_ae_1/encoder_1/layer_normalization_2_1/mul:0: 3c3bdd42
+contrastive_ae_1/encoder_1/layer_normalization_2_1/mul_2:0: 3cdf45f6
+contrastive_ae_1/encoder_1/layer_normalization_2_1/mul_1:0: 3ac81cbe
+(Unnamed Layer* 173) [Constant]_output: 37ee1c5c
+contrastive_ae_1/encoder_1/layer_normalization_2_1/add_1:0: 3acc6d98
+contrastive_ae_1/encoder_1/layer_normalization_2_1/add_2:0: 3cdfa7f2
+(Unnamed Layer* 176) [Constant]_output: 3aa062bc
+(Unnamed Layer* 177) [Shuffle]_output: 3aa062bc
+contrastive_ae_1/encoder_1/dense_4_1/MatMul:0: 3cade6b7
+(Unnamed Layer* 179) [Constant]_output: 391b7bd7
+(Unnamed Layer* 180) [Shuffle]_output: 391b7bd7
+contrastive_ae_1/encoder_1/dense_4_1/BiasAdd:0: 3cb7b928
+contrastive_ae_1/encoder_1/dense_4_1/Relu:0: 3cae0b47
+(Unnamed Layer* 183) [Constant]_output: 3aa75701
+(Unnamed Layer* 184) [Shuffle]_output: 3aa75701
+contrastive_ae_1/encoder_1/dense_5_1/MatMul:0: 3c968143
+(Unnamed Layer* 186) [Constant]_output: 37c49676
+(Unnamed Layer* 187) [Shuffle]_output: 37c49676
+contrastive_ae_1/encoder_1/dense_5_1/BiasAdd:0: 3c96ba79
+contrastive_ae_1/encoder_1/Add_3:0: 3d041655
+contrastive_ae_1/encoder_1/layer_normalization_3_1/moments/mean:0: 3a603f69
+contrastive_ae_1/encoder_1/layer_normalization_3_1/Neg:0: 3a603f69
+contrastive_ae_1/encoder_1/layer_normalization_3_1/moments/SquaredDifference:0: 3d051fef
+contrastive_ae_1/encoder_1/layer_normalization_3_1/moments/SquaredDifference__38:0: 3db601a1
+contrastive_ae_1/encoder_1/layer_normalization_3_1/moments/variance:0: 3c47d82a
+(Unnamed Layer* 196) [Shuffle]_output: 370422e6
+contrastive_ae_1/encoder_1/layer_normalization_3_1/add:0: 3c4def6b
+contrastive_ae_1/encoder_1/layer_normalization_3_1/Rsqrt:0: 3c3794c8
+contrastive_ae_1/encoder_1/layer_normalization_3_1/Rsqrt__39:0: 3c1ab7a1
+(Unnamed Layer* 200) [Constant]_output: 3c04bcf9
+contrastive_ae_1/encoder_1/layer_normalization_3_1/mul:0: 3c1b01d6
+contrastive_ae_1/encoder_1/layer_normalization_3_1/mul_2:0: 3cef7f12
+contrastive_ae_1/encoder_1/layer_normalization_3_1/mul_1:0: 3a4bc861
+(Unnamed Layer* 204) [Constant]_output: 37eb8dff
+contrastive_ae_1/encoder_1/layer_normalization_3_1/add_1:0: 3a4b6d22
+contrastive_ae_1/encoder_1/layer_normalization_3_1/add_2:0: 3cee640b
+contrastive_ae_1/encoder_1/global_average_pooling1d_1/Mean:0: 3c8f4d2a
+(Unnamed Layer* 209) [Shuffle]_output: 3c8f4d2a
+(Unnamed Layer* 210) [Fully Connected]_output: 3c8fc7fc
+contrastive_ae_1/encoder_1/latent_1/MatMul_Gemm__6:0: 3c8fc7fc
+(Unnamed Layer* 212) [Shuffle]_output: 3c8fc7fc
+(Unnamed Layer* 213) [Fully Connected]_output: 3bb62214
+contrastive_ae_1/decoder_1/dense_6_1/MatMul_Gemm__7:0: 3bb62214
+contrastive_ae_1/decoder_1/reshape_1_1/Reshape:0: 3bb62214
+(Unnamed Layer* 216) [Constant]_output: 3c010a14
+(Unnamed Layer* 217) [Shuffle]_output: 3c010a14
+contrastive_ae_1/decoder_1/positional_encoding_1_1/add:0: 3c5013bc
+(Unnamed Layer* 219) [Constant]_output: 39a39abc
+(Unnamed Layer* 220) [Shuffle]_output: 39a39abc
+contrastive_ae_1/decoder_1/dec_mha_0_1/MatMul_2:0: 3bae639f
+(Unnamed Layer* 222) [Constant]_output: 37676e2f
+(Unnamed Layer* 223) [Shuffle]_output: 37676e2f
+contrastive_ae_1/decoder_1/dec_mha_0_1/add_2:0: 3bb40562
+contrastive_ae_1/decoder_1/dec_mha_0_1/Reshape_8:0: 3bb40562
+contrastive_ae_1/decoder_1/dec_mha_0_1/transpose_2:0: 3bb40562
+contrastive_ae_1/decoder_1/dec_mha_0_1/Reshape_11:0: 3bb40562
+(Unnamed Layer* 228) [Constant]_output: 39a23633
+(Unnamed Layer* 229) [Shuffle]_output: 39a23633
+contrastive_ae_1/decoder_1/dec_mha_0_1/MatMul_1:0: 3bca6faa
+(Unnamed Layer* 231) [Constant]_output: 31099bec
+(Unnamed Layer* 232) [Shuffle]_output: 31099bec
+contrastive_ae_1/decoder_1/dec_mha_0_1/add_1:0: 3bca6faa
+contrastive_ae_1/decoder_1/dec_mha_0_1/Reshape_5:0: 3bca6faa
+contrastive_ae_1/decoder_1/dec_mha_0_1/transpose_1:0: 3bca6faa
+contrastive_ae_1/decoder_1/dec_mha_0_1/Reshape_10:0: 3bca6faa
+contrastive_ae_1/decoder_1/dec_mha_0_1/MatMul_3__49:0: 3bca6faa
+(Unnamed Layer* 238) [Constant]_output: 39a2b4d8
+(Unnamed Layer* 239) [Shuffle]_output: 39a2b4d8
+contrastive_ae_1/decoder_1/dec_mha_0_1/MatMul:0: 3ba07b54
+(Unnamed Layer* 241) [Constant]_output: 37414371
+(Unnamed Layer* 242) [Shuffle]_output: 37414371
+contrastive_ae_1/decoder_1/dec_mha_0_1/add:0: 3b9e846d
+contrastive_ae_1/decoder_1/dec_mha_0_1/Reshape_2:0: 3b9e846d
+contrastive_ae_1/decoder_1/dec_mha_0_1/transpose:0: 3b9e846d
+contrastive_ae_1/decoder_1/dec_mha_0_1/Reshape_9:0: 3b9e846d
+contrastive_ae_1/decoder_1/dec_mha_0_1/MatMul_3:0: 3bc7443d
+(Unnamed Layer* 249) [Shuffle]_output: 3ab67d3d
+contrastive_ae_1/decoder_1/dec_mha_0_1/mul:0: 3a8ce71a
+contrastive_ae_1/decoder_1/dec_mha_0_1/Max:0: 3a5cbe6d
+contrastive_ae_1/decoder_1/dec_mha_0_1/sub:0: 3a9a3f7c
+contrastive_ae_1/decoder_1/dec_mha_0_1/Exp:0: 3c010a14
+contrastive_ae_1/decoder_1/dec_mha_0_1/Sum:0: 3f46605a
+contrastive_ae_1/decoder_1/dec_mha_0_1/truediv:0: 38b0d973
+contrastive_ae_1/decoder_1/dec_mha_0_1/MatMul_4:0: 3b214402
+contrastive_ae_1/decoder_1/dec_mha_0_1/Reshape_12:0: 3b214402
+contrastive_ae_1/decoder_1/dec_mha_0_1/transpose_3:0: 3b214402
+contrastive_ae_1/decoder_1/dec_mha_0_1/Reshape_13:0: 3b214402
+(Unnamed Layer* 260) [Constant]_output: 3a4a46a2
+(Unnamed Layer* 261) [Shuffle]_output: 3a4a46a2
+contrastive_ae_1/decoder_1/dec_mha_0_1/MatMul_5:0: 3af310dd
+(Unnamed Layer* 263) [Constant]_output: 378a6347
+(Unnamed Layer* 264) [Shuffle]_output: 378a6347
+contrastive_ae_1/decoder_1/dec_mha_0_1/add_3:0: 3ae4d513
+contrastive_ae_1/decoder_1/Add:0: 3c50d768
+contrastive_ae_1/decoder_1/layer_normalization_4_1/moments/mean:0: 3b948cfa
+contrastive_ae_1/decoder_1/layer_normalization_4_1/Neg:0: 3b948cfa
+contrastive_ae_1/decoder_1/layer_normalization_4_1/moments/SquaredDifference:0: 3c6e8597
+contrastive_ae_1/decoder_1/layer_normalization_4_1/moments/SquaredDifference__55:0: 3cb798d3
+contrastive_ae_1/decoder_1/layer_normalization_4_1/moments/variance:0: 3b7a98ef
+(Unnamed Layer* 273) [Shuffle]_output: 370422e6
+contrastive_ae_1/decoder_1/layer_normalization_4_1/add:0: 3b7b1ec8
+contrastive_ae_1/decoder_1/layer_normalization_4_1/Rsqrt:0: 3bb36d34
+contrastive_ae_1/decoder_1/layer_normalization_4_1/Rsqrt__56:0: 3ca8a489
+(Unnamed Layer* 277) [Constant]_output: 3c01488e
+contrastive_ae_1/decoder_1/layer_normalization_4_1/mul:0: 3c9e12c9
+contrastive_ae_1/decoder_1/layer_normalization_4_1/mul_2:0: 3cb8c502
+contrastive_ae_1/decoder_1/layer_normalization_4_1/mul_1:0: 3c1a0fc5
+(Unnamed Layer* 281) [Constant]_output: 3786c3ea
+contrastive_ae_1/decoder_1/layer_normalization_4_1/add_1:0: 3c13c451
+contrastive_ae_1/decoder_1/layer_normalization_4_1/add_2:0: 3cd7cf0b
+(Unnamed Layer* 284) [Constant]_output: 3a4ee9fd
+(Unnamed Layer* 285) [Shuffle]_output: 3a4ee9fd
+contrastive_ae_1/decoder_1/dense_7_1/MatMul:0: 3cad6de0
+(Unnamed Layer* 287) [Constant]_output: 37c1eeda
+(Unnamed Layer* 288) [Shuffle]_output: 37c1eeda
+contrastive_ae_1/decoder_1/dense_7_1/BiasAdd:0: 3cacf156
+contrastive_ae_1/decoder_1/dense_7_1/Relu:0: 3cace23f
+(Unnamed Layer* 291) [Constant]_output: 3a56f0b4
+(Unnamed Layer* 292) [Shuffle]_output: 3a56f0b4
+contrastive_ae_1/decoder_1/dense_8_1/MatMul:0: 3ca8623e
+(Unnamed Layer* 294) [Constant]_output: 376706a6
+(Unnamed Layer* 295) [Shuffle]_output: 376706a6
+contrastive_ae_1/decoder_1/dense_8_1/BiasAdd:0: 3ca3587a
+contrastive_ae_1/decoder_1/Add_1:0: 3d0316e6
+contrastive_ae_1/decoder_1/layer_normalization_5_1/moments/mean:0: 3a35ad55
+contrastive_ae_1/decoder_1/layer_normalization_5_1/Neg:0: 3a35ad55
+contrastive_ae_1/decoder_1/layer_normalization_5_1/moments/SquaredDifference:0: 3d043ce3
+contrastive_ae_1/decoder_1/layer_normalization_5_1/moments/SquaredDifference__57:0: 3dde8b1b
+contrastive_ae_1/decoder_1/layer_normalization_5_1/moments/variance:0: 3c49ceb0
+(Unnamed Layer* 304) [Shuffle]_output: 370422e6
+contrastive_ae_1/decoder_1/layer_normalization_5_1/add:0: 3c49f081
+contrastive_ae_1/decoder_1/layer_normalization_5_1/Rsqrt:0: 3c3b008f
+contrastive_ae_1/decoder_1/layer_normalization_5_1/Rsqrt__58:0: 3c06e69e
+(Unnamed Layer* 308) [Constant]_output: 3c014b11
+contrastive_ae_1/decoder_1/layer_normalization_5_1/mul:0: 3c1068e3
+contrastive_ae_1/decoder_1/layer_normalization_5_1/mul_2:0: 3cfc7346
+contrastive_ae_1/decoder_1/layer_normalization_5_1/mul_1:0: 3a2bd3e9
+(Unnamed Layer* 312) [Constant]_output: 37838995
+contrastive_ae_1/decoder_1/layer_normalization_5_1/add_1:0: 3a2d7112
+contrastive_ae_1/decoder_1/layer_normalization_5_1/add_2:0: 3d02dd57
+(Unnamed Layer* 315) [Constant]_output: 3ab88f1a
+(Unnamed Layer* 316) [Shuffle]_output: 3ab88f1a
+contrastive_ae_1/decoder_1/dense_9_1/MatMul:0: 3d272e7c
+(Unnamed Layer* 318) [Constant]_output: 3722b907
+(Unnamed Layer* 319) [Shuffle]_output: 3722b907
+contrastive_ae_1/decoder_1/dense_9_1/BiasAdd:0: 3d270b1d
+(Unnamed Layer* 321) [Constant]_output: 3a107a24
+(Unnamed Layer* 322) [Shuffle]_output: 3a107a24
+contrastive_ae_1/decoder_1/dec_mha_1_1/MatMul_2:0: 3c6c0033
+(Unnamed Layer* 324) [Constant]_output: 3725209b
+(Unnamed Layer* 325) [Shuffle]_output: 3725209b
+contrastive_ae_1/decoder_1/dec_mha_1_1/add_2:0: 3c6c1887
+contrastive_ae_1/decoder_1/dec_mha_1_1/Reshape_8:0: 3c6c1887
+contrastive_ae_1/decoder_1/dec_mha_1_1/transpose_2:0: 3c6c1887
+contrastive_ae_1/decoder_1/dec_mha_1_1/Reshape_11:0: 3c6c1887
+(Unnamed Layer* 330) [Constant]_output: 3a0f0b59
+(Unnamed Layer* 331) [Shuffle]_output: 3a0f0b59
+contrastive_ae_1/decoder_1/dec_mha_1_1/MatMul_1:0: 3c80ac60
+(Unnamed Layer* 333) [Constant]_output: 35c70b15
+(Unnamed Layer* 334) [Shuffle]_output: 35c70b15
+contrastive_ae_1/decoder_1/dec_mha_1_1/add_1:0: 3c80ad4c
+contrastive_ae_1/decoder_1/dec_mha_1_1/Reshape_5:0: 3c80ad4c
+contrastive_ae_1/decoder_1/dec_mha_1_1/transpose_1:0: 3c80ad4c
+contrastive_ae_1/decoder_1/dec_mha_1_1/Reshape_10:0: 3c80ad4c
+contrastive_ae_1/decoder_1/dec_mha_1_1/MatMul_3__65:0: 3c80ad4c
+(Unnamed Layer* 340) [Constant]_output: 3a100ca6
+(Unnamed Layer* 341) [Shuffle]_output: 3a100ca6
+contrastive_ae_1/decoder_1/dec_mha_1_1/MatMul:0: 3c3d2c6d
+(Unnamed Layer* 343) [Constant]_output: 37891905
+(Unnamed Layer* 344) [Shuffle]_output: 37891905
+contrastive_ae_1/decoder_1/dec_mha_1_1/add:0: 3c3d6316
+contrastive_ae_1/decoder_1/dec_mha_1_1/Reshape_2:0: 3c3d6316
+contrastive_ae_1/decoder_1/dec_mha_1_1/transpose:0: 3c3d6316
+contrastive_ae_1/decoder_1/dec_mha_1_1/Reshape_9:0: 3c3d6316
+contrastive_ae_1/decoder_1/dec_mha_1_1/MatMul_3:0: 3cb203e6
+(Unnamed Layer* 351) [Shuffle]_output: 3b010a14
+contrastive_ae_1/decoder_1/dec_mha_1_1/mul:0: 3bb203e6
+contrastive_ae_1/decoder_1/dec_mha_1_1/Max:0: 3baaad13
+contrastive_ae_1/decoder_1/dec_mha_1_1/sub:0: 3bda23f3
+contrastive_ae_1/decoder_1/dec_mha_1_1/Exp:0: 3c010a14
+contrastive_ae_1/decoder_1/dec_mha_1_1/Sum:0: 3f39a2b9
+contrastive_ae_1/decoder_1/dec_mha_1_1/truediv:0: 39012d4b
+contrastive_ae_1/decoder_1/dec_mha_1_1/MatMul_4:0: 3bbe7400
+contrastive_ae_1/decoder_1/dec_mha_1_1/Reshape_12:0: 3bbe7400
+contrastive_ae_1/decoder_1/dec_mha_1_1/transpose_3:0: 3bbe7400
+contrastive_ae_1/decoder_1/dec_mha_1_1/Reshape_13:0: 3bbe7400
+(Unnamed Layer* 362) [Constant]_output: 3a8e474e
+(Unnamed Layer* 363) [Shuffle]_output: 3a8e474e
+contrastive_ae_1/decoder_1/dec_mha_1_1/MatMul_5:0: 3b908fff
+(Unnamed Layer* 365) [Constant]_output: 3765f930
+(Unnamed Layer* 366) [Shuffle]_output: 3765f930
+contrastive_ae_1/decoder_1/dec_mha_1_1/add_3:0: 3b966ff6
+contrastive_ae_1/decoder_1/Add_2:0: 3d2a8dd2
+contrastive_ae_1/decoder_1/layer_normalization_6_1/moments/mean:0: 3b2cccdb
+contrastive_ae_1/decoder_1/layer_normalization_6_1/Neg:0: 3b2cccdb
+contrastive_ae_1/decoder_1/layer_normalization_6_1/moments/SquaredDifference:0: 3d3164a1
+contrastive_ae_1/decoder_1/layer_normalization_6_1/moments/SquaredDifference__71:0: 3e249985
+contrastive_ae_1/decoder_1/layer_normalization_6_1/moments/variance:0: 3ca71847
+(Unnamed Layer* 375) [Shuffle]_output: 370422e6
+contrastive_ae_1/decoder_1/layer_normalization_6_1/add:0: 3ca729ed
+contrastive_ae_1/decoder_1/layer_normalization_6_1/Rsqrt:0: 3c6a2182
+contrastive_ae_1/decoder_1/layer_normalization_6_1/Rsqrt__72:0: 3c09a254
+(Unnamed Layer* 379) [Constant]_output: 3c0150b1
+contrastive_ae_1/decoder_1/layer_normalization_6_1/mul:0: 3c0cd0c5
+contrastive_ae_1/decoder_1/layer_normalization_6_1/mul_2:0: 3d0b3958
+contrastive_ae_1/decoder_1/layer_normalization_6_1/mul_1:0: 3b193890
+(Unnamed Layer* 383) [Constant]_output: 376cb19e
+contrastive_ae_1/decoder_1/layer_normalization_6_1/add_1:0: 3b17ae7e
+contrastive_ae_1/decoder_1/layer_normalization_6_1/add_2:0: 3d088670
+(Unnamed Layer* 386) [Constant]_output: 3aa5443e
+(Unnamed Layer* 387) [Shuffle]_output: 3aa5443e
+contrastive_ae_1/decoder_1/dense_10_1/MatMul:0: 3cbbcc7e
+(Unnamed Layer* 389) [Constant]_output: 37fa1686
+(Unnamed Layer* 390) [Shuffle]_output: 37fa1686
+contrastive_ae_1/decoder_1/dense_10_1/BiasAdd:0: 3cbb81c6
+contrastive_ae_1/decoder_1/dense_10_1/Relu:0: 3cbe5ce1
+(Unnamed Layer* 393) [Constant]_output: 3ab8a9c8
+(Unnamed Layer* 394) [Shuffle]_output: 3ab8a9c8
+contrastive_ae_1/decoder_1/dense_11_1/MatMul:0: 3c9d6511
+(Unnamed Layer* 396) [Constant]_output: 3724d753
+(Unnamed Layer* 397) [Shuffle]_output: 3724d753
+contrastive_ae_1/decoder_1/dense_11_1/BiasAdd:0: 3ca0914b
+contrastive_ae_1/decoder_1/Add_3:0: 3cfc44d4
+contrastive_ae_1/decoder_1/layer_normalization_7_1/moments/mean:0: 3a9060b3
+contrastive_ae_1/decoder_1/layer_normalization_7_1/Neg:0: 3a9060b3
+contrastive_ae_1/decoder_1/layer_normalization_7_1/moments/SquaredDifference:0: 3cfc17ef
+contrastive_ae_1/decoder_1/layer_normalization_7_1/moments/SquaredDifference__73:0: 3dec657c
+contrastive_ae_1/decoder_1/layer_normalization_7_1/moments/variance:0: 3c6735f0
+(Unnamed Layer* 406) [Shuffle]_output: 370422e6
+contrastive_ae_1/decoder_1/layer_normalization_7_1/add:0: 3c67588f
+contrastive_ae_1/decoder_1/layer_normalization_7_1/Rsqrt:0: 3c33d9be
+contrastive_ae_1/decoder_1/layer_normalization_7_1/Rsqrt__74:0: 3c024d62
+(Unnamed Layer* 410) [Constant]_output: 3c012e6f
+contrastive_ae_1/decoder_1/layer_normalization_7_1/mul:0: 3c0d8c33
+contrastive_ae_1/decoder_1/layer_normalization_7_1/mul_2:0: 3cd6af1f
+contrastive_ae_1/decoder_1/layer_normalization_7_1/mul_1:0: 3a909238
+(Unnamed Layer* 414) [Constant]_output: 36c21033
+contrastive_ae_1/decoder_1/layer_normalization_7_1/add_1:0: 3a8dabc7
+contrastive_ae_1/decoder_1/layer_normalization_7_1/add_2:0: 3cdd6080
+(Unnamed Layer* 417) [Constant]_output: 3b19e7e3
+(Unnamed Layer* 418) [Shuffle]_output: 3b19e7e3
+contrastive_ae_1/decoder_1/dense_12_1/MatMul:0: 3d05ae41
+(Unnamed Layer* 420) [Constant]_output: 36c2c757
+(Unnamed Layer* 421) [Shuffle]_output: 36c2c757
+decoder: 3d05b391

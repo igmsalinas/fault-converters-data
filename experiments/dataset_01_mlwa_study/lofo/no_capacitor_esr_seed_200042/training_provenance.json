@@ -1,0 +1,9 @@
+{
+  "regime": "lofo_no_capacitor_esr",
+  "seed": 200042,
+  "reused_readonly_checkpoint": null,
+  "initial_model_weights_sha256": "4b79e4482df8a60d6bd8468fe52f8ec757687194a1601b54e54a237af86d2a98",
+  "final_best_weights_sha256": "63416f443d4b224fd6db3c45d52558fc5b4eca51214c8322a8f5584e5c2f6d2e",
+  "training_seconds": 205.8438220779999,
+  "epochs_trained": 148
+}

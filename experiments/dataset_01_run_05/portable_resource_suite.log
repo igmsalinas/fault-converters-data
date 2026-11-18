@@ -1,0 +1,28 @@
+Skipping unsupported or unavailable path: conv1d tensorrt int8
+Keeping completed resource study: conv1d tflite fp32
+Keeping completed resource study: conv1d tflite fp16
+Keeping completed resource study: conv1d tflite int8
+Skipping unsupported or unavailable path: gru tensorrt int8
+Skipping unsupported or unavailable path: gru tflite int8
+Skipping unsupported or unavailable path: lstm tensorrt int8
+Skipping unsupported or unavailable path: lstm tflite int8
+2026-08-24 13:28:43.265376660 [E:onnxruntime:, inference_session.cc:1588 operator()] Exception during initialization: /home/onnxruntime/onnxruntime/include/onnxruntime/core/graph/graph.h:1522 onnxruntime::Node* onnxruntime::Graph::NodeAtIndexImpl(onnxruntime::NodeIndex) const node_index < nodes_.size() was false. Validating no unexpected access using an invalid node_index. Got:224498720 Max:841
+
+Traceback (most recent call last):
+  File "scripts/benchmark_jetson_resources.py", line 525, in <module>
+    main()
+  File "scripts/benchmark_jetson_resources.py", line 521, in main
+    run(parser.parse_args())
+  File "scripts/benchmark_jetson_resources.py", line 361, in run
+    runner = build_runner(args.backend, model_dir, model_path)
+  File "scripts/benchmark_jetson_resources.py", line 306, in build_runner
+    runner = create_onnx_runner(str(model_path))
+  File "/home/ignaciouc3m/projects/fault_converters/src/deployment/runners.py", line 235, in create_onnx_runner
+    session = ort.InferenceSession(onnx_path, providers=["CPUExecutionProvider"])
+  File "/home/ignaciouc3m/projects/fault_converters/.venv-jp46/lib/python3.6/site-packages/onnxruntime/capi/onnxruntime_inference_collection.py", line 335, in __init__
+    self._create_inference_session(providers, provider_options, disabled_optimizers)
+  File "/home/ignaciouc3m/projects/fault_converters/.venv-jp46/lib/python3.6/site-packages/onnxruntime/capi/onnxruntime_inference_collection.py", line 381, in _create_inference_session
+    sess.initialize_session(providers, provider_options, disabled_optimizers)
+onnxruntime.capi.onnxruntime_pybind11_state.RuntimeException: [ONNXRuntimeError] : 6 : RUNTIME_EXCEPTION : Exception during initialization: /home/onnxruntime/onnxruntime/include/onnxruntime/core/graph/graph.h:1522 onnxruntime::Node* onnxruntime::Graph::NodeAtIndexImpl(onnxruntime::NodeIndex) const node_index < nodes_.size() was false. Validating no unexpected access using an invalid node_index. Got:224498720 Max:841
+
+Resource study failed at runtime: transformer onnx int8

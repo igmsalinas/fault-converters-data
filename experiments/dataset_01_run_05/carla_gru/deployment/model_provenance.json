@@ -1,0 +1,105 @@
+{
+  "model_dir": "experiments/dataset_01_run_05/carla_gru",
+  "checkpoint_selection": "checkpoints/best",
+  "threshold": 0.0009681425872258842,
+  "autoencoder_parameter_count": 2831426,
+  "autoencoder_weight_tensor_count": 16,
+  "autoencoder_loaded_weights_sha256": "e871bf08d7c56d4b67648425bed86ccad45b385c41d3aa22814e8f3242e976e5",
+  "autoencoder_weight_shapes": [
+    [
+      2,
+      1536
+    ],
+    [
+      512,
+      1536
+    ],
+    [
+      2,
+      1536
+    ],
+    [
+      512,
+      768
+    ],
+    [
+      256,
+      768
+    ],
+    [
+      2,
+      768
+    ],
+    [
+      256,
+      64
+    ],
+    [
+      64
+    ],
+    [
+      64,
+      768
+    ],
+    [
+      256,
+      768
+    ],
+    [
+      2,
+      768
+    ],
+    [
+      256,
+      1536
+    ],
+    [
+      512,
+      1536
+    ],
+    [
+      2,
+      1536
+    ],
+    [
+      512,
+      2
+    ],
+    [
+      2
+    ]
+  ],
+  "zero_probe_output_sha256": "22dbbb6285e25a151c0b857e72717618317fddd9228a55c8dfa83969bcbd8b3e",
+  "tracked_files": [
+    {
+      "path": "checkpoints/best/autoencoder.weights.h5",
+      "size_bytes": 11385304,
+      "sha256": "aee6710e86e74a17bc1f73f9fee17e0c7e9352d812d9ea88628601326db6e232"
+    },
+    {
+      "path": "checkpoints/best/autoencoder.weights.npz",
+      "size_bytes": 11332312,
+      "sha256": "c2ec26bd93e71e5883dc806253bbeb63e38aa2725b4c6942a17626060041c3d0"
+    },
+    {
+      "path": "model_config.json",
+      "size_bytes": 491,
+      "sha256": "3e4404add749be967f9b0a96afed3fc43b7d70a61250d1e273645f45d8dc505d"
+    },
+    {
+      "path": "threshold.json",
+      "size_bytes": 98,
+      "sha256": "9f4fd83afc49779ba22587a15c57f97c4762b1fefc651b1406e25e1f2ad6f6f6"
+    },
+    {
+      "path": "preprocessor/config.json",
+      "size_bytes": 95,
+      "sha256": "35a39c02147122b3d2caca1b8c5e29b5677622046e088a097a50b7cdfa7711c1"
+    },
+    {
+      "path": "preprocessor/scaler.json",
+      "size_bytes": 173,
+      "sha256": "c3ac6b3c4a571abf9cf6d7ac05e738c5418a187fdea93aa80aeacd85220706a4"
+    }
+  ]
+}

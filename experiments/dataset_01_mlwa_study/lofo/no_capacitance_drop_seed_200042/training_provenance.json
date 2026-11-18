@@ -1,0 +1,9 @@
+{
+  "regime": "lofo_no_capacitance_drop",
+  "seed": 200042,
+  "reused_readonly_checkpoint": null,
+  "initial_model_weights_sha256": "4b79e4482df8a60d6bd8468fe52f8ec757687194a1601b54e54a237af86d2a98",
+  "final_best_weights_sha256": "72b955c9959e184cfb577900db6b7f737ca24704e8aed22176348aeb0383f8a0",
+  "training_seconds": 196.59086267400016,
+  "epochs_trained": 145
+}

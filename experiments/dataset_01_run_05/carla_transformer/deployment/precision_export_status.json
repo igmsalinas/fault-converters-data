@@ -1,0 +1,54 @@
+[
+  {
+    "backend": "onnx",
+    "precision": "fp16",
+    "status": "exported"
+  },
+  {
+    "backend": "onnx",
+    "precision": "int8",
+    "status": "exported",
+    "method": "static QDQ PTQ",
+    "calibration_samples": 35,
+    "quantize_nodes": 239,
+    "dequantize_nodes": 320
+  },
+  {
+    "backend": "onnx-cpu",
+    "precision": "fp32",
+    "status": "runnable"
+  },
+  {
+    "backend": "onnx-cpu",
+    "precision": "fp16",
+    "status": "runnable"
+  },
+  {
+    "backend": "onnx-cpu",
+    "precision": "int8",
+    "status": "runnable"
+  },
+  {
+    "backend": "tflite-cpu",
+    "precision": "fp32",
+    "status": "exported",
+    "converter_tensorflow_version": "2.7.0"
+  },
+  {
+    "backend": "tflite-cpu",
+    "precision": "fp16",
+    "status": "exported",
+    "converter_tensorflow_version": "2.7.0",
+    "method": "FP16 weight PTQ; FP32 CPU compute and I/O"
+  },
+  {
+    "backend": "tflite-cpu",
+    "precision": "int8",
+    "status": "exported",
+    "converter_tensorflow_version": "2.7.0",
+    "method": "TensorFlow Lite full-integer static PTQ",
+    "calibration_samples": 35,
+    "int8_tensor_count": 447,
+    "io_dtype": "float32"
+  }
+]

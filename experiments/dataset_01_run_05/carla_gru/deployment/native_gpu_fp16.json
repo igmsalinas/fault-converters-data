@@ -1,0 +1,39 @@
+{
+  "model_dir": "experiments/dataset_01_run_05/carla_gru",
+  "backend": "keras-gpu",
+  "precision": "fp16",
+  "policy": "mixed_float16",
+  "protocol": {
+    "batch_size": 1,
+    "warmup_runs": 15,
+    "timed_runs": 150,
+    "consistency_samples": 32
+  },
+  "timing": {
+    "latency_mean_ms": 169.89417592366536,
+    "latency_std_ms": 34.44751628409554,
+    "latency_min_ms": 135.69842529296875,
+    "latency_max_ms": 379.7555236816406,
+    "timing_source": "cuda_event",
+    "end_to_end_latency_mean_ms": 178.8922157933348,
+    "end_to_end_latency_std_ms": 38.12210662868871,
+    "end_to_end_latency_min_ms": 135.7520139999906,
+    "end_to_end_latency_max_ms": 402.5354469999911,
+    "timing_batch_size": 1,
+    "timing_warmup_runs": 15,
+    "timing_runs": 150
+  },
+  "consistency": {
+    "consistency_samples": 32,
+    "reconstruction_mse_vs_baseline": 4.89565195493924e-07,
+    "reconstruction_mean_abs_error_vs_baseline": 0.0005280365003272891,
+    "reconstruction_max_abs_error_vs_baseline": 0.0026559829711914062,
+    "reconstruction_relative_l2_vs_baseline": 0.0007331859087571502,
+    "reconstruction_within_tolerance": true,
+    "anomaly_disagreement_rate_vs_baseline": 0.0
+  },
+  "tensorflow_gpu_memory": {
+    "current_mb": 27.32373046875,
+    "peak_mb": 45.80712890625
+  }
+}

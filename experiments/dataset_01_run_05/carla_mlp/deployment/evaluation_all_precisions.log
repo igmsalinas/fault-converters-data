@@ -1,0 +1,84 @@
+2026-08-24 14:03:41.163863: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1019] ARM64 does not support NUMA - returning NUMA node zero
+2026-08-24 14:03:41.181329: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1019] ARM64 does not support NUMA - returning NUMA node zero
+2026-08-24 14:03:41.181661: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1019] ARM64 does not support NUMA - returning NUMA node zero
+2026-08-24 14:03:41 | __main__ | INFO | Deployment evaluation for: experiments/dataset_01_run_05/carla_mlp/deployment
+2026-08-24 14:03:41 | src.inference.predictor | INFO | Loaded config from experiments/dataset_01_run_05/carla_mlp/model_config.json
+2026-08-24 14:03:41 | src.inference.predictor | INFO | Loaded threshold: 0.043756
+2026-08-24 14:03:41 | src.inference.predictor | INFO | Loaded preprocessor
+2026-08-24 14:03:41 | src.inference.predictor | INFO | Loading CARLA checkpoint from experiments/dataset_01_run_05/carla_mlp/checkpoints/best
+2026-08-24 14:03:41 | src.models.base | INFO | Building carla_mlp with input shape (101, 2)
+2026-08-24 14:03:41.312452: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1019] ARM64 does not support NUMA - returning NUMA node zero
+2026-08-24 14:03:41.312806: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1019] ARM64 does not support NUMA - returning NUMA node zero
+2026-08-24 14:03:41.313115: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1019] ARM64 does not support NUMA - returning NUMA node zero
+2026-08-24 14:03:43.700534: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1019] ARM64 does not support NUMA - returning NUMA node zero
+2026-08-24 14:03:43.700923: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1019] ARM64 does not support NUMA - returning NUMA node zero
+2026-08-24 14:03:43.701236: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1019] ARM64 does not support NUMA - returning NUMA node zero
+2026-08-24 14:03:43.701404: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 743 MB memory:  -> device: 0, name: NVIDIA Tegra X1, pci bus id: 0000:00:00.0, compute capability: 5.3
+2026-08-24 14:03:44 | src.models.base | INFO | Model built. Parameters: 509,706
+2026-08-24 14:03:45 | src.models.contrastive_ae | INFO | Projection head parameters: 74,880
+2026-08-24 14:03:45 | src.models.contrastive_ae | INFO | Model loaded from experiments/dataset_01_run_05/carla_mlp/checkpoints/best
+2026-08-24 14:03:45 | __main__ | INFO | Loaded baseline predictor successfully.
+2026-08-24 14:03:45 | src.deployment.utils | INFO | Loading dataset from data/buck/buck_data/dataset_01 for deployment...
+2026-08-24 14:03:45 | src.data.loader | INFO | Loading from cache: cache/simulations_3828ac063c98.npz
+2026-08-24 14:03:45 | src.data.dataset | INFO | Loaded 100 samples
+2026-08-24 14:03:45 | src.data.dataset | INFO | Preprocessed data shape: (100, 101, 2)
+2026-08-24 14:03:45 | src.data.dataset | INFO | Normal samples: 50, Anomaly samples: 50
+2026-08-24 14:03:45 | src.data.dataset | INFO | Splits - Train: 35, Val: 7, Fit Val: 14 (Normal: 7, Anomaly: 7), Test: 51 (Normal: 8, Anomaly: 43)
+2026-08-24 14:03:45 | __main__ | INFO | --- Running CPU-only Benchmark via Subprocess ---
+2026-08-24 14:03:45 | __main__ | INFO | Reusing the existing isolated CPU baseline.
+2026-08-24 14:03:45 | __main__ | INFO | --- Study 1: Consistency, Classification, and Timing Evaluation ---
+2026-08-24 14:03:46 | src.deployment.timing_evaluation | INFO | Starting unified deployment evaluation benchmark...
+2026-08-24 14:03:46 | src.deployment.timing_evaluation | INFO | Running cross-backend consistency preflight...
+2026-08-24 14:03:50 | src.deployment.timing_evaluation | WARNING | TFLite INT8 reconstruction is outside the standard numerical tolerance (atol=0.001, rtol=0.01).
+2026-08-24 14:03:55 | src.deployment.timing_evaluation | WARNING | ONNX INT8 (CPU) reconstruction is outside the standard numerical tolerance (atol=0.001, rtol=0.01).
+2026-08-24 14:03:59 | src.deployment.timing_evaluation | WARNING | TensorRT FP16 (GPU) reconstruction is outside the standard numerical tolerance (atol=0.001, rtol=0.01).
+2026-08-24 14:04:03 | src.deployment.timing_evaluation | INFO | Saved cross-backend preflight report to experiments/dataset_01_run_05/carla_mlp/deployment/cross_backend_consistency.json
+2026-08-24 14:04:03 | src.deployment.timing_evaluation | INFO | Evaluating TFLite (experiments/dataset_01_run_05/carla_mlp/deployment/model_fp32.tflite)...
+2026-08-24 14:04:03 | src.deployment.timing_evaluation | INFO | Evaluating TFLite (experiments/dataset_01_run_05/carla_mlp/deployment/model_float16.tflite)...
+2026-08-24 14:04:04 | src.deployment.timing_evaluation | INFO | Evaluating TFLite (experiments/dataset_01_run_05/carla_mlp/deployment/model_int8.tflite)...
+2026-08-24 14:04:04 | src.deployment.timing_evaluation | INFO | Evaluating ONNX (experiments/dataset_01_run_05/carla_mlp/deployment/model.onnx)...
+2026-08-24 14:04:04 | src.deployment.timing_evaluation | INFO | Evaluating ONNX (experiments/dataset_01_run_05/carla_mlp/deployment/model_fp16.onnx)...
+2026-08-24 14:04:06 | src.deployment.timing_evaluation | INFO | Evaluating ONNX (experiments/dataset_01_run_05/carla_mlp/deployment/model_int8.onnx)...
+2026-08-24 14:04:06 | src.deployment.timing_evaluation | INFO | Evaluating TensorRT (experiments/dataset_01_run_05/carla_mlp/deployment/model_fp16.engine)...
+2026-08-24 14:04:07 | src.deployment.timing_evaluation | INFO | Evaluating TensorRT (experiments/dataset_01_run_05/carla_mlp/deployment/model_fp32.engine)...
+2026-08-24 14:04:07 | src.deployment.timing_evaluation | INFO | Evaluating TensorRT (experiments/dataset_01_run_05/carla_mlp/deployment/model_int8.engine)...
+2026-08-24 14:04:08 | src.deployment.timing_evaluation | INFO | ================================== CLASSIFICATION & TIMING EVALUATION SUMMARY ==================================
+2026-08-24 14:04:08 | src.deployment.timing_evaluation | INFO | Model Format           | Size (MB)  | Latency/S Mean ± Std (ms)    | F1-Score   | ROC-AUC    | Recall    
+2026-08-24 14:04:08 | src.deployment.timing_evaluation | INFO | --------------------------------------------------------------------------------------------------------------
+2026-08-24 14:04:08 | src.deployment.timing_evaluation | INFO | TFLite FP32            | 1.925      | 0.5983  ± 0.0286       | 0.9767     | 0.9971     | 0.9767    
+2026-08-24 14:04:08 | src.deployment.timing_evaluation | INFO | TFLite FP16            | 0.966      | 0.5895  ± 0.0379       | 0.9767     | 0.9971     | 0.9767    
+2026-08-24 14:04:08 | src.deployment.timing_evaluation | INFO | TFLite INT8            | 0.490      | 0.3385  ± 0.0083       | 0.9767     | 0.9942     | 0.9767    
+2026-08-24 14:04:08 | src.deployment.timing_evaluation | INFO | ONNX FP32 (CPU)        | 1.939      | 0.5859  ± 0.0224       | 0.9767     | 0.9971     | 0.9767    
+2026-08-24 14:04:08 | src.deployment.timing_evaluation | INFO | ONNX FP16 (CPU)        | 0.975      | 3.3915  ± 0.0228       | 0.9767     | 0.9971     | 0.9767    
+2026-08-24 14:04:08 | src.deployment.timing_evaluation | INFO | ONNX INT8 (CPU)        | 0.546      | 0.2767  ± 0.0138       | 0.9767     | 0.9971     | 0.9767    
+2026-08-24 14:04:08 | src.deployment.timing_evaluation | INFO | TensorRT FP16 (GPU)    | 0.994      | 0.3796  ± 0.0130       | 0.9767     | 0.9971     | 0.9767    
+2026-08-24 14:04:08 | src.deployment.timing_evaluation | INFO | TensorRT FP32 (GPU)    | 1.991      | 0.4675  ± 0.0102       | 0.9767     | 0.9971     | 0.9767    
+2026-08-24 14:04:08 | src.deployment.timing_evaluation | INFO | TensorRT INT8 (GPU)    | 2.007      | 0.4712  ± 0.0133       | 0.9767     | 0.9971     | 0.9767    
+2026-08-24 14:04:08 | src.deployment.timing_evaluation | INFO | ================================================================================================================
+2026-08-24 14:04:08 | __main__ | INFO | --- Study 2: Timing and Memory Performance (single input, n=1) ---
+2026-08-24 14:04:08 | src.deployment.timing_memory_benchmark | INFO | Measuring Timing & Memory for: TFLite FP32...
+2026-08-24 14:04:08 | src.deployment.timing_memory_benchmark | INFO | Measuring Timing & Memory for: TFLite FP16...
+2026-08-24 14:04:09 | src.deployment.timing_memory_benchmark | INFO | Measuring Timing & Memory for: TFLite INT8...
+2026-08-24 14:04:09 | src.deployment.timing_memory_benchmark | INFO | Measuring Timing & Memory for: ONNX FP32 (CPU)...
+2026-08-24 14:04:10 | src.deployment.timing_memory_benchmark | INFO | Measuring Timing & Memory for: ONNX FP16 (CPU)...
+2026-08-24 14:04:11 | src.deployment.timing_memory_benchmark | INFO | Measuring Timing & Memory for: ONNX INT8 (CPU)...
+2026-08-24 14:04:11 | src.deployment.timing_memory_benchmark | INFO | Measuring Timing & Memory for: TensorRT FP16 (GPU)...
+2026-08-24 14:04:12 | src.deployment.timing_memory_benchmark | INFO | Measuring Timing & Memory for: TensorRT FP32 (GPU)...
+2026-08-24 14:04:12 | src.deployment.timing_memory_benchmark | INFO | Measuring Timing & Memory for: TensorRT INT8 (GPU)...
+2026-08-24 14:04:13 | src.deployment.timing_memory_benchmark | INFO | ================================= PERFORMANCE SUITE SUMMARY =================================
+2026-08-24 14:04:13 | src.deployment.timing_memory_benchmark | INFO | Model Format           | Mean Latency    | Min / Max (ms)     | Net RAM (MB) | Net VRAM (MB)
+2026-08-24 14:04:13 | src.deployment.timing_memory_benchmark | INFO | --------------------------------------------------------------------------------------------
+2026-08-24 14:04:13 | src.deployment.timing_memory_benchmark | INFO | TFLite FP32            | 0.602 ±0.028  ms | 0.57 /0.72  ms | 0.426        | 0.000       
+2026-08-24 14:04:13 | src.deployment.timing_memory_benchmark | INFO | TFLite FP16            | 0.590 ±0.036  ms | 0.55 /0.72  ms | 0.000        | 0.000       
+2026-08-24 14:04:13 | src.deployment.timing_memory_benchmark | INFO | TFLite INT8            | 0.341 ±0.012  ms | 0.33 /0.41  ms | 0.000        | 0.000       
+2026-08-24 14:04:13 | src.deployment.timing_memory_benchmark | INFO | ONNX FP32 (CPU)        | 0.613 ±0.021  ms | 0.58 /0.68  ms | 0.254        | 0.000       
+2026-08-24 14:04:13 | src.deployment.timing_memory_benchmark | INFO | ONNX FP16 (CPU)        | 3.383 ±0.048  ms | 3.32 /3.66  ms | 0.715        | 0.000       
+2026-08-24 14:04:13 | src.deployment.timing_memory_benchmark | INFO | ONNX INT8 (CPU)        | 0.276 ±0.016  ms | 0.26 /0.35  ms | 0.000        | 0.000       
+2026-08-24 14:04:13 | src.deployment.timing_memory_benchmark | INFO | TensorRT FP16 (GPU)    | 0.378 ±0.011  ms | 0.36 /0.43  ms | 0.062        | 0.000       
+2026-08-24 14:04:13 | src.deployment.timing_memory_benchmark | INFO | TensorRT FP32 (GPU)    | 0.462 ±0.012  ms | 0.43 /0.53  ms | 0.012        | 0.000       
+2026-08-24 14:04:13 | src.deployment.timing_memory_benchmark | INFO | TensorRT INT8 (GPU)    | 0.463 ±0.011  ms | 0.45 /0.53  ms | 0.012        | 0.000       
+2026-08-24 14:04:13 | src.deployment.timing_memory_benchmark | INFO | =============================================================================================
+2026-08-24 14:04:13 | __main__ | INFO | --- Generating Unified Deployment Report ---
+2026-08-24 14:04:13 | __main__ | INFO | Saved unified deployment JSON report to experiments/dataset_01_run_05/carla_mlp/deployment/unified_deployment_report.json
+2026-08-24 14:04:13 | __main__ | INFO | Saved unified benchmark report to experiments/dataset_01_run_05/carla_mlp/deployment/unified_deployment_report.md
+2026-08-24 14:04:13 | __main__ | INFO | Deployment evaluation complete! All reports in: experiments/dataset_01_run_05/carla_mlp/deployment

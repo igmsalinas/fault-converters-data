@@ -1,0 +1,9 @@
+{
+  "regime": "physics_exact_ssa",
+  "seed": 200044,
+  "reused_readonly_checkpoint": null,
+  "initial_model_weights_sha256": "d82a3e34274f986a63a54ef5e3aff0a08a815c444cfc0c50f5811191ea709f37",
+  "final_best_weights_sha256": "383e971a2079d6ad810f4c10f9de0b1387a7393cf1d14ab7a08ead6ead588d55",
+  "training_seconds": 129.13564065599985,
+  "epochs_trained": 96
+}

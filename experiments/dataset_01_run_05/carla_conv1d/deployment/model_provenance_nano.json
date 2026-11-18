@@ -1,0 +1,185 @@
+{
+  "model_dir": "experiments/dataset_01_run_05/carla_conv1d",
+  "checkpoint_selection": "checkpoints/best",
+  "threshold": 0.058001697063446045,
+  "autoencoder_parameter_count": 3376418,
+  "autoencoder_weight_tensor_count": 42,
+  "autoencoder_loaded_weights_sha256": "f97ee04d968eb9c84defb0594c2b0866466a870d637123c8dbd9931c791adff8",
+  "autoencoder_weight_shapes": [
+    [
+      5,
+      2,
+      128
+    ],
+    [
+      128
+    ],
+    [
+      128
+    ],
+    [
+      128
+    ],
+    [
+      128
+    ],
+    [
+      128
+    ],
+    [
+      5,
+      128,
+      256
+    ],
+    [
+      256
+    ],
+    [
+      256
+    ],
+    [
+      256
+    ],
+    [
+      256
+    ],
+    [
+      256
+    ],
+    [
+      5,
+      256,
+      512
+    ],
+    [
+      512
+    ],
+    [
+      512
+    ],
+    [
+      512
+    ],
+    [
+      512
+    ],
+    [
+      512
+    ],
+    [
+      6656,
+      32
+    ],
+    [
+      32
+    ],
+    [
+      32,
+      6144
+    ],
+    [
+      6144
+    ],
+    [
+      5,
+      512,
+      512
+    ],
+    [
+      512
+    ],
+    [
+      512
+    ],
+    [
+      512
+    ],
+    [
+      512
+    ],
+    [
+      512
+    ],
+    [
+      5,
+      256,
+      512
+    ],
+    [
+      256
+    ],
+    [
+      256
+    ],
+    [
+      256
+    ],
+    [
+      256
+    ],
+    [
+      256
+    ],
+    [
+      5,
+      128,
+      256
+    ],
+    [
+      128
+    ],
+    [
+      128
+    ],
+    [
+      128
+    ],
+    [
+      128
+    ],
+    [
+      128
+    ],
+    [
+      5,
+      128,
+      2
+    ],
+    [
+      2
+    ]
+  ],
+  "zero_probe_output_sha256": "9ab0955b47ab49c8c67e5747688072195aad0d37a1b9ca0bf561e599d4b0fc9b",
+  "tracked_files": [
+    {
+      "path": "checkpoints/best/autoencoder.weights.h5",
+      "size_bytes": 13598112,
+      "sha256": "840e8e42bcb8bc6e5c258ceb246925cb0e62afff1a2c816b09fc347b972dba2f"
+    },
+    {
+      "path": "checkpoints/best/autoencoder.weights.npz",
+      "size_bytes": 13522912,
+      "sha256": "c524fddf1e0eb6996fefa789ff26faef2cc99d3cfb5e7c56829b84cb14a47d0f"
+    },
+    {
+      "path": "model_config.json",
+      "size_bytes": 498,
+      "sha256": "4c2d2670c2552ed79986eedae173b05cd1819e66239c8718df2784e44134f892"
+    },
+    {
+      "path": "threshold.json",
+      "size_bytes": 98,
+      "sha256": "18dd3c7b8bf81d2f0dce57d0072394b73f2911c6384264c0b8135ceea50e3f6a"
+    },
+    {
+      "path": "preprocessor/config.json",
+      "size_bytes": 95,
+      "sha256": "35a39c02147122b3d2caca1b8c5e29b5677622046e088a097a50b7cdfa7711c1"
+    },
+    {
+      "path": "preprocessor/scaler.json",
+      "size_bytes": 173,
+      "sha256": "c3ac6b3c4a571abf9cf6d7ac05e738c5418a187fdea93aa80aeacd85220706a4"
+    }
+  ]
+}

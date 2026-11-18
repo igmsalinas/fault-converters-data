@@ -1,0 +1,9 @@
+{
+  "regime": "heuristic",
+  "seed": 200045,
+  "reused_readonly_checkpoint": null,
+  "initial_model_weights_sha256": "153f2b491d664affc06fde100b6207171be5123e329fbc6b720896bc2cbdcb7c",
+  "final_best_weights_sha256": "e4da928d23771444f06dfb31bc6cc3810e7b130933c7253e90489109270f52b1",
+  "training_seconds": 74.45639824900081,
+  "epochs_trained": 60
+}

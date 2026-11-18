@@ -1,0 +1,9 @@
+{
+  "regime": "recon_only",
+  "seed": 200043,
+  "reused_readonly_checkpoint": null,
+  "initial_model_weights_sha256": "581614f097e3ccdfb6aaf92459fe080a6a67ab6ffc48b333ac55b826aeb9c766",
+  "final_best_weights_sha256": "75eee5a893745a0f888642b59349fab89322b0e18c5a11297cdbe3f0a367d79d",
+  "training_seconds": 160.4656066180005,
+  "epochs_trained": 142
+}
