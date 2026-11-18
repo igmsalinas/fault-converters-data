@@ -1,0 +1,121 @@
+{
+  "converter": "buck",
+  "dataset_name": "dataset_02",
+  "normal_mode": "lhs",
+  "n_normal": 500,
+  "normal_levels": 3,
+  "normal_step": null,
+  "fault_mode": "lhs",
+  "n_fault": 300,
+  "fault_prob": 0.12,
+  "fault_levels": 5,
+  "fault_step": null,
+  "fault_backgrounds": 1,
+  "correlated": false,
+  "seed": 102,
+  "components": [
+    "Cout",
+    "Esr_C",
+    "Lout",
+    "Esr_L",
+    "Rds_1",
+    "Rout"
+  ],
+  "timestamp": "2026-11-05T23:01:08.889994+00:00",
+  "nominal_parameters": {
+    "Simview": 0,
+    "Vin": 50.0,
+    "fsw": 100000.0,
+    "Rout": 4.0,
+    "Lout": 0.0002,
+    "Cout": 0.0001,
+    "D": 0.4,
+    "Rds_1": 0.01,
+    "Rds_2": 0.01,
+    "Esr_L": 0.1,
+    "Esr_C": 0.02
+  },
+  "component_ranges": {
+    "Cout": {
+      "normal": [
+        0.8,
+        1.2
+      ],
+      "anomalous": [
+        0.3,
+        0.7
+      ],
+      "normal_step": 0.05,
+      "anomalous_step": 0.1
+    },
+    "Esr_C": {
+      "normal": [
+        0.5,
+        2.0
+      ],
+      "anomalous": [
+        3.0,
+        8.0
+      ],
+      "normal_step": 0.25,
+      "anomalous_step": 1.25
+    },
+    "Lout": {
+      "normal": [
+        0.8,
+        1.2
+      ],
+      "anomalous": [
+        0.4,
+        0.7
+      ],
+      "normal_step": 0.05,
+      "anomalous_step": 0.075
+    },
+    "Esr_L": {
+      "normal": [
+        0.85,
+        1.4
+      ],
+      "anomalous": [
+        2.0,
+        6.0
+      ],
+      "normal_step": 0.1,
+      "anomalous_step": 1.0
+    },
+    "Rds_1": {
+      "normal": [
+        1.0,
+        2.2
+      ],
+      "anomalous": [
+        3.0,
+        15.0
+      ],
+      "normal_step": 0.2,
+      "anomalous_step": 3.0
+    },
+    "Rds_2": {
+      "normal": [
+        1.0,
+        2.2
+      ],
+      "anomalous": [
+        3.0,
+        15.0
+      ],
+      "normal_step": 0.2,
+      "anomalous_step": 3.0
+    },
+    "Rout": {
+      "normal": [
+        0.5,
+        2.0
+      ],
+      "anomalous": null,
+      "normal_step": null,
+      "anomalous_step": null
+    }
+  }
+}
