@@ -1,0 +1,9 @@
+{
+  "regime": "enc_ssa_fixed_carla_lstm",
+  "seed": 200042,
+  "encoder_type": "lstm",
+  "initial_model_weights_sha256": "0c4e731385fbf61d19d66d2e404e1daff06d2dd064d791b1791cd470f7ca30cd",
+  "final_best_weights_sha256": "ceb9e0c69d5108fc9c9aa99dc33742317becfcaa4a7d2d54190e2a2dd59c894c",
+  "training_seconds": 212.77530342800003,
+  "epochs_trained": 150
+}

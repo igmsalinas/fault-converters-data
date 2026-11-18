@@ -1,0 +1,9 @@
+{
+  "n_train": 50,
+  "seed": 200042,
+  "batch_size": 25,
+  "initial_model_weights_sha256": "93a727323559bc967afa7dcb239fbe0151beb8bcfda26929d0cb5d9d5555b02d",
+  "final_best_weights_sha256": "1069ceadec2522f669c8aa16b24eff0c0922c15cd5eb561519280b3ab3c4f10d",
+  "training_seconds": 199.6844447349995,
+  "epochs_trained": 150
+}

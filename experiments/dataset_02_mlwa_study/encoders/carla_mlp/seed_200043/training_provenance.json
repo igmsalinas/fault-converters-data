@@ -1,0 +1,9 @@
+{
+  "regime": "enc_carla_mlp",
+  "seed": 200043,
+  "encoder_type": "mlp",
+  "initial_model_weights_sha256": "259eccbd1bd348a83364c8f22ee91116caee9f886879176b7e96d7ae55ada978",
+  "final_best_weights_sha256": "bf1bbb20698638b4e4b7d63a6849334e64e5588c9f22081ddedf48beb8e78b3f",
+  "training_seconds": 117.36644946500019,
+  "epochs_trained": 150
+}

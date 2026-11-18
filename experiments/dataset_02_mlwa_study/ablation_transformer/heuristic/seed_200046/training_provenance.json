@@ -1,0 +1,9 @@
+{
+  "regime": "tf_heuristic",
+  "seed": 200046,
+  "encoder_type": "transformer",
+  "initial_model_weights_sha256": "73af07d97fdba6a928d0aec30a65392cdf6a779f4f5d12140a0693c7f4dc74ea",
+  "final_best_weights_sha256": "51a33a3c71c96a5dc1d17de4ce267a88957b33637e285265bd5371ec0c2e29df",
+  "training_seconds": 200.74736771400057,
+  "epochs_trained": 150
+}

@@ -1,0 +1,9 @@
+{
+  "regime": "tf_lofo_no_switch_degradation",
+  "seed": 200042,
+  "encoder_type": "transformer",
+  "initial_model_weights_sha256": "93a727323559bc967afa7dcb239fbe0151beb8bcfda26929d0cb5d9d5555b02d",
+  "final_best_weights_sha256": "273e3b9c2487c83bf17370f4cdb193007bee8209361a8b15ecbc7d29c7d4ce17",
+  "training_seconds": 96.06463727400114,
+  "epochs_trained": 70
+}

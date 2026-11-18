@@ -1,0 +1,9 @@
+{
+  "regime": "tf_recon_only",
+  "seed": 200043,
+  "encoder_type": "transformer",
+  "initial_model_weights_sha256": "5558304c46dc82c49d6f5418554748f9e8ee4132616427e2a01351a27f5c7e89",
+  "final_best_weights_sha256": "e029d06b929783185da16ee28d17388d803df50a6ed0bbbd0cbab6e76841b93d",
+  "training_seconds": 207.68954231300086,
+  "epochs_trained": 150
+}

@@ -1,0 +1,9 @@
+{
+  "regime": "physics_ssa_load_adapt_fra",
+  "seed": 200043,
+  "encoder_type": "conv1d",
+  "initial_model_weights_sha256": "581614f097e3ccdfb6aaf92459fe080a6a67ab6ffc48b333ac55b826aeb9c766",
+  "final_best_weights_sha256": "58ffc37310fe0c8dfb4c0a349bd9ce5f1d53b933cb13ffcbd3bdcff66f300987",
+  "training_seconds": 85.97640547100309,
+  "epochs_trained": 144
+}

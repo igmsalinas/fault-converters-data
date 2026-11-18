@@ -1,0 +1,9 @@
+{
+  "regime": "recon_only",
+  "seed": 200044,
+  "encoder_type": "conv1d",
+  "initial_model_weights_sha256": "d82a3e34274f986a63a54ef5e3aff0a08a815c444cfc0c50f5811191ea709f37",
+  "final_best_weights_sha256": "c02eecb808e8dbee0db6fda7577af84eb479e87199d645d76c203b142034fa35",
+  "training_seconds": 83.39847551300045,
+  "epochs_trained": 150
+}

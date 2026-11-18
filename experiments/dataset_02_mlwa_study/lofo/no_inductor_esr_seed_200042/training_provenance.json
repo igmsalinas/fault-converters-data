@@ -1,0 +1,9 @@
+{
+  "regime": "lofo_no_inductor_esr",
+  "seed": 200042,
+  "encoder_type": "conv1d",
+  "initial_model_weights_sha256": "4b79e4482df8a60d6bd8468fe52f8ec757687194a1601b54e54a237af86d2a98",
+  "final_best_weights_sha256": "c5badda0723a8827f7d92abee46f5d53e7c0dcbd565f37b2da5596acd974088c",
+  "training_seconds": 90.11570063099862,
+  "epochs_trained": 150
+}

@@ -1,0 +1,9 @@
+{
+  "regime": "enc_carla_transformer",
+  "seed": 200043,
+  "encoder_type": "transformer",
+  "initial_model_weights_sha256": "5558304c46dc82c49d6f5418554748f9e8ee4132616427e2a01351a27f5c7e89",
+  "final_best_weights_sha256": "8f79eee59a76463b7e73e58fe1d774693794923b1ad2595b3d1f609a3b556ff7",
+  "training_seconds": 99.04027064700131,
+  "epochs_trained": 70
+}

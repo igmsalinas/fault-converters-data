@@ -1,0 +1,9 @@
+{
+  "regime": "enc_carla_gru",
+  "seed": 200044,
+  "encoder_type": "gru",
+  "initial_model_weights_sha256": "697fd8b706deabd8b8f538ae6726459a00714143bf4b3912c69b0c59a5d0ce3c",
+  "final_best_weights_sha256": "9d225efaf06847b51c8b535e47316293ea7a7902dc7fc0183599494ddf8a6d70",
+  "training_seconds": 188.18861989500147,
+  "epochs_trained": 150
+}

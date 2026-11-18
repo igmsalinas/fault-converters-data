@@ -1,0 +1,9 @@
+{
+  "regime": "tf_ssa_fixed_lofo_no_inductor_esr",
+  "seed": 200045,
+  "encoder_type": "transformer",
+  "initial_model_weights_sha256": "c741ab4814af3dae72af9c7d26f576e61b25fc8b7677bbcb17ca76863b90d168",
+  "final_best_weights_sha256": "47bf83e0d6b7029aeab28b72274ac9568d3b0db563fd1080a21ba136f77984f3",
+  "training_seconds": 99.55414435199964,
+  "epochs_trained": 68
+}

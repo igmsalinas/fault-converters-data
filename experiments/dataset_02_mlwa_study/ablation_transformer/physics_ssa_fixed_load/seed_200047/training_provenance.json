@@ -1,0 +1,9 @@
+{
+  "regime": "tf_physics_ssa_fixed_load",
+  "seed": 200047,
+  "encoder_type": "transformer",
+  "initial_model_weights_sha256": "7b2e4de3d0b961186a1e1c31d90b5ba323d691f6f30b813885c3487a01495b45",
+  "final_best_weights_sha256": "2e108190b69e227663ca9729336d933d279774395b828fa77c24263157c306f4",
+  "training_seconds": 96.91558583799997,
+  "epochs_trained": 71
+}

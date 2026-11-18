@@ -1,0 +1,9 @@
+{
+  "regime": "enc_ssa_fixed_carla_gru",
+  "seed": 200042,
+  "encoder_type": "gru",
+  "initial_model_weights_sha256": "70dbd15367ff2f6a8ac8a9494afb77ca53b6a51ddc2b825e10377a3adedd84e9",
+  "final_best_weights_sha256": "48b70eda572e5d8d03c229f7e363a065db48e42f29772f6fa2551edb0e4e60ee",
+  "training_seconds": 180.58766566600002,
+  "epochs_trained": 150
+}

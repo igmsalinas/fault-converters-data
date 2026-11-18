@@ -1,0 +1,9 @@
+{
+  "regime": "tf_lofo_no_capacitor_esr",
+  "seed": 200042,
+  "encoder_type": "transformer",
+  "initial_model_weights_sha256": "93a727323559bc967afa7dcb239fbe0151beb8bcfda26929d0cb5d9d5555b02d",
+  "final_best_weights_sha256": "5aa34227c4d3cfda0177ff211f72a3561cfadec6f650ec949f9e14759da7a718",
+  "training_seconds": 102.00830655499885,
+  "epochs_trained": 67
+}

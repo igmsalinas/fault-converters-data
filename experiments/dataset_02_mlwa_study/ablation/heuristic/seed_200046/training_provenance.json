@@ -1,0 +1,9 @@
+{
+  "regime": "heuristic",
+  "seed": 200046,
+  "encoder_type": "conv1d",
+  "initial_model_weights_sha256": "8443f7e5d734e72ab6b20bdbb9ed30fab19ecd3853e0479a0b8e5d53dfe2556c",
+  "final_best_weights_sha256": "d31cce492df0dcdfad9446e8a9a36c829f4f970c7982340ff5af805900e34613",
+  "training_seconds": 84.42916686999888,
+  "epochs_trained": 150
+}
