@@ -1,0 +1,57 @@
+{
+  "sampler": "heuristic",
+  "seed": 200043,
+  "architecture": "conv1d",
+  "selected_hyperparameters": {
+    "name": "carla_conv1d",
+    "type": "carla",
+    "input_shape": [
+      101,
+      2
+    ],
+    "encoder_type": "conv1d",
+    "latent_dim": 64,
+    "projection_dim": 512,
+    "encoder_filters": [
+      64,
+      128
+    ],
+    "encoder_units": [
+      256,
+      128,
+      64
+    ],
+    "kernel_size": 3,
+    "num_heads": 2,
+    "learning_rate": 5e-05,
+    "reconstruction_weight": 10.0,
+    "contrastive_weight": 1.0,
+    "temperature": 0.07,
+    "anomaly_ratio": 1.0,
+    "scoring_method": "knn",
+    "k_neighbors": 3,
+    "dropout_rate": 0.0
+  },
+  "training_seconds": 107.34341900800064,
+  "epochs_trained": 99,
+  "train_rows": 2419,
+  "fit_validation_rows": 1036,
+  "test_rows": 1268,
+  "source_commit": "38d81f9871f49845a800754bde679c38da9d16b1",
+  "random_seed_api": "keras.utils.set_random_seed",
+  "training_host": "TorredeNacho",
+  "training_machine": "x86_64",
+  "tensorflow_version": "2.21.0",
+  "tensorflow_gpu_details": [
+    {
+      "compute_capability": [
+        8,
+        9
+      ],
+      "device_name": "NVIDIA GeForce RTX 4070"
+    }
+  ],
+  "initial_model_weights_sha256": "581614f097e3ccdfb6aaf92459fe080a6a67ab6ffc48b333ac55b826aeb9c766",
+  "selected_final_model_weights_sha256": "da0bb8fae9c72fe752b6c6f81ccbbdd800667d5d959c1fdf4ee95c3e56fbd6f3",
+  "test_inference_performed": false
+}

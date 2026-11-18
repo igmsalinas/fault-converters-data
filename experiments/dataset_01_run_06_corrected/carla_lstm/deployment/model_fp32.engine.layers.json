@@ -1,0 +1,20 @@
+{"Layers": [{
+  "Name": "{ForeignNode[encoder_0_enc_lstm_0_kernel...output]}",
+  "LayerType": "Myelin",
+  "Inputs": [
+  {
+    "Name": "input_1",
+    "Dimensions": [1,101,2],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "output_1",
+    "Dimensions": [1,512],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "TacticValue": "0x0"
+}],
+"Bindings": ["input_1"
+,"output_1"
+]}

@@ -1,0 +1,170 @@
+{
+  "device": {
+    "hostname": "jetson",
+    "machine": "aarch64",
+    "platform": "Linux-4.9.337-tegra-aarch64-with-Ubuntu-18.04-bionic"
+  },
+  "model_dir": "experiments/dataset_01_run_06_corrected/carla_lstm",
+  "checkpoint_selection": "checkpoints/best",
+  "threshold": 0.11469353698194024,
+  "detector_parameter_count": 584608,
+  "detector_weight_tensor_count": 19,
+  "detector_loaded_weights_sha256": "7019f6bfc9ee3216e5bd88578326cc4450c8c029eae3cfa8c2dbc3467e49cd51",
+  "detector_weight_shapes": [
+    [
+      2,
+      1024
+    ],
+    [
+      256,
+      1024
+    ],
+    [
+      1024
+    ],
+    [
+      256,
+      512
+    ],
+    [
+      128,
+      512
+    ],
+    [
+      512
+    ],
+    [
+      128,
+      256
+    ],
+    [
+      64,
+      256
+    ],
+    [
+      256
+    ],
+    [
+      64,
+      32
+    ],
+    [
+      32
+    ],
+    [
+      32,
+      128
+    ],
+    [
+      128
+    ],
+    [
+      128
+    ],
+    [
+      128
+    ],
+    [
+      128,
+      512
+    ],
+    [
+      512
+    ],
+    [
+      128
+    ],
+    [
+      128
+    ]
+  ],
+  "detector_loaded_weights_multiset_sha256": "7805b0322ba02637f9006f8173a3dbe74ca5edb8b5886329a9cfbc716a5d49a4",
+  "detector_weight_tensor_sha256": [
+    "e0e27f568dd45cc8420e60352b2c9b6441a98925b225117f77f77d14a3d0c042",
+    "2393948d2ab9e38303cc13102ef408c48927b6d1bb6ee4ff1b04efdb8b44a611",
+    "b71d43386558427cbdc20a8d1fb1118d8c4d87562d696edf69680f3e1ca60860",
+    "4cd82080436b3a2391c18efd1c85e0e7ac51749167fb1e36727eb5953aac0631",
+    "594d4849b4a5248970841a6e4d643a5a535839349832f9347c1d5426c6cd9449",
+    "da91019e486a4c8d13035d3e55e532e8d52844a565acbf3905ee863b866451d9",
+    "5d43d63b87e63e94dad6994f137ca7f4274e009312650612cace4f1a7f435f31",
+    "3336659eb1f0c5d86abd47bc295624cd7414ba3d3f22e718534cf7665c8cdd18",
+    "915191c2a899742c232e45b6ea97107671bfe509ab41cdb7349a4de39600535d",
+    "08a236e7d5af0d4b057d98be74d7c88869dc78cd1ccb0fbb1f4576f66d1ca63c",
+    "55985cb35dfd9b2c0475aea126a08cc65a0cd1e20f95e6bf7e114e3a89299f75",
+    "18f10bccb804dfcc8d09e45cdd9c257f701188d698d1b07c8419af5515d6ba0f",
+    "7d94d372f0fb34d1084f1af5768c12981589a1387f3ff67df3fb5fc883f74dd9",
+    "11bf46e5bc7f881cfee96545cd96f43b97d46bedd9f275c67c69ec38ecceb8cb",
+    "36acdeb83c8df0a2fa9f738ea1a3a649d7a821321de397b1c25a35f9ef5b8150",
+    "00ccaa57dfcb87938307d996a0412352cb3426de6882cecb56028c2cb5225464",
+    "48908150c44c601ca3230a23343d4f5718db63cac08830da570bf8cd4341e871",
+    "87f16428459141ce5edf7adfa25d23a426d794ab773e69fbefb5c60d2683352a",
+    "b95835417205e4784f2288e815e2cfbca01d25105c8dd3c7545a2d1e00ddc6df"
+  ],
+  "zero_probe_embedding_sha256": "16127cfd2a85cdfaad5ad7326b8ee556726a777b1644f3e47439a2eb1059b7c7",
+  "reference_embedding_shape": [
+    2419,
+    512
+  ],
+  "reference_embeddings_sha256": "a035824d84a5fc2f4a7c1325f45a2cb5e60595df8f52d852dd6963f87ed4c548",
+  "scoring_method": "knn",
+  "k_neighbors": 1,
+  "tracked_files": [
+    {
+      "path": "checkpoints/best/autoencoder.weights.h5",
+      "size_bytes": 4202600,
+      "sha256": "b16e0dfd5f21a99ffa752977d51d76ee322960fac1819fe0fa325a2457c3249e"
+    },
+    {
+      "path": "checkpoints/best/autoencoder.weights.npz",
+      "size_bytes": 4138064,
+      "sha256": "0a9a32ed09ed44d7d505fe706500ede50be094cc713f9d2aed42269fd80325ba"
+    },
+    {
+      "path": "checkpoints/best/encoder.weights.npz",
+      "size_bytes": 2060012,
+      "sha256": "08714bdfaac75eb4d82938cefd9493a2a40e3f6c35566b2e09401ee37c644914"
+    },
+    {
+      "path": "checkpoints/best/decoder.weights.npz",
+      "size_bytes": 2078324,
+      "sha256": "3a037f0fcfe41b375d5e29f1dff64576fc1fd8fd7a8166a30a9d9186aaf114bc"
+    },
+    {
+      "path": "checkpoints/best/projection_head.weights.npz",
+      "size_bytes": 287344,
+      "sha256": "49b6c2ea4296df9204aabe79c6c2513b33134ab4873d24629ea81b031a16c8bd"
+    },
+    {
+      "path": "checkpoints/best/reference_embeddings.npy",
+      "size_bytes": 4954240,
+      "sha256": "a83a6e520a5d99bf761abeb606defe52449ba320b64b23bbdf0d3097a86bb586"
+    },
+    {
+      "path": "model_config.json",
+      "size_bytes": 492,
+      "sha256": "6687e8882fa83c5fc343256485a77b1bef1a5ef0d1f85d07977634cc81a40ef4"
+    },
+    {
+      "path": "threshold.json",
+      "size_bytes": 279,
+      "sha256": "a4ed92dcfa98d972a6f458076adccbb7184214a9fdf9f9e8b97884e1806631a6"
+    },
+    {
+      "path": "preprocessor/config.json",
+      "size_bytes": 95,
+      "sha256": "35a39c02147122b3d2caca1b8c5e29b5677622046e088a097a50b7cdfa7711c1"
+    },
+    {
+      "path": "preprocessor/scaler.json",
+      "size_bytes": 172,
+      "sha256": "c6f43f0133cc4eb7d4ab0c99b23d2368bf0ccb9d649cc5674bb1b15fc7b69bea"
+    }
+  ],
+  "cross_host_comparisons": [
+    {
+      "report": "model_provenance_TorredeNacho.json",
+      "matched": true,
+      "mismatched_fields": []
+    }
+  ]
+}

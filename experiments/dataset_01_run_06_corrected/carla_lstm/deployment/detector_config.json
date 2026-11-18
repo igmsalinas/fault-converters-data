@@ -1,0 +1,13 @@
+{
+  "detector": "carla_projection_distance",
+  "scoring_method": "knn",
+  "k_neighbors": 1,
+  "threshold": 0.11469353698194024,
+  "input_shape": [
+    101,
+    2
+  ],
+  "embedding_shape": [
+    512
+  ]
+}

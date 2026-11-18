@@ -1,0 +1,6 @@
+{
+  "hostname": "jetson",
+  "platform": "Linux-4.9.337-tegra-aarch64-with-Ubuntu-18.04-bionic",
+  "machine": "aarch64",
+  "stage": "optimization"
+}

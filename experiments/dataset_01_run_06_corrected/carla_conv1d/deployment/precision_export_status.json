@@ -1,0 +1,80 @@
+[
+  {
+    "backend": "tflite-cpu",
+    "precision": "fp32",
+    "status": "exported",
+    "converter_tensorflow_version": "2.7.0",
+    "conversion_hostname": "jetson",
+    "conversion_machine": "aarch64"
+  },
+  {
+    "backend": "tflite-cpu",
+    "precision": "fp16",
+    "status": "exported",
+    "converter_tensorflow_version": "2.7.0",
+    "method": "FP16 weight PTQ; FP32 CPU compute and I/O",
+    "conversion_hostname": "jetson",
+    "conversion_machine": "aarch64"
+  },
+  {
+    "backend": "tflite-cpu",
+    "precision": "int8",
+    "status": "exported",
+    "converter_tensorflow_version": "2.7.0",
+    "method": "TensorFlow Lite full-integer static PTQ",
+    "calibration_samples": 100,
+    "int8_tensor_count": 15,
+    "io_dtype": "float32",
+    "calibration_sha256": "cd9647ded2e620e1ae3d4a15ba398b5ef43a9c68419245e1d55539a18a33ea09",
+    "conversion_hostname": "jetson",
+    "conversion_machine": "aarch64"
+  },
+  {
+    "backend": "onnx",
+    "precision": "fp16",
+    "status": "exported",
+    "conversion_hostname": "jetson",
+    "conversion_machine": "aarch64"
+  },
+  {
+    "backend": "onnx",
+    "precision": "int8",
+    "status": "exported",
+    "method": "static QDQ PTQ",
+    "calibration_samples": 100,
+    "quantize_nodes": 21,
+    "dequantize_nodes": 37,
+    "qdq_compute_coverage": {
+      "interpretation": "Structural Q/DQ adjacency only; effective TensorRT layer precision is determined separately by the target builder/runtime.",
+      "compute_operators_with_dequantized_inputs": {
+        "Conv": 2,
+        "Gemm": 3
+      },
+      "compute_operators_without_dequantized_inputs": {}
+    },
+    "calibration_sha256": "cd9647ded2e620e1ae3d4a15ba398b5ef43a9c68419245e1d55539a18a33ea09",
+    "conversion_hostname": "jetson",
+    "conversion_machine": "aarch64"
+  },
+  {
+    "backend": "onnx-cpu",
+    "precision": "fp32",
+    "status": "runnable",
+    "conversion_hostname": "jetson",
+    "conversion_machine": "aarch64"
+  },
+  {
+    "backend": "onnx-cpu",
+    "precision": "fp16",
+    "status": "runnable",
+    "conversion_hostname": "jetson",
+    "conversion_machine": "aarch64"
+  },
+  {
+    "backend": "onnx-cpu",
+    "precision": "int8",
+    "status": "runnable",
+    "conversion_hostname": "jetson",
+    "conversion_machine": "aarch64"
+  }
+]

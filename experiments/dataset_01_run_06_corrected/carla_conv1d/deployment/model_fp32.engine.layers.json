@@ -1,0 +1,433 @@
+{"Layers": [{
+  "Name": "carla_embedding_detector/encoder/enc_conv_0/Conv1D/ExpandDims + carla_embedding_detector/encoder/enc_conv_0/Conv1D__12",
+  "LayerType": "Shuffle",
+  "Inputs": [
+  {
+    "Name": "input_1",
+    "Dimensions": [1,101,2],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "carla_embedding_detector/encoder/enc_conv_0/Conv1D__12:0",
+    "Dimensions": [1,2,1,101],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "Shuffle",
+  "FirstTranspose": [0,1,2],
+  "Reshape": [1,1,101,2],
+  "SecondTranspose": [0,3,1,2],
+  "ZeroIsPlaceholder": 0,
+  "TacticValue": "0x0"
+},{
+  "Name": "carla_embedding_detector/encoder/enc_conv_0/Conv1D",
+  "LayerType": "CudnnConvolution",
+  "Inputs": [
+  {
+    "Name": "carla_embedding_detector/encoder/enc_conv_0/Conv1D__12:0",
+    "Dimensions": [1,2,1,101],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "carla_embedding_detector/encoder/enc_conv_0/Conv1D:0",
+    "Dimensions": [1,64,1,51],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "Convolution",
+  "Kernel": [1,3],
+  "PaddingMode": "kEXPLICIT_ROUND_DOWN",
+  "PrePadding": [0,1],
+  "PostPadding": [0,1],
+  "Stride": [1,2],
+  "Dilation": [1,1],
+  "OutMaps": 64,
+  "Groups": 1,
+  "Weights": {"Type": "Float", "Count": 384},
+  "Bias": {"Type": "Float", "Count": 0},
+  "AllowSparse": 0,
+  "Activation": "NONE",
+  "HasBias": 0,
+  "TacticValue": "0x1"
+},{
+  "Name": "carla_embedding_detector/encoder/enc_conv_0/Conv1D/Squeeze",
+  "LayerType": "NoOp",
+  "Inputs": [
+  {
+    "Name": "carla_embedding_detector/encoder/enc_conv_0/Conv1D:0",
+    "Dimensions": [1,64,1,51],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "carla_embedding_detector/encoder/enc_conv_0/Conv1D/Squeeze:0",
+    "Dimensions": [1,64,51],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "TacticValue": "0x0"
+},{
+  "Name": "const_fold_opt__53",
+  "LayerType": "Constant",
+  "Inputs": [],
+  "Outputs": [
+  {
+    "Name": "(Unnamed Layer* 4) [Constant]_output",
+    "Dimensions": [1,64,1],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "Constant",
+  "weights": {"Type": "Float", "Count": 64},
+  "dimensions": [1,64,1],
+  "TacticValue": "0x0"
+},{
+  "Name": "carla_embedding_detector/encoder/batch_normalization/batchnorm/mul:0",
+  "LayerType": "Constant",
+  "Inputs": [],
+  "Outputs": [
+  {
+    "Name": "(Unnamed Layer* 6) [Constant]_output",
+    "Dimensions": [1,64,1],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "Constant",
+  "weights": {"Type": "Float", "Count": 64},
+  "dimensions": [1,64,1],
+  "TacticValue": "0x0"
+},{
+  "Name": "const_fold_opt__62",
+  "LayerType": "Constant",
+  "Inputs": [],
+  "Outputs": [
+  {
+    "Name": "(Unnamed Layer* 8) [Constant]_output",
+    "Dimensions": [1,64,1],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "Constant",
+  "weights": {"Type": "Float", "Count": 64},
+  "dimensions": [1,64,1],
+  "TacticValue": "0x0"
+},{
+  "Name": "PWN(PWN(carla_embedding_detector/encoder/enc_conv_0/BiasAdd, carla_embedding_detector/encoder/batch_normalization/batchnorm/mul_1), carla_embedding_detector/encoder/batch_normalization/batchnorm/add_1 + carla_embedding_detector/encoder/re_lu/Relu)",
+  "LayerType": "PointWiseV2",
+  "Inputs": [
+  {
+    "Name": "carla_embedding_detector/encoder/enc_conv_0/Conv1D/Squeeze:0",
+    "Dimensions": [1,64,51],
+    "Format/Datatype": "Row major linear FP32"
+  },
+  {
+    "Name": "(Unnamed Layer* 4) [Constant]_output",
+    "Dimensions": [1,64,1],
+    "Format/Datatype": "Row major linear FP32"
+  },
+  {
+    "Name": "(Unnamed Layer* 6) [Constant]_output",
+    "Dimensions": [1,64,1],
+    "Format/Datatype": "Row major linear FP32"
+  },
+  {
+    "Name": "(Unnamed Layer* 8) [Constant]_output",
+    "Dimensions": [1,64,1],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "carla_embedding_detector/encoder/re_lu/Relu:0",
+    "Dimensions": [1,64,51],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "PointWise",
+  "ParameterSubType": "PointWiseExpression",
+  "NbInputArgs": 4,
+  "InputArgs": ["arg0", "arg1", "arg2", "arg3"],
+  "NbOutputVars": 1,
+  "OutputVars": ["var3"],
+  "NbParams": 0,
+  "Params": [],
+  "NbLiterals": 1,
+  "Literals": ["0.000000e+00f"],
+  "NbOperations": 4,
+  "Operations": ["const auto var0 = pwgen::iPlus(arg0, arg1);", "const auto var1 = pwgen::iMul(var0, arg2);", "const auto var2 = pwgen::iPlus(var1, arg3);", "const auto var3 = pwgen::iMax(var2, literal0);"],
+  "TacticValue": "0x1"
+},{
+  "Name": "carla_embedding_detector/encoder/enc_conv_1/Conv1D/ExpandDims",
+  "LayerType": "NoOp",
+  "Inputs": [
+  {
+    "Name": "carla_embedding_detector/encoder/re_lu/Relu:0",
+    "Dimensions": [1,64,51],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "carla_embedding_detector/encoder/enc_conv_1/Conv1D/ExpandDims:0",
+    "Dimensions": [1,64,1,51],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "TacticValue": "0x0"
+},{
+  "Name": "carla_embedding_detector/encoder/enc_conv_1/Conv1D",
+  "LayerType": "CudnnConvolution",
+  "Inputs": [
+  {
+    "Name": "carla_embedding_detector/encoder/enc_conv_1/Conv1D/ExpandDims:0",
+    "Dimensions": [1,64,1,51],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "carla_embedding_detector/encoder/enc_conv_1/Conv1D:0",
+    "Dimensions": [1,128,1,26],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "Convolution",
+  "Kernel": [1,3],
+  "PaddingMode": "kEXPLICIT_ROUND_DOWN",
+  "PrePadding": [0,1],
+  "PostPadding": [0,1],
+  "Stride": [1,2],
+  "Dilation": [1,1],
+  "OutMaps": 128,
+  "Groups": 1,
+  "Weights": {"Type": "Float", "Count": 24576},
+  "Bias": {"Type": "Float", "Count": 0},
+  "AllowSparse": 0,
+  "Activation": "NONE",
+  "HasBias": 0,
+  "TacticValue": "0x0"
+},{
+  "Name": "carla_embedding_detector/encoder/enc_conv_1/Conv1D/Squeeze",
+  "LayerType": "NoOp",
+  "Inputs": [
+  {
+    "Name": "carla_embedding_detector/encoder/enc_conv_1/Conv1D:0",
+    "Dimensions": [1,128,1,26],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "carla_embedding_detector/encoder/enc_conv_1/Conv1D/Squeeze:0",
+    "Dimensions": [1,128,26],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "TacticValue": "0x0"
+},{
+  "Name": "const_fold_opt__60",
+  "LayerType": "Constant",
+  "Inputs": [],
+  "Outputs": [
+  {
+    "Name": "(Unnamed Layer* 14) [Constant]_output",
+    "Dimensions": [1,128,1],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "Constant",
+  "weights": {"Type": "Float", "Count": 128},
+  "dimensions": [1,128,1],
+  "TacticValue": "0x0"
+},{
+  "Name": "carla_embedding_detector/encoder/batch_normalization_1/batchnorm/mul:0",
+  "LayerType": "Constant",
+  "Inputs": [],
+  "Outputs": [
+  {
+    "Name": "(Unnamed Layer* 16) [Constant]_output",
+    "Dimensions": [1,128,1],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "Constant",
+  "weights": {"Type": "Float", "Count": 128},
+  "dimensions": [1,128,1],
+  "TacticValue": "0x0"
+},{
+  "Name": "const_fold_opt__59",
+  "LayerType": "Constant",
+  "Inputs": [],
+  "Outputs": [
+  {
+    "Name": "(Unnamed Layer* 18) [Constant]_output",
+    "Dimensions": [1,128,1],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "Constant",
+  "weights": {"Type": "Float", "Count": 128},
+  "dimensions": [1,128,1],
+  "TacticValue": "0x0"
+},{
+  "Name": "PWN(PWN(carla_embedding_detector/encoder/enc_conv_1/BiasAdd, carla_embedding_detector/encoder/batch_normalization_1/batchnorm/mul_1), carla_embedding_detector/encoder/batch_normalization_1/batchnorm/add_1 + carla_embedding_detector/encoder/re_lu_1/Relu)",
+  "LayerType": "PointWiseV2",
+  "Inputs": [
+  {
+    "Name": "carla_embedding_detector/encoder/enc_conv_1/Conv1D/Squeeze:0",
+    "Dimensions": [1,128,26],
+    "Format/Datatype": "Row major linear FP32"
+  },
+  {
+    "Name": "(Unnamed Layer* 14) [Constant]_output",
+    "Dimensions": [1,128,1],
+    "Format/Datatype": "Row major linear FP32"
+  },
+  {
+    "Name": "(Unnamed Layer* 16) [Constant]_output",
+    "Dimensions": [1,128,1],
+    "Format/Datatype": "Row major linear FP32"
+  },
+  {
+    "Name": "(Unnamed Layer* 18) [Constant]_output",
+    "Dimensions": [1,128,1],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "carla_embedding_detector/encoder/re_lu_1/Relu:0",
+    "Dimensions": [1,128,26],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "PointWise",
+  "ParameterSubType": "PointWiseExpression",
+  "NbInputArgs": 4,
+  "InputArgs": ["arg0", "arg1", "arg2", "arg3"],
+  "NbOutputVars": 1,
+  "OutputVars": ["var3"],
+  "NbParams": 0,
+  "Params": [],
+  "NbLiterals": 1,
+  "Literals": ["0.000000e+00f"],
+  "NbOperations": 4,
+  "Operations": ["const auto var0 = pwgen::iPlus(arg0, arg1);", "const auto var1 = pwgen::iMul(var0, arg2);", "const auto var2 = pwgen::iPlus(var1, arg3);", "const auto var3 = pwgen::iMax(var2, literal0);"],
+  "TacticValue": "0x1c"
+},{
+  "Name": "Transpose__47 + carla_embedding_detector/encoder/flatten/Reshape + (Unnamed Layer* 23) [Shuffle]",
+  "LayerType": "Shuffle",
+  "Inputs": [
+  {
+    "Name": "carla_embedding_detector/encoder/re_lu_1/Relu:0",
+    "Dimensions": [1,128,26],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "(Unnamed Layer* 23) [Shuffle]_output",
+    "Dimensions": [1,3328,1,1],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "Shuffle",
+  "FirstTranspose": [0,2,1],
+  "Reshape": [1,3328,1,1],
+  "SecondTranspose": [0,1,2,3],
+  "ZeroIsPlaceholder": 0,
+  "TacticValue": "0x0"
+},{
+  "Name": "carla_embedding_detector/encoder/latent/MatMul_Gemm__6",
+  "LayerType": "CublasConvolution",
+  "Inputs": [
+  {
+    "Name": "(Unnamed Layer* 23) [Shuffle]_output",
+    "Dimensions": [1,3328,1,1],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "(Unnamed Layer* 24) [Fully Connected]_output",
+    "Dimensions": [1,64,1,1],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "Convolution",
+  "Kernel": [1,1],
+  "PaddingMode": "kEXPLICIT_ROUND_DOWN",
+  "PrePadding": [0,0],
+  "PostPadding": [0,0],
+  "Stride": [1,1],
+  "Dilation": [1,1],
+  "OutMaps": 64,
+  "Groups": 1,
+  "Weights": {"Type": "Float", "Count": 212992},
+  "Bias": {"Type": "Float", "Count": 64},
+  "AllowSparse": 0,
+  "Activation": "NONE",
+  "HasBias": 1,
+  "CublasConvolutionTacticIndex": 0,
+  "TacticValue": "0x0"
+},{
+  "Name": "carla_embedding_detector/projection_head/projection_head/dense/MatMul_Gemm__7 + carla_embedding_detector/projection_head/projection_head/batch_normalization/batchnorm/mul:0 + (Unnamed Layer* 30) [Shuffle] + unsqueeze_node_after_carla_embedding_detector/projection_head/projection_head/batch_normalization/batchnorm/mul:0 + (Unnamed Layer* 30) [Shuffle]_(Unnamed Layer* 30) [Shuffle]_output + carla_embedding_detector/projection_head/projection_head/batch_normalization/batchnorm/mul_1 + carla_embedding_detector/projection_head/projection_head/batch_normalization/batchnorm/sub:0 + (Unnamed Layer* 33) [Shuffle] + unsqueeze_node_after_carla_embedding_detector/projection_head/projection_head/batch_normalization/batchnorm/sub:0 + (Unnamed Layer* 33) [Shuffle]_(Unnamed Layer* 33) [Shuffle]_output + carla_embedding_detector/projection_head/projection_head/batch_normalization/batchnorm/add_1 + carla_embedding_detector/projection_head/projection_head/activation/Relu",
+  "LayerType": "CublasConvolution",
+  "Inputs": [
+  {
+    "Name": "(Unnamed Layer* 24) [Fully Connected]_output",
+    "Dimensions": [1,64,1,1],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "carla_embedding_detector/projection_head/projection_head/activation/Relu_out_tensor",
+    "Dimensions": [1,128,1,1],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "Convolution",
+  "Kernel": [1,1],
+  "PaddingMode": "kEXPLICIT_ROUND_DOWN",
+  "PrePadding": [0,0],
+  "PostPadding": [0,0],
+  "Stride": [1,1],
+  "Dilation": [1,1],
+  "OutMaps": 128,
+  "Groups": 1,
+  "Weights": {"Type": "Float", "Count": 8192},
+  "Bias": {"Type": "Float", "Count": 128},
+  "AllowSparse": 0,
+  "Activation": "RELU",
+  "HasBias": 1,
+  "CublasConvolutionTacticIndex": 0,
+  "TacticValue": "0x0"
+},{
+  "Name": "carla_embedding_detector/projection_head/projection_head/dense_1/MatMul_Gemm__8",
+  "LayerType": "CublasConvolution",
+  "Inputs": [
+  {
+    "Name": "carla_embedding_detector/projection_head/projection_head/activation/Relu_out_tensor",
+    "Dimensions": [1,128,1,1],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "(Unnamed Layer* 37) [Fully Connected]_output",
+    "Dimensions": [1,512,1,1],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "ParameterType": "Convolution",
+  "Kernel": [1,1],
+  "PaddingMode": "kEXPLICIT_ROUND_DOWN",
+  "PrePadding": [0,0],
+  "PostPadding": [0,0],
+  "Stride": [1,1],
+  "Dilation": [1,1],
+  "OutMaps": 512,
+  "Groups": 1,
+  "Weights": {"Type": "Float", "Count": 65536},
+  "Bias": {"Type": "Float", "Count": 512},
+  "AllowSparse": 0,
+  "Activation": "NONE",
+  "HasBias": 1,
+  "CublasConvolutionTacticIndex": 1,
+  "TacticValue": "0x1"
+},{
+  "Name": "(Unnamed Layer* 38) [Shuffle]",
+  "LayerType": "NoOp",
+  "Inputs": [
+  {
+    "Name": "(Unnamed Layer* 37) [Fully Connected]_output",
+    "Dimensions": [1,512,1,1],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "Outputs": [
+  {
+    "Name": "projection_head",
+    "Dimensions": [1,512],
+    "Format/Datatype": "Row major linear FP32"
+  }],
+  "TacticValue": "0x0"
+}],
+"Bindings": ["input_1"
+,"projection_head"
+]}

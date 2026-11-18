@@ -1,0 +1,24 @@
+{
+  "encoder_type": "mlp",
+  "latent_dim": 64,
+  "projection_dim": 512,
+  "encoder_filters": [
+    64,
+    128
+  ],
+  "encoder_units": [
+    256,
+    128,
+    64
+  ],
+  "kernel_size": 5,
+  "num_heads": 2,
+  "learning_rate": 5e-05,
+  "reconstruction_weight": 20.0,
+  "contrastive_weight": 1.0,
+  "temperature": 0.05,
+  "anomaly_ratio": 1.0,
+  "scoring_method": "knn",
+  "k_neighbors": 3,
+  "dropout_rate": 0.0
+}

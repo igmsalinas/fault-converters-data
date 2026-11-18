@@ -1,0 +1,111 @@
+&&&& RUNNING TensorRT.trtexec [TensorRT v8201] # /usr/src/tensorrt/bin/trtexec --onnx=experiments/dataset_01_run_06_corrected/carla_lstm/deployment/model_int8.onnx --saveEngine=experiments/dataset_01_run_06_corrected/carla_lstm/deployment/model_int8.engine.building.24722 --workspace=512 --buildOnly --profilingVerbosity=detailed --dumpLayerInfo --exportLayerInfo=experiments/dataset_01_run_06_corrected/carla_lstm/deployment/model_int8.engine.layers.json.building.24722 --int8
+[08/25/2026-13:14:23] [I] === Model Options ===
+[08/25/2026-13:14:23] [I] Format: ONNX
+[08/25/2026-13:14:23] [I] Model: experiments/dataset_01_run_06_corrected/carla_lstm/deployment/model_int8.onnx
+[08/25/2026-13:14:23] [I] Output:
+[08/25/2026-13:14:23] [I] === Build Options ===
+[08/25/2026-13:14:23] [I] Max batch: explicit batch
+[08/25/2026-13:14:23] [I] Workspace: 512 MiB
+[08/25/2026-13:14:23] [I] minTiming: 1
+[08/25/2026-13:14:23] [I] avgTiming: 8
+[08/25/2026-13:14:23] [I] Precision: FP32+INT8
+[08/25/2026-13:14:23] [I] Calibration: Dynamic
+[08/25/2026-13:14:23] [I] Refit: Disabled
+[08/25/2026-13:14:23] [I] Sparsity: Disabled
+[08/25/2026-13:14:23] [I] Safe mode: Disabled
+[08/25/2026-13:14:23] [I] DirectIO mode: Disabled
+[08/25/2026-13:14:23] [I] Restricted mode: Disabled
+[08/25/2026-13:14:23] [I] Save engine: experiments/dataset_01_run_06_corrected/carla_lstm/deployment/model_int8.engine.building.24722
+[08/25/2026-13:14:23] [I] Load engine: 
+[08/25/2026-13:14:23] [I] Profiling verbosity: 2
+[08/25/2026-13:14:23] [I] Tactic sources: Using default tactic sources
+[08/25/2026-13:14:23] [I] timingCacheMode: local
+[08/25/2026-13:14:23] [I] timingCacheFile: 
+[08/25/2026-13:14:23] [I] Input(s)s format: fp32:CHW
+[08/25/2026-13:14:23] [I] Output(s)s format: fp32:CHW
+[08/25/2026-13:14:23] [I] Input build shapes: model
+[08/25/2026-13:14:23] [I] Input calibration shapes: model
+[08/25/2026-13:14:23] [I] === System Options ===
+[08/25/2026-13:14:23] [I] Device: 0
+[08/25/2026-13:14:23] [I] DLACore: 
+[08/25/2026-13:14:23] [I] Plugins:
+[08/25/2026-13:14:23] [I] === Inference Options ===
+[08/25/2026-13:14:23] [I] Batch: Explicit
+[08/25/2026-13:14:23] [I] Input inference shapes: model
+[08/25/2026-13:14:23] [I] Iterations: 10
+[08/25/2026-13:14:23] [I] Duration: 3s (+ 200ms warm up)
+[08/25/2026-13:14:23] [I] Sleep time: 0ms
+[08/25/2026-13:14:23] [I] Idle time: 0ms
+[08/25/2026-13:14:23] [I] Streams: 1
+[08/25/2026-13:14:23] [I] ExposeDMA: Disabled
+[08/25/2026-13:14:23] [I] Data transfers: Enabled
+[08/25/2026-13:14:23] [I] Spin-wait: Disabled
+[08/25/2026-13:14:23] [I] Multithreading: Disabled
+[08/25/2026-13:14:23] [I] CUDA Graph: Disabled
+[08/25/2026-13:14:23] [I] Separate profiling: Disabled
+[08/25/2026-13:14:23] [I] Time Deserialize: Disabled
+[08/25/2026-13:14:23] [I] Time Refit: Disabled
+[08/25/2026-13:14:23] [I] Skip inference: Enabled
+[08/25/2026-13:14:23] [I] Inputs:
+[08/25/2026-13:14:23] [I] === Reporting Options ===
+[08/25/2026-13:14:23] [I] Verbose: Disabled
+[08/25/2026-13:14:23] [I] Averages: 10 inferences
+[08/25/2026-13:14:23] [I] Percentile: 99
+[08/25/2026-13:14:23] [I] Dump refittable layers:Disabled
+[08/25/2026-13:14:23] [I] Dump output: Disabled
+[08/25/2026-13:14:23] [I] Profile: Disabled
+[08/25/2026-13:14:23] [I] Export timing to JSON file: 
+[08/25/2026-13:14:23] [I] Export output to JSON file: 
+[08/25/2026-13:14:23] [I] Export profile to JSON file: 
+[08/25/2026-13:14:23] [I] 
+[08/25/2026-13:14:23] [I] === Device Information ===
+[08/25/2026-13:14:23] [I] Selected Device: NVIDIA Tegra X1
+[08/25/2026-13:14:23] [I] Compute Capability: 5.3
+[08/25/2026-13:14:23] [I] SMs: 1
+[08/25/2026-13:14:23] [I] Compute Clock Rate: 0.9216 GHz
+[08/25/2026-13:14:23] [I] Device Global Memory: 3963 MiB
+[08/25/2026-13:14:23] [I] Shared Memory per SM: 64 KiB
+[08/25/2026-13:14:23] [I] Memory Bus Width: 64 bits (ECC disabled)
+[08/25/2026-13:14:23] [I] Memory Clock Rate: 0.01275 GHz
+[08/25/2026-13:14:23] [I] 
+[08/25/2026-13:14:23] [I] TensorRT version: 8.2.1
+[08/25/2026-13:14:25] [I] [TRT] [MemUsageChange] Init CUDA: CPU +229, GPU +0, now: CPU 248, GPU 2668 (MiB)
+[08/25/2026-13:14:25] [I] [TRT] [MemUsageSnapshot] Begin constructing builder kernel library: CPU 248 MiB, GPU 2668 MiB
+[08/25/2026-13:14:25] [I] [TRT] [MemUsageSnapshot] End constructing builder kernel library: CPU 277 MiB, GPU 2698 MiB
+[08/25/2026-13:14:25] [I] Start parsing network model
+[08/25/2026-13:14:25] [I] [TRT] ----------------------------------------------------------------
+[08/25/2026-13:14:25] [I] [TRT] Input filename:   experiments/dataset_01_run_06_corrected/carla_lstm/deployment/model_int8.onnx
+[08/25/2026-13:14:25] [I] [TRT] ONNX IR version:  0.0.7
+[08/25/2026-13:14:25] [I] [TRT] Opset version:    13
+[08/25/2026-13:14:25] [I] [TRT] Producer name:    onnx.quantize
+[08/25/2026-13:14:25] [I] [TRT] Producer version: 0.1.0
+[08/25/2026-13:14:25] [I] [TRT] Domain:           
+[08/25/2026-13:14:25] [I] [TRT] Model version:    0
+[08/25/2026-13:14:25] [I] [TRT] Doc string:       
+[08/25/2026-13:14:25] [I] [TRT] ----------------------------------------------------------------
+[08/25/2026-13:14:25] [W] [TRT] onnx2trt_utils.cpp:366: Your ONNX model has been generated with INT64 weights, while TensorRT does not natively support INT64. Attempting to cast down to INT32.
+[08/25/2026-13:14:25] [E] Error[3]: encoder_8_latent_bias_value_DequantizeLinear_dequantize_scale_node: only activation types allowed as input to this layer.
+[08/25/2026-13:14:25] [E] [TRT] ModelImporter.cpp:773: While parsing node number 0 [DequantizeLinear -> "encoder_8_latent_bias_value"]:
+[08/25/2026-13:14:25] [E] [TRT] ModelImporter.cpp:774: --- Begin node ---
+[08/25/2026-13:14:25] [E] [TRT] ModelImporter.cpp:775: input: "encoder_8_latent_bias_value_quantized"
+input: "encoder_8_latent_bias_value_quantized_scale"
+input: "encoder_8_latent_bias_value_quantized_zero_point"
+output: "encoder_8_latent_bias_value"
+name: "encoder_8_latent_bias_value_DequantizeLinear"
+op_type: "DequantizeLinear"
+attribute {
+  name: "axis"
+  i: 0
+  type: INT
+}
+
+[08/25/2026-13:14:25] [E] [TRT] ModelImporter.cpp:776: --- End node ---
+[08/25/2026-13:14:25] [E] [TRT] ModelImporter.cpp:779: ERROR: ModelImporter.cpp:179 In function parseGraph:
+[6] Invalid Node - encoder_8_latent_bias_value_DequantizeLinear
+encoder_8_latent_bias_value_DequantizeLinear_dequantize_scale_node: only activation types allowed as input to this layer.
+[08/25/2026-13:14:25] [E] Failed to parse onnx file
+[08/25/2026-13:14:25] [I] Finish parsing network model
+[08/25/2026-13:14:25] [E] Parsing model failed
+[08/25/2026-13:14:25] [E] Failed to create engine from model.
+[08/25/2026-13:14:25] [E] Engine set up failed
+&&&& FAILED TensorRT.trtexec [TensorRT v8201] # /usr/src/tensorrt/bin/trtexec --onnx=experiments/dataset_01_run_06_corrected/carla_lstm/deployment/model_int8.onnx --saveEngine=experiments/dataset_01_run_06_corrected/carla_lstm/deployment/model_int8.engine.building.24722 --workspace=512 --buildOnly --profilingVerbosity=detailed --dumpLayerInfo --exportLayerInfo=experiments/dataset_01_run_06_corrected/carla_lstm/deployment/model_int8.engine.layers.json.building.24722 --int8

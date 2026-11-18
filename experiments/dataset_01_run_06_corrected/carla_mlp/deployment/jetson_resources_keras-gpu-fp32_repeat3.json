@@ -1,0 +1,337 @@
+{
+  "device": {
+    "hostname": "jetson",
+    "machine": "aarch64",
+    "platform": "Linux-4.9.337-tegra-aarch64-with-Ubuntu-18.04-bionic",
+    "python_version": "3.6.9",
+    "l4t_release": "# R32 (release), REVISION: 7.6, GCID: 38171779, BOARD: t210ref, EABI: aarch64, DATE: Tue Nov  5 07:46:14 UTC 2024",
+    "git_commit": "d1e5dad8c29b02aa8b71aeecdcece36746a10671",
+    "git_dirty": true,
+    "tensorrt_version": "8.2.1-1+cuda10.2"
+  },
+  "model_dir": "experiments/dataset_01_run_06_corrected/carla_mlp",
+  "backend": "keras-gpu-fp32",
+  "precision": "fp32",
+  "model_file": null,
+  "protocol": {
+    "batch_size": 1,
+    "warmup_runs": 15,
+    "timed_runs": 150,
+    "resource_sample_interval_ms": 100,
+    "idle_seconds": 5.0,
+    "sustained_active_seconds": 15.0
+  },
+  "timing": {
+    "latency_mean_ms": 30.86142573038737,
+    "latency_std_ms": 0.9389779248830569,
+    "latency_min_ms": 29.57338523864746,
+    "latency_max_ms": 34.26625061035156,
+    "timing_source": "cuda_event",
+    "timing_scope": "device_synchronized_tensorflow_model_call",
+    "end_to_end_latency_mean_ms": 31.889327980073478,
+    "end_to_end_latency_std_ms": 1.0113505876612208,
+    "end_to_end_latency_min_ms": 30.42153499700362,
+    "end_to_end_latency_max_ms": 35.85196300264215,
+    "timing_batch_size": 1,
+    "timing_warmup_runs": 15,
+    "timing_runs": 150
+  },
+  "detector_timing": {
+    "latency_mean_ms": 36.912103173041636,
+    "latency_std_ms": 3.107537965321618,
+    "latency_min_ms": 34.3471390006016,
+    "latency_max_ms": 65.54868999955943,
+    "timing_source": "perf_counter",
+    "timing_scope": "synchronous_model_call",
+    "end_to_end_latency_mean_ms": 36.912103173041636,
+    "end_to_end_latency_std_ms": 3.107537965321618,
+    "end_to_end_latency_min_ms": 34.3471390006016,
+    "end_to_end_latency_max_ms": 65.54868999955943,
+    "timing_batch_size": 1,
+    "timing_warmup_runs": 15,
+    "timing_runs": 150
+  },
+  "sustained_throughput_inferences_per_second": 28.38389725308632,
+  "sustained_inference_count": 426,
+  "system_shared_memory": {
+    "idle_mean_mb": 894.1923076923077,
+    "active_mean_mb": 2812.901960784314,
+    "active_peak_mb": 2813.0,
+    "active_mean_delta_mb": 1918.7096530920062,
+    "active_peak_delta_mb": 1918.8076923076924
+  },
+  "process_ram": {
+    "method": "/proc/self/status VmRSS/VmHWM",
+    "baseline_rss_mb": 29.5234375,
+    "peak_rss_mb": 1255.55859375,
+    "peak_delta_mb": 1226.03515625,
+    "samples": [
+      {
+        "peak_rss_mb": 30.75390625,
+        "rss_mb": 29.5234375,
+        "phase": "pre_load_baseline"
+      },
+      {
+        "peak_rss_mb": 47.0546875,
+        "rss_mb": 47.0546875,
+        "phase": "cuda_context"
+      },
+      {
+        "peak_rss_mb": 1033.76953125,
+        "rss_mb": 1033.76953125,
+        "phase": "runner_loaded"
+      },
+      {
+        "peak_rss_mb": 1254.68359375,
+        "rss_mb": 1254.68359375,
+        "phase": "timing_complete"
+      },
+      {
+        "peak_rss_mb": 1255.55859375,
+        "rss_mb": 1255.55859375,
+        "phase": "active_complete"
+      }
+    ]
+  },
+  "cuda_memory": {
+    "available": true,
+    "method": "pycuda.driver.mem_get_info",
+    "context_baseline_used_mb": 1778.6328125,
+    "peak_used_mb": 3659.37109375,
+    "peak_delta_from_context_baseline_mb": 1880.73828125,
+    "total_cuda_addressable_mb": 3963.8828125,
+    "samples": [
+      {
+        "phase": "context_baseline",
+        "free_mb": 2185.25,
+        "used_mb": 1778.6328125,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "engine_loaded",
+        "free_mb": 480.96484375,
+        "used_mb": 3482.91796875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "timing_complete",
+        "free_mb": 307.50390625,
+        "used_mb": 3656.37890625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 304.90625,
+        "used_mb": 3658.9765625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 304.78515625,
+        "used_mb": 3659.09765625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 304.78515625,
+        "used_mb": 3659.09765625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 304.6640625,
+        "used_mb": 3659.21875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 304.6640625,
+        "used_mb": 3659.21875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 304.6640625,
+        "used_mb": 3659.21875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 304.6640625,
+        "used_mb": 3659.21875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 304.6640625,
+        "used_mb": 3659.21875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 304.6640625,
+        "used_mb": 3659.21875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 304.6640625,
+        "used_mb": 3659.21875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 304.6640625,
+        "used_mb": 3659.21875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 304.6328125,
+        "used_mb": 3659.25,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 304.51171875,
+        "used_mb": 3659.37109375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 304.54296875,
+        "used_mb": 3659.33984375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 304.54296875,
+        "used_mb": 3659.33984375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 304.54296875,
+        "used_mb": 3659.33984375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 304.54296875,
+        "used_mb": 3659.33984375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active_complete",
+        "free_mb": 304.54296875,
+        "used_mb": 3659.33984375,
+        "total_mb": 3963.8828125
+      }
+    ]
+  },
+  "utilization": {
+    "cpu_active_mean_percent": 98.00326797385621,
+    "gpu_active_mean_percent": 0.4444444444444444,
+    "emc_active_mean_percent": 0.0
+  },
+  "temperatures": {
+    "ao": {
+      "mean_c": 57.85294117647059,
+      "max_c": 58.5
+    },
+    "cpu": {
+      "mean_c": 51.16013071895425,
+      "max_c": 51.5
+    },
+    "gpu": {
+      "mean_c": 46.27450980392157,
+      "max_c": 47.0
+    },
+    "pll": {
+      "mean_c": 48.48039215686274,
+      "max_c": 49.0
+    },
+    "pmic": {
+      "mean_c": 50.0,
+      "max_c": 50.0
+    },
+    "thermal": {
+      "mean_c": 48.661764705882355,
+      "max_c": 49.0
+    }
+  },
+  "power": {
+    "sensor_available": true,
+    "source": "PMLib INA3221 daemon",
+    "idle": {
+      "source": "PMLib INA3221 daemon",
+      "sample_count": 50,
+      "sample_period_mean_s": 0.10214520473869479,
+      "measured_duration_s": 5.005115032196045,
+      "rails": {
+        "POM_5V_IN": {
+          "mean_w": 2.4163799999999998,
+          "std_w": 0.1328064591802673,
+          "min_w": 2.368,
+          "max_w": 3.246,
+          "energy_j": 12.054359892129897
+        },
+        "POM_5V_GPU": {
+          "mean_w": 0.20392000000000002,
+          "std_w": 0.0003370459909270485,
+          "min_w": 0.202,
+          "max_w": 0.204,
+          "energy_j": 1.020737030982971
+        },
+        "POM_5V_CPU": {
+          "mean_w": 0.51414,
+          "std_w": 0.10945008177246832,
+          "min_w": 0.489,
+          "max_w": 1.217,
+          "energy_j": 2.538716909885406
+        }
+      }
+    },
+    "active": {
+      "source": "PMLib INA3221 daemon",
+      "sample_count": 150,
+      "sample_period_mean_s": 0.10072872622701146,
+      "measured_duration_s": 15.008580207824707,
+      "rails": {
+        "POM_5V_IN": {
+          "mean_w": 4.500019999999999,
+          "std_w": 0.12054456824483357,
+          "min_w": 3.327,
+          "max_w": 4.548,
+          "energy_j": 67.59758755171299
+        },
+        "POM_5V_GPU": {
+          "mean_w": 0.5990066666666667,
+          "std_w": 0.03513886673692757,
+          "min_w": 0.202,
+          "max_w": 0.603,
+          "energy_j": 9.010033458352087
+        },
+        "POM_5V_CPU": {
+          "mean_w": 2.0941,
+          "std_w": 0.0932894956573354,
+          "min_w": 1.217,
+          "max_w": 2.133,
+          "energy_j": 31.471683193445205
+        }
+      }
+    },
+    "idle_input_mean_w": 2.4163799999999998,
+    "active_input_mean_w": 4.500019999999999,
+    "dynamic_input_mean_w": 2.0836399999999995,
+    "total_energy_per_inference_mj": 158.54130107206086,
+    "dynamic_energy_per_inference_mj": 73.4092285291596,
+    "gpu_rail_active_mean_w": 0.5990066666666667,
+    "gpu_rail_energy_per_inference_mj": 21.10374982426114,
+    "cpu_rail_active_mean_w": 2.0941,
+    "cpu_rail_energy_per_inference_mj": 73.7777473377902,
+    "throughput_per_input_watt": 6.307504689553896,
+    "note": "POM_5V_IN is total module input power. GPU/CPU rails are reported separately and are not added to it."
+  },
+  "tegrastats_sample_count": 493
+}

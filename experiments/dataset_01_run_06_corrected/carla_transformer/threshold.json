@@ -1,0 +1,12 @@
+{
+  "threshold": 13.761927032470703,
+  "method": "mahalanobis_p95_k5",
+  "selection_split": "fit_validation",
+  "selection": {
+    "criterion": "fit_validation_f1",
+    "value": 0.8523206751054853,
+    "normal_score_percentile": 95.0
+  },
+  "scoring_method": "mahalanobis",
+  "k_neighbors": 5
+}

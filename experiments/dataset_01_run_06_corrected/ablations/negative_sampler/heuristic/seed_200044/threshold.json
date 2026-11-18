@@ -1,0 +1,12 @@
+{
+  "threshold": 0.012426353152841333,
+  "method": "knn_p90_k3",
+  "selection_split": "fit_validation",
+  "selection": {
+    "criterion": "fit_validation_f1",
+    "value": 0.8210961737331954,
+    "normal_score_percentile": 90.0
+  },
+  "scoring_method": "knn",
+  "k_neighbors": 3
+}

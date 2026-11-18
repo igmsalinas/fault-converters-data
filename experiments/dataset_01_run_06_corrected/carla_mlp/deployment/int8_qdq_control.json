@@ -1,0 +1,16 @@
+{
+  "control": "format-restricted QDQ (Conv/MatMul/Gemm only, FP32 biases)",
+  "model_dir": "experiments/dataset_01_run_06_corrected/carla_mlp",
+  "output": "/tmp/model_int8_qdq_control.onnx",
+  "calibration_samples": 100,
+  "calibration_sha256": "cd9647ded2e620e1ae3d4a15ba398b5ef43a9c68419245e1d55539a18a33ea09",
+  "bias_qdq_pairs_removed": 6,
+  "quantize_nodes": 11,
+  "dequantize_nodes": 17,
+  "quantized_compute_nodes": {
+    "Gemm": 6
+  },
+  "trtexec_exit_code": 139,
+  "trtexec_outcome": "import rejected (invalid weights type of Int8 on Gemm kernel DQ), then SIGSEGV",
+  "campaign_calibration_sha256_match": true
+}

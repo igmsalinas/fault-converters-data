@@ -1,0 +1,51 @@
+{
+  "hostname": "jetson",
+  "machine": "aarch64",
+  "platform": "Linux-4.9.337-tegra-aarch64-with-Ubuntu-18.04-bionic",
+  "tensorflow_version": "2.7.0",
+  "onnx_version": "1.11.0",
+  "onnxruntime_version": "1.11.0",
+  "tf2onnx_version": "1.12.1",
+  "tensorrt_version": "8.2.1.8",
+  "tensorrt_add_rnn_v2_available": true,
+  "tensorrt_rnn_operations": [
+    "GRU",
+    "LSTM",
+    "RELU",
+    "TANH"
+  ],
+  "platform_has_fast_fp16": true,
+  "platform_has_fast_int8": false,
+  "power_mode_query": "NVPM WARN: fan mode is not set!\nNV Power Mode: MAXN\n0\nNVPM ERROR: Error opening /sys/kernel/nvpmodel_emc_cap/emc_iso_cap: 13\nNVPM ERROR: failed to read PARAM EMC: ARG MAX_FREQ: PATH /sys/kernel/nvpmodel_emc_cap/emc_iso_cap",
+  "cpu_clock": {
+    "unit": "kHz",
+    "current": 1479000,
+    "minimum": 1479000,
+    "maximum": 1479000
+  },
+  "gpu_clock": {
+    "unit": "Hz",
+    "current": 921600000,
+    "minimum": 921600000,
+    "maximum": 921600000
+  },
+  "jetson_clocks_show": "2026-08-25T11:47:21+01:00\nSOC family:tegra210  Machine:NVIDIA Jetson Nano Developer Kit\nOnline CPUs: 0-3\ncpu0: Online=1 Governor=schedutil MinFreq=1479000 MaxFreq=1479000 CurrentFreq=1479000 IdleStates: WFI=0 c7=0 \ncpu1: Online=1 Governor=schedutil MinFreq=1479000 MaxFreq=1479000 CurrentFreq=1479000 IdleStates: WFI=0 c7=0 \ncpu2: Online=1 Governor=schedutil MinFreq=1479000 MaxFreq=1479000 CurrentFreq=1479000 IdleStates: WFI=0 c7=0 \ncpu3: Online=1 Governor=schedutil MinFreq=1479000 MaxFreq=1479000 CurrentFreq=1479000 IdleStates: WFI=0 c7=0 \nGPU MinFreq=921600000 MaxFreq=921600000 CurrentFreq=921600000\nEMC MinFreq=204000000 MaxFreq=1600000000 CurrentFreq=1600000000 FreqOverride=1\nFan: PWM=80\nNV Power Mode: MAXN\n",
+  "privileged_clock_checks": {
+    "record_age_seconds": 295.61769223213196,
+    "record_fresh_within_10_minutes": true,
+    "all_four_cpus_fixed": true,
+    "gpu_fixed": true,
+    "emc_override_fixed_at_max": true,
+    "fan_pwm": 80
+  },
+  "fixed_clock_lock_verified": true,
+  "tensorflow_gpus": [
+    {
+      "compute_capability": [
+        5,
+        3
+      ],
+      "device_name": "NVIDIA Tegra X1"
+    }
+  ]
+}

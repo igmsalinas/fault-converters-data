@@ -1,0 +1,105 @@
+{
+  "stage": "training",
+  "hostname": "TorredeNacho",
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "machine": "x86_64",
+  "tensorflow_version": "2.21.0",
+  "tensorflow_gpus": [
+    "/physical_device:GPU:0"
+  ],
+  "tensorflow_gpu_details": [
+    {
+      "compute_capability": [
+        8,
+        9
+      ],
+      "device_name": "NVIDIA GeForce RTX 4070"
+    }
+  ],
+  "git_commit": "c492ee828ab0967140ad470df05f1bf6d263576e",
+  "git_tracked_dirty": false,
+  "command": [
+    "/home/nacho/projects/fault_converters/.venv/bin/python3",
+    "-m",
+    "src.train",
+    "--model",
+    "carla_lstm",
+    "--data-dir",
+    "data/buck/buck_data/dataset_01",
+    "--output-dir",
+    "experiments",
+    "--n-trials",
+    "50",
+    "--batch-size",
+    "128",
+    "--epochs-per-trial",
+    "30",
+    "--final-epochs",
+    "150",
+    "--seed",
+    "42",
+    "--experiment-name",
+    "dataset_01_run_06_corrected"
+  ],
+  "source_rows": 12000,
+  "unique_rows_used": 4723,
+  "train_rows": 2419,
+  "validation_normal_rows": 518,
+  "fit_validation_rows": 1036,
+  "test_rows": 1268,
+  "split_seed": 42,
+  "search_trial_seed_policy": "split_seed_plus_trial_id",
+  "final_training_seed": 100042,
+  "random_seed_api": "keras.utils.set_random_seed",
+  "physics_negatives_per_anchor": 1,
+  "physics_fault_modes": [
+    {
+      "name": "capacitor_esr",
+      "component": "esr_cap",
+      "severity_range": [
+        3.0,
+        8.0
+      ],
+      "log_uniform": false
+    },
+    {
+      "name": "capacitance_drop",
+      "component": "capacitance",
+      "severity_range": [
+        0.3,
+        0.7
+      ],
+      "log_uniform": false
+    },
+    {
+      "name": "inductor_saturation",
+      "component": "inductance",
+      "severity_range": [
+        0.4,
+        0.7
+      ],
+      "log_uniform": false
+    },
+    {
+      "name": "inductor_esr",
+      "component": "esr_ind",
+      "severity_range": [
+        2.0,
+        6.0
+      ],
+      "log_uniform": false
+    },
+    {
+      "name": "switch_degradation",
+      "component": "rds",
+      "severity_range": [
+        3.0,
+        15.0
+      ],
+      "log_uniform": false
+    }
+  ],
+  "validation_perturbations": "fixed_once_per_fit",
+  "preprocessor_fit_split": "training_normals_only",
+  "duplicate_policy": "one_representative_per_component_vector"
+}

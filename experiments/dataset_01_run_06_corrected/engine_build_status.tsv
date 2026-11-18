@@ -1,0 +1,16 @@
+model	precision	status
+carla_conv1d	FP32	built
+carla_conv1d	FP16	built
+carla_conv1d	INT8	build_failed
+carla_gru	FP32	built
+carla_gru	FP16	built
+carla_gru	INT8	build_failed
+carla_lstm	FP32	built
+carla_lstm	FP16	built
+carla_lstm	INT8	build_failed
+carla_mlp	FP32	built
+carla_mlp	FP16	built
+carla_mlp	INT8	build_failed
+carla_transformer	FP32	built
+carla_transformer	FP16	built
+carla_transformer	INT8	build_failed

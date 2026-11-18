@@ -1,0 +1,72 @@
+{
+  "device": {
+    "hostname": "jetson",
+    "machine": "aarch64",
+    "platform": "Linux-4.9.337-tegra-aarch64-with-Ubuntu-18.04-bionic",
+    "tensorflow_version": "2.7.0",
+    "tensorflow_gpu": {
+      "compute_capability": [
+        5,
+        3
+      ],
+      "device_name": "NVIDIA Tegra X1"
+    },
+    "l4t_release": "# R32 (release), REVISION: 7.6, GCID: 38171779, BOARD: t210ref, EABI: aarch64, DATE: Tue Nov  5 07:46:14 UTC 2024"
+  },
+  "model_dir": "experiments/dataset_01_run_06_corrected/carla_mlp",
+  "backend": "keras-gpu",
+  "precision": "fp32",
+  "policy": "float32",
+  "protocol": {
+    "batch_size": 1,
+    "warmup_runs": 15,
+    "timed_runs": 150,
+    "consistency_samples": 32
+  },
+  "evaluation": {
+    "latency_per_sample_mean_ms": 32.06381633758545,
+    "latency_per_sample_std_ms": 1.4391584770477603,
+    "latency_per_sample_min_ms": 29.867656707763672,
+    "latency_per_sample_max_ms": 39.378021240234375,
+    "timing_source": "cuda_event",
+    "timing_scope": "device_synchronized_tensorflow_model_call",
+    "end_to_end_latency_mean_ms": 33.01512963322845,
+    "end_to_end_latency_std_ms": 1.4617539974044818,
+    "end_to_end_latency_min_ms": 30.714147997059627,
+    "end_to_end_latency_max_ms": 40.337583999644266,
+    "detector_end_to_end_latency_mean_ms": 34.19275372660195,
+    "detector_end_to_end_latency_std_ms": 0.5630757296621988,
+    "detector_timing_source": "perf_counter",
+    "detector_timing_scope": "synchronous_model_call",
+    "timing_batch_size": 1,
+    "timing_warmup_runs": 15,
+    "timing_runs": 150,
+    "evaluation_batch_size": 1,
+    "accuracy": 0.8706624605678234,
+    "precision": 0.9591194968553459,
+    "recall": 0.8155080213903744,
+    "f1": 0.8815028901734104,
+    "auc_roc": 0.9161147675853557,
+    "full_test_consistency_samples": 1268,
+    "full_test_anomaly_disagreement_rate_vs_baseline": 0.0
+  },
+  "consistency": {
+    "consistency_samples": 32,
+    "output_mse_vs_baseline": 0.0,
+    "output_mean_abs_error_vs_baseline": 0.0,
+    "output_max_abs_error_vs_baseline": 0.0,
+    "output_relative_l2_vs_baseline": 0.0,
+    "output_within_tolerance": true,
+    "score_mean_abs_error_vs_baseline": 0.0,
+    "score_max_abs_error_vs_baseline": 0.0,
+    "anomaly_disagreement_rate_vs_baseline": 0.0,
+    "preflight_anomaly_disagreement_rate_vs_baseline": 0.0,
+    "full_test_consistency_samples": 1268,
+    "full_test_anomaly_disagreement_rate_vs_baseline": 0.0
+  },
+  "tensorflow_gpu_memory": {
+    "measurement_scope": "candidate_model_after_reference_release",
+    "current_mb": 1.20068359375,
+    "peak_mb": 1.20654296875
+  }
+}

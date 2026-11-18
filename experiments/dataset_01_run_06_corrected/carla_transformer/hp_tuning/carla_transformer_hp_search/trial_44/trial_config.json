@@ -1,0 +1,24 @@
+{
+  "encoder_type": "transformer",
+  "latent_dim": 128,
+  "projection_dim": 256,
+  "encoder_filters": [
+    64,
+    128
+  ],
+  "encoder_units": [
+    512,
+    256,
+    128
+  ],
+  "kernel_size": 5,
+  "num_heads": 4,
+  "learning_rate": 0.0003,
+  "reconstruction_weight": 5.0,
+  "contrastive_weight": 1.0,
+  "temperature": 0.05,
+  "anomaly_ratio": 1.0,
+  "scoring_method": "knn",
+  "k_neighbors": 5,
+  "dropout_rate": 0.0
+}

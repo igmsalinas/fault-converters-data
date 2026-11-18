@@ -1,0 +1,955 @@
+{
+  "device": {
+    "hostname": "jetson",
+    "machine": "aarch64",
+    "platform": "Linux-4.9.337-tegra-aarch64-with-Ubuntu-18.04-bionic",
+    "python_version": "3.6.9",
+    "l4t_release": "# R32 (release), REVISION: 7.6, GCID: 38171779, BOARD: t210ref, EABI: aarch64, DATE: Tue Nov  5 07:46:14 UTC 2024",
+    "git_commit": "d1e5dad8c29b02aa8b71aeecdcece36746a10671",
+    "git_dirty": true,
+    "tensorrt_version": "8.2.1-1+cuda10.2"
+  },
+  "model_dir": "experiments/dataset_01_run_06_corrected/carla_transformer",
+  "backend": "tensorrt",
+  "precision": "fp32",
+  "model_file": "experiments/dataset_01_run_06_corrected/carla_transformer/deployment/model_fp32.engine",
+  "protocol": {
+    "batch_size": 1,
+    "warmup_runs": 15,
+    "timed_runs": 150,
+    "resource_sample_interval_ms": 100,
+    "idle_seconds": 5.0,
+    "sustained_active_seconds": 15.0
+  },
+  "timing": {
+    "latency_mean_ms": 2.81932603041331,
+    "latency_std_ms": 0.08646109993895933,
+    "latency_min_ms": 2.711092948913574,
+    "latency_max_ms": 3.114738941192627,
+    "timing_source": "cuda_event",
+    "timing_scope": "tensorrt_engine_execution",
+    "end_to_end_latency_mean_ms": 3.367099459913637,
+    "end_to_end_latency_std_ms": 0.0976937027207252,
+    "end_to_end_latency_min_ms": 3.24397499935003,
+    "end_to_end_latency_max_ms": 3.7132559955352917,
+    "timing_batch_size": 1,
+    "timing_warmup_runs": 15,
+    "timing_runs": 150
+  },
+  "detector_timing": {
+    "latency_mean_ms": 3.6869819998294893,
+    "latency_std_ms": 0.2512494319622456,
+    "latency_min_ms": 3.5144489957019687,
+    "latency_max_ms": 5.395947999204509,
+    "timing_source": "perf_counter",
+    "timing_scope": "synchronous_model_call",
+    "end_to_end_latency_mean_ms": 3.6869819998294893,
+    "end_to_end_latency_std_ms": 0.2512494319622456,
+    "end_to_end_latency_min_ms": 3.5144489957019687,
+    "end_to_end_latency_max_ms": 5.395947999204509,
+    "timing_batch_size": 1,
+    "timing_warmup_runs": 15,
+    "timing_runs": 150
+  },
+  "sustained_throughput_inferences_per_second": 200.52325506128446,
+  "sustained_inference_count": 3008,
+  "system_shared_memory": {
+    "idle_mean_mb": 889.4423076923077,
+    "active_mean_mb": 1973.4967320261437,
+    "active_peak_mb": 1977.0,
+    "active_mean_delta_mb": 1084.0544243338359,
+    "active_peak_delta_mb": 1087.5576923076924
+  },
+  "process_ram": {
+    "method": "/proc/self/status VmRSS/VmHWM",
+    "baseline_rss_mb": 29.8515625,
+    "peak_rss_mb": 1668.60546875,
+    "peak_delta_mb": 1638.75390625,
+    "samples": [
+      {
+        "peak_rss_mb": 30.52734375,
+        "rss_mb": 29.8515625,
+        "phase": "pre_load_baseline"
+      },
+      {
+        "peak_rss_mb": 45.39453125,
+        "rss_mb": 45.39453125,
+        "phase": "cuda_context"
+      },
+      {
+        "peak_rss_mb": 1307.0859375,
+        "rss_mb": 1307.0859375,
+        "phase": "runner_loaded"
+      },
+      {
+        "peak_rss_mb": 1667.546875,
+        "rss_mb": 1667.546875,
+        "phase": "timing_complete"
+      },
+      {
+        "peak_rss_mb": 1668.60546875,
+        "rss_mb": 1668.60546875,
+        "phase": "active_complete"
+      }
+    ]
+  },
+  "cuda_memory": {
+    "available": true,
+    "method": "pycuda.driver.mem_get_info",
+    "context_baseline_used_mb": 1609.96484375,
+    "peak_used_mb": 2981.328125,
+    "peak_delta_from_context_baseline_mb": 1371.36328125,
+    "total_cuda_addressable_mb": 3963.8828125,
+    "samples": [
+      {
+        "phase": "context_baseline",
+        "free_mb": 2353.91796875,
+        "used_mb": 1609.96484375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "engine_loaded",
+        "free_mb": 1413.3984375,
+        "used_mb": 2550.484375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "timing_complete",
+        "free_mb": 983.3125,
+        "used_mb": 2980.5703125,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 982.5703125,
+        "used_mb": 2981.3125,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 982.5703125,
+        "used_mb": 2981.3125,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 982.5703125,
+        "used_mb": 2981.3125,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 982.5703125,
+        "used_mb": 2981.3125,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 982.5703125,
+        "used_mb": 2981.3125,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 982.5703125,
+        "used_mb": 2981.3125,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 982.5703125,
+        "used_mb": 2981.3125,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 982.5703125,
+        "used_mb": 2981.3125,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 982.5703125,
+        "used_mb": 2981.3125,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 982.5703125,
+        "used_mb": 2981.3125,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 982.5703125,
+        "used_mb": 2981.3125,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 982.5703125,
+        "used_mb": 2981.3125,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 982.5703125,
+        "used_mb": 2981.3125,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 982.5703125,
+        "used_mb": 2981.3125,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 982.5703125,
+        "used_mb": 2981.3125,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 982.5703125,
+        "used_mb": 2981.3125,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 982.5703125,
+        "used_mb": 2981.3125,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 982.5703125,
+        "used_mb": 2981.3125,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 982.5703125,
+        "used_mb": 2981.3125,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 982.5703125,
+        "used_mb": 2981.3125,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 982.5703125,
+        "used_mb": 2981.3125,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 982.5703125,
+        "used_mb": 2981.3125,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 982.5703125,
+        "used_mb": 2981.3125,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 982.5703125,
+        "used_mb": 2981.3125,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 982.5703125,
+        "used_mb": 2981.3125,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 982.5703125,
+        "used_mb": 2981.3125,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 982.5703125,
+        "used_mb": 2981.3125,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 982.5703125,
+        "used_mb": 2981.3125,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 982.5546875,
+        "used_mb": 2981.328125,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 982.5546875,
+        "used_mb": 2981.328125,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 982.5546875,
+        "used_mb": 2981.328125,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 982.5546875,
+        "used_mb": 2981.328125,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 982.5546875,
+        "used_mb": 2981.328125,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 982.5703125,
+        "used_mb": 2981.3125,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 982.5703125,
+        "used_mb": 2981.3125,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 982.5703125,
+        "used_mb": 2981.3125,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 982.5703125,
+        "used_mb": 2981.3125,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 982.5703125,
+        "used_mb": 2981.3125,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 982.5703125,
+        "used_mb": 2981.3125,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 982.5703125,
+        "used_mb": 2981.3125,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 982.5703125,
+        "used_mb": 2981.3125,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 982.69140625,
+        "used_mb": 2981.19140625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 982.69140625,
+        "used_mb": 2981.19140625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 982.69140625,
+        "used_mb": 2981.19140625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 982.69140625,
+        "used_mb": 2981.19140625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 982.69140625,
+        "used_mb": 2981.19140625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 982.69140625,
+        "used_mb": 2981.19140625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 982.69140625,
+        "used_mb": 2981.19140625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 982.69140625,
+        "used_mb": 2981.19140625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 982.5703125,
+        "used_mb": 2981.3125,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 982.5703125,
+        "used_mb": 2981.3125,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 982.5703125,
+        "used_mb": 2981.3125,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 982.5703125,
+        "used_mb": 2981.3125,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 982.5703125,
+        "used_mb": 2981.3125,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 982.5703125,
+        "used_mb": 2981.3125,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 982.5703125,
+        "used_mb": 2981.3125,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 985.5,
+        "used_mb": 2978.3828125,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 985.5,
+        "used_mb": 2978.3828125,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 985.5,
+        "used_mb": 2978.3828125,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 985.5,
+        "used_mb": 2978.3828125,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 985.86328125,
+        "used_mb": 2978.01953125,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 985.86328125,
+        "used_mb": 2978.01953125,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 985.86328125,
+        "used_mb": 2978.01953125,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 985.86328125,
+        "used_mb": 2978.01953125,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 985.86328125,
+        "used_mb": 2978.01953125,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 985.7421875,
+        "used_mb": 2978.140625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 985.62109375,
+        "used_mb": 2978.26171875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 985.62109375,
+        "used_mb": 2978.26171875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 985.62109375,
+        "used_mb": 2978.26171875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 985.62109375,
+        "used_mb": 2978.26171875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 985.62109375,
+        "used_mb": 2978.26171875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 985.62109375,
+        "used_mb": 2978.26171875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 985.62109375,
+        "used_mb": 2978.26171875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 985.62109375,
+        "used_mb": 2978.26171875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 985.62109375,
+        "used_mb": 2978.26171875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 985.62109375,
+        "used_mb": 2978.26171875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 985.62109375,
+        "used_mb": 2978.26171875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 985.62109375,
+        "used_mb": 2978.26171875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 985.62109375,
+        "used_mb": 2978.26171875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 985.62109375,
+        "used_mb": 2978.26171875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 985.62109375,
+        "used_mb": 2978.26171875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 985.62109375,
+        "used_mb": 2978.26171875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 985.62109375,
+        "used_mb": 2978.26171875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 985.62109375,
+        "used_mb": 2978.26171875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 985.62109375,
+        "used_mb": 2978.26171875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 985.62109375,
+        "used_mb": 2978.26171875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 985.62109375,
+        "used_mb": 2978.26171875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 985.62109375,
+        "used_mb": 2978.26171875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 985.62109375,
+        "used_mb": 2978.26171875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 985.62109375,
+        "used_mb": 2978.26171875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 985.62109375,
+        "used_mb": 2978.26171875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 985.62109375,
+        "used_mb": 2978.26171875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 985.62109375,
+        "used_mb": 2978.26171875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 985.62109375,
+        "used_mb": 2978.26171875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 985.62109375,
+        "used_mb": 2978.26171875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 985.62109375,
+        "used_mb": 2978.26171875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 985.62109375,
+        "used_mb": 2978.26171875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 985.62109375,
+        "used_mb": 2978.26171875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 985.62109375,
+        "used_mb": 2978.26171875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 985.62109375,
+        "used_mb": 2978.26171875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 985.62109375,
+        "used_mb": 2978.26171875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 985.62109375,
+        "used_mb": 2978.26171875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 985.62109375,
+        "used_mb": 2978.26171875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 985.62109375,
+        "used_mb": 2978.26171875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 985.62109375,
+        "used_mb": 2978.26171875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 985.62109375,
+        "used_mb": 2978.26171875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 985.5,
+        "used_mb": 2978.3828125,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 985.5,
+        "used_mb": 2978.3828125,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 985.5,
+        "used_mb": 2978.3828125,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 985.5,
+        "used_mb": 2978.3828125,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 985.5,
+        "used_mb": 2978.3828125,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 985.5,
+        "used_mb": 2978.3828125,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 985.5,
+        "used_mb": 2978.3828125,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 985.5,
+        "used_mb": 2978.3828125,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 985.37890625,
+        "used_mb": 2978.50390625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 985.37890625,
+        "used_mb": 2978.50390625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 985.37890625,
+        "used_mb": 2978.50390625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 985.37890625,
+        "used_mb": 2978.50390625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 985.37890625,
+        "used_mb": 2978.50390625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 985.37890625,
+        "used_mb": 2978.50390625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active_complete",
+        "free_mb": 985.31640625,
+        "used_mb": 2978.56640625,
+        "total_mb": 3963.8828125
+      }
+    ]
+  },
+  "utilization": {
+    "cpu_active_mean_percent": 97.9640522875817,
+    "gpu_active_mean_percent": 38.78431372549019,
+    "emc_active_mean_percent": 0.0
+  },
+  "temperatures": {
+    "ao": {
+      "mean_c": 59.72222222222222,
+      "max_c": 60.5
+    },
+    "cpu": {
+      "mean_c": 53.15359477124183,
+      "max_c": 54.0
+    },
+    "gpu": {
+      "mean_c": 47.63398692810458,
+      "max_c": 48.5
+    },
+    "pll": {
+      "mean_c": 49.55882352941177,
+      "max_c": 50.0
+    },
+    "pmic": {
+      "mean_c": 50.0,
+      "max_c": 50.0
+    },
+    "thermal": {
+      "mean_c": 50.4297385620915,
+      "max_c": 50.75
+    }
+  },
+  "power": {
+    "sensor_available": true,
+    "source": "PMLib INA3221 daemon",
+    "idle": {
+      "source": "PMLib INA3221 daemon",
+      "sample_count": 50,
+      "sample_period_mean_s": 0.10214538963473573,
+      "measured_duration_s": 5.005124092102051,
+      "rails": {
+        "POM_5V_IN": {
+          "mean_w": 2.4752199999999998,
+          "std_w": 0.17982505832058007,
+          "min_w": 2.409,
+          "max_w": 3.246,
+          "energy_j": 12.322258029222487
+        },
+        "POM_5V_GPU": {
+          "mean_w": 0.20381999999999997,
+          "std_w": 0.00043312815655414505,
+          "min_w": 0.202,
+          "max_w": 0.204,
+          "energy_j": 1.0202792242765426
+        },
+        "POM_5V_CPU": {
+          "mean_w": 0.5221399999999999,
+          "std_w": 0.11130858187938608,
+          "min_w": 0.489,
+          "max_w": 1.176,
+          "energy_j": 2.5714080725908284
+        }
+      }
+    },
+    "active": {
+      "source": "PMLib INA3221 daemon",
+      "sample_count": 150,
+      "sample_period_mean_s": 0.10067658456379935,
+      "measured_duration_s": 15.000811100006104,
+      "rails": {
+        "POM_5V_IN": {
+          "mean_w": 5.595746666666667,
+          "std_w": 0.3195511682900806,
+          "min_w": 3.327,
+          "max_w": 6.1,
+          "energy_j": 84.05875655198099
+        },
+        "POM_5V_GPU": {
+          "mean_w": 1.4746333333333335,
+          "std_w": 0.2100521337403857,
+          "min_w": 0.202,
+          "max_w": 1.834,
+          "energy_j": 22.184488099217415
+        },
+        "POM_5V_CPU": {
+          "mean_w": 2.22554,
+          "std_w": 0.09619027185739726,
+          "min_w": 1.217,
+          "max_w": 2.312,
+          "energy_j": 33.43494545483588
+        }
+      }
+    },
+    "idle_input_mean_w": 2.4752199999999998,
+    "active_input_mean_w": 5.595746666666667,
+    "dynamic_input_mean_w": 3.120526666666667,
+    "total_energy_per_inference_mj": 27.9057242760022,
+    "dynamic_energy_per_inference_mj": 15.561919068753214,
+    "gpu_rail_active_mean_w": 1.4746333333333335,
+    "gpu_rail_energy_per_inference_mj": 7.353926769653984,
+    "cpu_rail_active_mean_w": 2.22554,
+    "cpu_rail_energy_per_inference_mj": 11.098662842470937,
+    "throughput_per_input_watt": 35.83494160945178,
+    "note": "POM_5V_IN is total module input power. GPU/CPU rails are reported separately and are not added to it."
+  },
+  "tegrastats_sample_count": 468
+}

@@ -1,0 +1,13 @@
+{
+  "detector": "carla_projection_distance",
+  "scoring_method": "mahalanobis",
+  "k_neighbors": 5,
+  "threshold": 15.648967494964598,
+  "input_shape": [
+    101,
+    2
+  ],
+  "embedding_shape": [
+    512
+  ]
+}

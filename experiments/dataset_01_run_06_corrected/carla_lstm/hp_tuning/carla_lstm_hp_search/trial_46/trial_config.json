@@ -1,0 +1,24 @@
+{
+  "encoder_type": "lstm",
+  "latent_dim": 32,
+  "projection_dim": 512,
+  "encoder_filters": [
+    64,
+    128
+  ],
+  "encoder_units": [
+    512,
+    256,
+    128
+  ],
+  "kernel_size": 5,
+  "num_heads": 8,
+  "learning_rate": 0.0003,
+  "reconstruction_weight": 20.0,
+  "contrastive_weight": 1.0,
+  "temperature": 0.07,
+  "anomaly_ratio": 1.0,
+  "scoring_method": "knn",
+  "k_neighbors": 5,
+  "dropout_rate": 0.0
+}

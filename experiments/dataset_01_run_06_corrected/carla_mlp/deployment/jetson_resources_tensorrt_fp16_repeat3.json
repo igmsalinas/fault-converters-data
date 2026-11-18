@@ -1,0 +1,1825 @@
+{
+  "device": {
+    "hostname": "jetson",
+    "machine": "aarch64",
+    "platform": "Linux-4.9.337-tegra-aarch64-with-Ubuntu-18.04-bionic",
+    "python_version": "3.6.9",
+    "l4t_release": "# R32 (release), REVISION: 7.6, GCID: 38171779, BOARD: t210ref, EABI: aarch64, DATE: Tue Nov  5 07:46:14 UTC 2024",
+    "git_commit": "d1e5dad8c29b02aa8b71aeecdcece36746a10671",
+    "git_dirty": true,
+    "tensorrt_version": "8.2.1-1+cuda10.2"
+  },
+  "model_dir": "experiments/dataset_01_run_06_corrected/carla_mlp",
+  "backend": "tensorrt",
+  "precision": "fp16",
+  "model_file": "experiments/dataset_01_run_06_corrected/carla_mlp/deployment/model_fp16.engine",
+  "protocol": {
+    "batch_size": 1,
+    "warmup_runs": 15,
+    "timed_runs": 150,
+    "resource_sample_interval_ms": 100,
+    "idle_seconds": 5.0,
+    "sustained_active_seconds": 15.0
+  },
+  "timing": {
+    "latency_mean_ms": 0.6966607733567556,
+    "latency_std_ms": 0.1310643638436221,
+    "latency_min_ms": 0.5970839858055115,
+    "latency_max_ms": 2.0165629386901855,
+    "timing_source": "cuda_event",
+    "timing_scope": "tensorrt_engine_execution",
+    "end_to_end_latency_mean_ms": 1.1303855798905715,
+    "end_to_end_latency_std_ms": 0.2992295162509608,
+    "end_to_end_latency_min_ms": 0.9704900003271177,
+    "end_to_end_latency_max_ms": 3.8153419955051504,
+    "timing_batch_size": 1,
+    "timing_warmup_runs": 15,
+    "timing_runs": 150
+  },
+  "detector_timing": {
+    "latency_mean_ms": 2.292625606690611,
+    "latency_std_ms": 0.3949104488674156,
+    "latency_min_ms": 2.143846999388188,
+    "latency_max_ms": 4.967032997228671,
+    "timing_source": "perf_counter",
+    "timing_scope": "synchronous_model_call",
+    "end_to_end_latency_mean_ms": 2.292625606690611,
+    "end_to_end_latency_std_ms": 0.3949104488674156,
+    "end_to_end_latency_min_ms": 2.143846999388188,
+    "end_to_end_latency_max_ms": 4.967032997228671,
+    "timing_batch_size": 1,
+    "timing_warmup_runs": 15,
+    "timing_runs": 150
+  },
+  "sustained_throughput_inferences_per_second": 442.61373655543395,
+  "sustained_inference_count": 6640,
+  "system_shared_memory": {
+    "idle_mean_mb": 895.2549019607843,
+    "active_mean_mb": 1764.4276315789473,
+    "active_peak_mb": 1770.0,
+    "active_mean_delta_mb": 869.172729618163,
+    "active_peak_delta_mb": 874.7450980392157
+  },
+  "process_ram": {
+    "method": "/proc/self/status VmRSS/VmHWM",
+    "baseline_rss_mb": 30.15234375,
+    "peak_rss_mb": 1317.67578125,
+    "peak_delta_mb": 1287.5234375,
+    "samples": [
+      {
+        "peak_rss_mb": 30.55078125,
+        "rss_mb": 30.15234375,
+        "phase": "pre_load_baseline"
+      },
+      {
+        "peak_rss_mb": 47.5390625,
+        "rss_mb": 47.5390625,
+        "phase": "cuda_context"
+      },
+      {
+        "peak_rss_mb": 1313.8359375,
+        "rss_mb": 1313.8359375,
+        "phase": "runner_loaded"
+      },
+      {
+        "peak_rss_mb": 1316.5,
+        "rss_mb": 1316.5,
+        "phase": "timing_complete"
+      },
+      {
+        "peak_rss_mb": 1317.67578125,
+        "rss_mb": 1317.67578125,
+        "phase": "active_complete"
+      }
+    ]
+  },
+  "cuda_memory": {
+    "available": true,
+    "method": "pycuda.driver.mem_get_info",
+    "context_baseline_used_mb": 1753.078125,
+    "peak_used_mb": 2622.6640625,
+    "peak_delta_from_context_baseline_mb": 869.5859375,
+    "total_cuda_addressable_mb": 3963.8828125,
+    "samples": [
+      {
+        "phase": "context_baseline",
+        "free_mb": 2210.8046875,
+        "used_mb": 1753.078125,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "engine_loaded",
+        "free_mb": 1342.65625,
+        "used_mb": 2621.2265625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "timing_complete",
+        "free_mb": 1342.65625,
+        "used_mb": 2621.2265625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.33984375,
+        "used_mb": 2622.54296875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.33984375,
+        "used_mb": 2622.54296875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.33984375,
+        "used_mb": 2622.54296875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.33984375,
+        "used_mb": 2622.54296875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.33984375,
+        "used_mb": 2622.54296875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.33984375,
+        "used_mb": 2622.54296875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.21875,
+        "used_mb": 2622.6640625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.21875,
+        "used_mb": 2622.6640625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.38671875,
+        "used_mb": 2622.49609375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.38671875,
+        "used_mb": 2622.49609375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.38671875,
+        "used_mb": 2622.49609375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.38671875,
+        "used_mb": 2622.49609375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.38671875,
+        "used_mb": 2622.49609375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.38671875,
+        "used_mb": 2622.49609375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.38671875,
+        "used_mb": 2622.49609375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.38671875,
+        "used_mb": 2622.49609375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.38671875,
+        "used_mb": 2622.49609375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.38671875,
+        "used_mb": 2622.49609375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.38671875,
+        "used_mb": 2622.49609375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.38671875,
+        "used_mb": 2622.49609375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.38671875,
+        "used_mb": 2622.49609375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.38671875,
+        "used_mb": 2622.49609375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.38671875,
+        "used_mb": 2622.49609375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.38671875,
+        "used_mb": 2622.49609375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.38671875,
+        "used_mb": 2622.49609375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.38671875,
+        "used_mb": 2622.49609375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.38671875,
+        "used_mb": 2622.49609375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.38671875,
+        "used_mb": 2622.49609375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.38671875,
+        "used_mb": 2622.49609375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.38671875,
+        "used_mb": 2622.49609375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.38671875,
+        "used_mb": 2622.49609375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.38671875,
+        "used_mb": 2622.49609375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.38671875,
+        "used_mb": 2622.49609375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.38671875,
+        "used_mb": 2622.49609375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.38671875,
+        "used_mb": 2622.49609375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.38671875,
+        "used_mb": 2622.49609375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.38671875,
+        "used_mb": 2622.49609375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.38671875,
+        "used_mb": 2622.49609375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.38671875,
+        "used_mb": 2622.49609375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.26171875,
+        "used_mb": 2622.62109375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.26171875,
+        "used_mb": 2622.62109375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.26171875,
+        "used_mb": 2622.62109375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.26171875,
+        "used_mb": 2622.62109375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.35546875,
+        "used_mb": 2622.52734375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.35546875,
+        "used_mb": 2622.52734375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.35546875,
+        "used_mb": 2622.52734375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.35546875,
+        "used_mb": 2622.52734375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.35546875,
+        "used_mb": 2622.52734375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.35546875,
+        "used_mb": 2622.52734375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.35546875,
+        "used_mb": 2622.52734375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.35546875,
+        "used_mb": 2622.52734375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.35546875,
+        "used_mb": 2622.52734375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.35546875,
+        "used_mb": 2622.52734375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.35546875,
+        "used_mb": 2622.52734375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.35546875,
+        "used_mb": 2622.52734375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.35546875,
+        "used_mb": 2622.52734375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.35546875,
+        "used_mb": 2622.52734375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.35546875,
+        "used_mb": 2622.52734375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.35546875,
+        "used_mb": 2622.52734375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.35546875,
+        "used_mb": 2622.52734375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.35546875,
+        "used_mb": 2622.52734375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.35546875,
+        "used_mb": 2622.52734375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.38671875,
+        "used_mb": 2622.49609375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.38671875,
+        "used_mb": 2622.49609375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.38671875,
+        "used_mb": 2622.49609375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.38671875,
+        "used_mb": 2622.49609375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.38671875,
+        "used_mb": 2622.49609375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.38671875,
+        "used_mb": 2622.49609375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.38671875,
+        "used_mb": 2622.49609375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.38671875,
+        "used_mb": 2622.49609375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.38671875,
+        "used_mb": 2622.49609375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.38671875,
+        "used_mb": 2622.49609375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.38671875,
+        "used_mb": 2622.49609375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.38671875,
+        "used_mb": 2622.49609375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.38671875,
+        "used_mb": 2622.49609375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.5078125,
+        "used_mb": 2622.375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.5078125,
+        "used_mb": 2622.375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.62890625,
+        "used_mb": 2622.25390625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.62890625,
+        "used_mb": 2622.25390625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.75,
+        "used_mb": 2622.1328125,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.87109375,
+        "used_mb": 2622.01171875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.87109375,
+        "used_mb": 2622.01171875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.87109375,
+        "used_mb": 2622.01171875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.9921875,
+        "used_mb": 2621.890625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1341.9921875,
+        "used_mb": 2621.890625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1342.59765625,
+        "used_mb": 2621.28515625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1342.59765625,
+        "used_mb": 2621.28515625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1342.71875,
+        "used_mb": 2621.1640625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1342.83984375,
+        "used_mb": 2621.04296875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1342.9609375,
+        "used_mb": 2620.921875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1342.9609375,
+        "used_mb": 2620.921875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1343.203125,
+        "used_mb": 2620.6796875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1343.203125,
+        "used_mb": 2620.6796875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1343.203125,
+        "used_mb": 2620.6796875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1343.203125,
+        "used_mb": 2620.6796875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1343.32421875,
+        "used_mb": 2620.55859375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1343.9296875,
+        "used_mb": 2619.953125,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1344.05078125,
+        "used_mb": 2619.83203125,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1344.171875,
+        "used_mb": 2619.7109375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1344.29296875,
+        "used_mb": 2619.58984375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1344.29296875,
+        "used_mb": 2619.58984375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1344.4140625,
+        "used_mb": 2619.46875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1344.4140625,
+        "used_mb": 2619.46875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1344.53515625,
+        "used_mb": 2619.34765625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1344.53515625,
+        "used_mb": 2619.34765625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1344.53515625,
+        "used_mb": 2619.34765625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1344.65625,
+        "used_mb": 2619.2265625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1344.65625,
+        "used_mb": 2619.2265625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1345.26171875,
+        "used_mb": 2618.62109375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1345.3828125,
+        "used_mb": 2618.5,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1345.3828125,
+        "used_mb": 2618.5,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1345.3828125,
+        "used_mb": 2618.5,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1345.50390625,
+        "used_mb": 2618.37890625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1345.625,
+        "used_mb": 2618.2578125,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1345.625,
+        "used_mb": 2618.2578125,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1345.74609375,
+        "used_mb": 2618.13671875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1345.8671875,
+        "used_mb": 2618.015625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1345.8671875,
+        "used_mb": 2618.015625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1345.98828125,
+        "used_mb": 2617.89453125,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1346.59375,
+        "used_mb": 2617.2890625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1346.71484375,
+        "used_mb": 2617.16796875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1346.71484375,
+        "used_mb": 2617.16796875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1346.8359375,
+        "used_mb": 2617.046875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1346.95703125,
+        "used_mb": 2616.92578125,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1347.078125,
+        "used_mb": 2616.8046875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1347.078125,
+        "used_mb": 2616.8046875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1347.078125,
+        "used_mb": 2616.8046875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1347.19921875,
+        "used_mb": 2616.68359375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1347.8046875,
+        "used_mb": 2616.078125,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1347.8046875,
+        "used_mb": 2616.078125,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1347.92578125,
+        "used_mb": 2615.95703125,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1352.16015625,
+        "used_mb": 2611.72265625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.5546875,
+        "used_mb": 2612.328125,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.5546875,
+        "used_mb": 2612.328125,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.5546875,
+        "used_mb": 2612.328125,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.43359375,
+        "used_mb": 2612.44921875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.43359375,
+        "used_mb": 2612.44921875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.43359375,
+        "used_mb": 2612.44921875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.43359375,
+        "used_mb": 2612.44921875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.43359375,
+        "used_mb": 2612.44921875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.43359375,
+        "used_mb": 2612.44921875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.43359375,
+        "used_mb": 2612.44921875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.43359375,
+        "used_mb": 2612.44921875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.43359375,
+        "used_mb": 2612.44921875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.43359375,
+        "used_mb": 2612.44921875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.43359375,
+        "used_mb": 2612.44921875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.43359375,
+        "used_mb": 2612.44921875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.43359375,
+        "used_mb": 2612.44921875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.43359375,
+        "used_mb": 2612.44921875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.43359375,
+        "used_mb": 2612.44921875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.46484375,
+        "used_mb": 2612.41796875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1350.46484375,
+        "used_mb": 2613.41796875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1350.5859375,
+        "used_mb": 2613.296875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1350.828125,
+        "used_mb": 2613.0546875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1350.94921875,
+        "used_mb": 2612.93359375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1350.94921875,
+        "used_mb": 2612.93359375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1350.94921875,
+        "used_mb": 2612.93359375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1350.94921875,
+        "used_mb": 2612.93359375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1350.94921875,
+        "used_mb": 2612.93359375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1350.94921875,
+        "used_mb": 2612.93359375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1350.94921875,
+        "used_mb": 2612.93359375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1350.94921875,
+        "used_mb": 2612.93359375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1350.828125,
+        "used_mb": 2613.0546875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1350.828125,
+        "used_mb": 2613.0546875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1350.828125,
+        "used_mb": 2613.0546875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1350.828125,
+        "used_mb": 2613.0546875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1350.828125,
+        "used_mb": 2613.0546875,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1350.9453125,
+        "used_mb": 2612.9375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.09375,
+        "used_mb": 2612.7890625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.09375,
+        "used_mb": 2612.7890625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.09375,
+        "used_mb": 2612.7890625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.09375,
+        "used_mb": 2612.7890625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.09375,
+        "used_mb": 2612.7890625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.09375,
+        "used_mb": 2612.7890625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.09375,
+        "used_mb": 2612.7890625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.09375,
+        "used_mb": 2612.7890625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.09375,
+        "used_mb": 2612.7890625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.09375,
+        "used_mb": 2612.7890625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.09375,
+        "used_mb": 2612.7890625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.09375,
+        "used_mb": 2612.7890625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.09375,
+        "used_mb": 2612.7890625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.09375,
+        "used_mb": 2612.7890625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.09375,
+        "used_mb": 2612.7890625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.09375,
+        "used_mb": 2612.7890625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.09375,
+        "used_mb": 2612.7890625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.09375,
+        "used_mb": 2612.7890625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.09375,
+        "used_mb": 2612.7890625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.09375,
+        "used_mb": 2612.7890625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.09375,
+        "used_mb": 2612.7890625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.09375,
+        "used_mb": 2612.7890625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.09375,
+        "used_mb": 2612.7890625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.09375,
+        "used_mb": 2612.7890625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.09375,
+        "used_mb": 2612.7890625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.09375,
+        "used_mb": 2612.7890625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.09375,
+        "used_mb": 2612.7890625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.09375,
+        "used_mb": 2612.7890625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.09375,
+        "used_mb": 2612.7890625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.09375,
+        "used_mb": 2612.7890625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.09375,
+        "used_mb": 2612.7890625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.09375,
+        "used_mb": 2612.7890625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.09375,
+        "used_mb": 2612.7890625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.09375,
+        "used_mb": 2612.7890625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.09375,
+        "used_mb": 2612.7890625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.09375,
+        "used_mb": 2612.7890625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.09375,
+        "used_mb": 2612.7890625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.09375,
+        "used_mb": 2612.7890625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.09375,
+        "used_mb": 2612.7890625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.09375,
+        "used_mb": 2612.7890625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.09375,
+        "used_mb": 2612.7890625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.09375,
+        "used_mb": 2612.7890625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.09375,
+        "used_mb": 2612.7890625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.09375,
+        "used_mb": 2612.7890625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.09375,
+        "used_mb": 2612.7890625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.09375,
+        "used_mb": 2612.7890625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.09375,
+        "used_mb": 2612.7890625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.09375,
+        "used_mb": 2612.7890625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.09375,
+        "used_mb": 2612.7890625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.09375,
+        "used_mb": 2612.7890625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.09375,
+        "used_mb": 2612.7890625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.09375,
+        "used_mb": 2612.7890625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.09375,
+        "used_mb": 2612.7890625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.09375,
+        "used_mb": 2612.7890625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.09375,
+        "used_mb": 2612.7890625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.09375,
+        "used_mb": 2612.7890625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.09375,
+        "used_mb": 2612.7890625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.09375,
+        "used_mb": 2612.7890625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.09375,
+        "used_mb": 2612.7890625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.09375,
+        "used_mb": 2612.7890625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.09375,
+        "used_mb": 2612.7890625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.09375,
+        "used_mb": 2612.7890625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.09375,
+        "used_mb": 2612.7890625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.09375,
+        "used_mb": 2612.7890625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.09375,
+        "used_mb": 2612.7890625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.09375,
+        "used_mb": 2612.7890625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.09375,
+        "used_mb": 2612.7890625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.09375,
+        "used_mb": 2612.7890625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.09375,
+        "used_mb": 2612.7890625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.09375,
+        "used_mb": 2612.7890625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.09375,
+        "used_mb": 2612.7890625,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.109375,
+        "used_mb": 2612.7734375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.109375,
+        "used_mb": 2612.7734375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.109375,
+        "used_mb": 2612.7734375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.109375,
+        "used_mb": 2612.7734375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.109375,
+        "used_mb": 2612.7734375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.109375,
+        "used_mb": 2612.7734375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.109375,
+        "used_mb": 2612.7734375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.109375,
+        "used_mb": 2612.7734375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.109375,
+        "used_mb": 2612.7734375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.109375,
+        "used_mb": 2612.7734375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.109375,
+        "used_mb": 2612.7734375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.109375,
+        "used_mb": 2612.7734375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.109375,
+        "used_mb": 2612.7734375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.109375,
+        "used_mb": 2612.7734375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.109375,
+        "used_mb": 2612.7734375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.109375,
+        "used_mb": 2612.7734375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.109375,
+        "used_mb": 2612.7734375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.109375,
+        "used_mb": 2612.7734375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.109375,
+        "used_mb": 2612.7734375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.109375,
+        "used_mb": 2612.7734375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.109375,
+        "used_mb": 2612.7734375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.109375,
+        "used_mb": 2612.7734375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.109375,
+        "used_mb": 2612.7734375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.109375,
+        "used_mb": 2612.7734375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.109375,
+        "used_mb": 2612.7734375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active",
+        "free_mb": 1351.109375,
+        "used_mb": 2612.7734375,
+        "total_mb": 3963.8828125
+      },
+      {
+        "phase": "active_complete",
+        "free_mb": 1350.95703125,
+        "used_mb": 2612.92578125,
+        "total_mb": 3963.8828125
+      }
+    ]
+  },
+  "utilization": {
+    "cpu_active_mean_percent": 98.16282894736842,
+    "gpu_active_mean_percent": 3.539473684210526,
+    "emc_active_mean_percent": 0.0
+  },
+  "temperatures": {
+    "ao": {
+      "mean_c": 58.19736842105263,
+      "max_c": 58.5
+    },
+    "cpu": {
+      "mean_c": 51.651315789473685,
+      "max_c": 52.0
+    },
+    "gpu": {
+      "mean_c": 46.5953947368421,
+      "max_c": 47.0
+    },
+    "pll": {
+      "mean_c": 48.75657894736842,
+      "max_c": 49.0
+    },
+    "pmic": {
+      "mean_c": 50.0,
+      "max_c": 50.0
+    },
+    "thermal": {
+      "mean_c": 49.0328947368421,
+      "max_c": 49.5
+    }
+  },
+  "power": {
+    "sensor_available": true,
+    "source": "PMLib INA3221 daemon",
+    "idle": {
+      "source": "PMLib INA3221 daemon",
+      "sample_count": 50,
+      "sample_period_mean_s": 0.10214522420143594,
+      "measured_duration_s": 5.005115985870361,
+      "rails": {
+        "POM_5V_IN": {
+          "mean_w": 2.42556,
+          "std_w": 0.13024149262043955,
+          "min_w": 2.368,
+          "max_w": 3.21,
+          "energy_j": 12.103085437774658
+        },
+        "POM_5V_GPU": {
+          "mean_w": 0.20396,
+          "std_w": 0.000195959179422649,
+          "min_w": 0.203,
+          "max_w": 0.204,
+          "energy_j": 1.0208904433250428
+        },
+        "POM_5V_CPU": {
+          "mean_w": 0.5133,
+          "std_w": 0.11330723719162868,
+          "min_w": 0.489,
+          "max_w": 1.217,
+          "energy_j": 2.5344272780418393
+        }
+      }
+    },
+    "active": {
+      "source": "PMLib INA3221 daemon",
+      "sample_count": 150,
+      "sample_period_mean_s": 0.10068400754224534,
+      "measured_duration_s": 15.001917123794556,
+      "rails": {
+        "POM_5V_IN": {
+          "mean_w": 4.789406666666666,
+          "std_w": 0.17096031105363485,
+          "min_w": 3.286,
+          "max_w": 4.863,
+          "energy_j": 71.92427524614334
+        },
+        "POM_5V_GPU": {
+          "mean_w": 0.6365866666666665,
+          "std_w": 0.0509373715676636,
+          "min_w": 0.202,
+          "max_w": 0.643,
+          "energy_j": 9.571575516223906
+        },
+        "POM_5V_CPU": {
+          "mean_w": 2.195420000000001,
+          "std_w": 0.10801328745421399,
+          "min_w": 1.217,
+          "max_w": 2.25,
+          "energy_j": 32.98403054118157
+        }
+      }
+    },
+    "idle_input_mean_w": 2.42556,
+    "active_input_mean_w": 4.789406666666666,
+    "dynamic_input_mean_w": 2.3638466666666664,
+    "total_energy_per_inference_mj": 10.820736617754813,
+    "dynamic_energy_per_inference_mj": 5.340653647722053,
+    "gpu_rail_active_mean_w": 0.6365866666666665,
+    "gpu_rail_energy_per_inference_mj": 1.4382442615107112,
+    "cpu_rail_active_mean_w": 2.195420000000001,
+    "cpu_rail_energy_per_inference_mj": 4.960126219953053,
+    "throughput_per_input_watt": 92.41515021807169,
+    "note": "POM_5V_IN is total module input power. GPU/CPU rails are reported separately and are not added to it."
+  },
+  "tegrastats_sample_count": 344
+}

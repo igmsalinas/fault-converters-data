@@ -1,0 +1,158 @@
+{
+  "device": {
+    "hostname": "TorredeNacho",
+    "machine": "x86_64",
+    "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39"
+  },
+  "model_dir": "experiments/dataset_01_run_06_corrected/carla_gru",
+  "checkpoint_selection": "checkpoints/best",
+  "threshold": 7.214441466331481,
+  "detector_parameter_count": 1429920,
+  "detector_weight_tensor_count": 16,
+  "detector_loaded_weights_sha256": "9a2314e870e513a4228ea62fe354fcfb8da1014f3a4ab6e65a801783adca238d",
+  "detector_weight_shapes": [
+    [
+      2,
+      1536
+    ],
+    [
+      512,
+      1536
+    ],
+    [
+      2,
+      1536
+    ],
+    [
+      512,
+      768
+    ],
+    [
+      256,
+      768
+    ],
+    [
+      2,
+      768
+    ],
+    [
+      256,
+      32
+    ],
+    [
+      32
+    ],
+    [
+      32,
+      128
+    ],
+    [
+      128
+    ],
+    [
+      128
+    ],
+    [
+      128
+    ],
+    [
+      128
+    ],
+    [
+      128
+    ],
+    [
+      128,
+      256
+    ],
+    [
+      256
+    ]
+  ],
+  "detector_loaded_weights_multiset_sha256": "320f2c7e5f128580328621e45f91f3f088a00b0763b349de15fcf6d3097c28f0",
+  "detector_weight_tensor_sha256": [
+    "62bd343f22983f96cb93e468230964cb60d89891c1e8c3295860ffaba836d16c",
+    "4908923d7f437aa1ae11926766f5b81a90aa6dea4f53fc1ca00d34626b4bee57",
+    "8aaae6c23e71672d8c807d249c14e9b503b30ffe230f3844aa476719489403bc",
+    "a730d39d42f1bdfe6557c01cd02f9feb273b6678ddd831eaac9e83f46aaca8af",
+    "4eadd1b3393610dd27cdfe92ef896c7708bcb4e133ef54cb26fed6095ca8a636",
+    "d4b17e97b8ea29fe0c470e92e3b2e96f278359f67cf192b92097f3031856753e",
+    "c3bee3e055192ae6054f32b28067171a86ebdef1fa614f89208f25d9760c1e06",
+    "7af0a22d953b63b3f3c83ed611104e9e5a98fc4ed741cffb98be38aeb8436ffe",
+    "5395d0716dc24ab658f76c08cb5f1bc1f883f0d7b47c7ca555196e8f8d2a13ea",
+    "3a2449f07250ac7bef5b33edaf5de1ad0b843fff68c72347887aa6ca77c1a746",
+    "95375a26b22fc26c179da70fa6d608641338414ed4a121d6561e9331876eff9c",
+    "d031c211f4ab4e91800bfabe7d27e9dec8e5819bc29d26a98ff529f75a9c6963",
+    "6687c5dab49d0948e0570d1e657160bc268101bb117bb3d2362f730379ca231b",
+    "43b0941591818e1b60892d1b32aa246b891f29e3e8151fbf7d4dec233d95a6bd",
+    "cf6ae5cf6f69e5b454c9d1c68e52f31210ab0bf6c8f04290cb9161d4096b14d3",
+    "886f97597a4ee581f0f2fc6b5d09c0e7c5f972c11bbcf060063696bb2f53dbf0"
+  ],
+  "zero_probe_embedding_sha256": "7942ebef55d4de6075c36bb465534e0208af37b90f1d24680bce03cf064f3e3e",
+  "reference_embedding_shape": [
+    2419,
+    256
+  ],
+  "reference_embeddings_sha256": "d1f3254decee1cc2ef36e410865e81fe5745a3b60abbfe610569094e1a288020",
+  "scoring_method": "mahalanobis",
+  "k_neighbors": 5,
+  "tracked_files": [
+    {
+      "path": "checkpoints/best/autoencoder.weights.h5",
+      "size_bytes": 11254232,
+      "sha256": "7d9625d3c1fe59832604767b6b1621d6d855a48a92c430c5dcf3d8c6def6ea9d"
+    },
+    {
+      "path": "checkpoints/best/autoencoder.weights.npz",
+      "size_bytes": 11201240,
+      "sha256": "b8f09f038d44d4565a0fcf15613cea6c2a8f509ab809bca56e0e23610f935903"
+    },
+    {
+      "path": "checkpoints/best/encoder.weights.npz",
+      "size_bytes": 5572080,
+      "sha256": "446fe3449b9f91471c91dc377f1b2c600a3ddbf2fa63ad8a3e9fbbd189a4050b"
+    },
+    {
+      "path": "checkpoints/best/decoder.weights.npz",
+      "size_bytes": 5629368,
+      "sha256": "fe528960143b75324010282cf268b8a51945e75be29cba50fbee9857e5ace17a"
+    },
+    {
+      "path": "checkpoints/best/projection_head.weights.npz",
+      "size_bytes": 155248,
+      "sha256": "6a73aaab93ee2bc8f6bc8bff20145dfd0b5ac6772fc03b157fa09f172319f48c"
+    },
+    {
+      "path": "checkpoints/best/reference_embeddings.npy",
+      "size_bytes": 2477184,
+      "sha256": "42b1974057b065a7011c1ddb9d142f0c9605929998c630458796500befce009a"
+    },
+    {
+      "path": "model_config.json",
+      "size_bytes": 485,
+      "sha256": "66a314d8513d727de8d080bf2288f75be22b32b24f2bd853900679a70783e0c2"
+    },
+    {
+      "path": "threshold.json",
+      "size_bytes": 293,
+      "sha256": "af5681d1f8af281463c11c88c20e79f5cbe1fe874e83b5fafa45ed2344d045d0"
+    },
+    {
+      "path": "preprocessor/config.json",
+      "size_bytes": 95,
+      "sha256": "35a39c02147122b3d2caca1b8c5e29b5677622046e088a097a50b7cdfa7711c1"
+    },
+    {
+      "path": "preprocessor/scaler.json",
+      "size_bytes": 172,
+      "sha256": "c6f43f0133cc4eb7d4ab0c99b23d2368bf0ccb9d649cc5674bb1b15fc7b69bea"
+    }
+  ],
+  "cross_host_comparisons": [
+    {
+      "report": "model_provenance_jetson.json",
+      "matched": true,
+      "mismatched_fields": []
+    }
+  ]
+}

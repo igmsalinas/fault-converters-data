@@ -1,0 +1,141 @@
+&&&& RUNNING TensorRT.trtexec [TensorRT v8201] # /usr/src/tensorrt/bin/trtexec --onnx=experiments/dataset_01_run_06_corrected/carla_mlp/deployment/model.onnx --saveEngine=experiments/dataset_01_run_06_corrected/carla_mlp/deployment/model_fp16.engine.building.24722 --workspace=512 --buildOnly --profilingVerbosity=detailed --dumpLayerInfo --exportLayerInfo=experiments/dataset_01_run_06_corrected/carla_mlp/deployment/model_fp16.engine.layers.json.building.24722 --fp16
+[08/25/2026-13:14:37] [I] === Model Options ===
+[08/25/2026-13:14:37] [I] Format: ONNX
+[08/25/2026-13:14:37] [I] Model: experiments/dataset_01_run_06_corrected/carla_mlp/deployment/model.onnx
+[08/25/2026-13:14:37] [I] Output:
+[08/25/2026-13:14:37] [I] === Build Options ===
+[08/25/2026-13:14:37] [I] Max batch: explicit batch
+[08/25/2026-13:14:37] [I] Workspace: 512 MiB
+[08/25/2026-13:14:37] [I] minTiming: 1
+[08/25/2026-13:14:37] [I] avgTiming: 8
+[08/25/2026-13:14:37] [I] Precision: FP32+FP16
+[08/25/2026-13:14:37] [I] Calibration: 
+[08/25/2026-13:14:37] [I] Refit: Disabled
+[08/25/2026-13:14:37] [I] Sparsity: Disabled
+[08/25/2026-13:14:37] [I] Safe mode: Disabled
+[08/25/2026-13:14:37] [I] DirectIO mode: Disabled
+[08/25/2026-13:14:37] [I] Restricted mode: Disabled
+[08/25/2026-13:14:37] [I] Save engine: experiments/dataset_01_run_06_corrected/carla_mlp/deployment/model_fp16.engine.building.24722
+[08/25/2026-13:14:37] [I] Load engine: 
+[08/25/2026-13:14:37] [I] Profiling verbosity: 2
+[08/25/2026-13:14:37] [I] Tactic sources: Using default tactic sources
+[08/25/2026-13:14:37] [I] timingCacheMode: local
+[08/25/2026-13:14:37] [I] timingCacheFile: 
+[08/25/2026-13:14:37] [I] Input(s)s format: fp32:CHW
+[08/25/2026-13:14:37] [I] Output(s)s format: fp32:CHW
+[08/25/2026-13:14:37] [I] Input build shapes: model
+[08/25/2026-13:14:37] [I] Input calibration shapes: model
+[08/25/2026-13:14:37] [I] === System Options ===
+[08/25/2026-13:14:37] [I] Device: 0
+[08/25/2026-13:14:37] [I] DLACore: 
+[08/25/2026-13:14:37] [I] Plugins:
+[08/25/2026-13:14:37] [I] === Inference Options ===
+[08/25/2026-13:14:37] [I] Batch: Explicit
+[08/25/2026-13:14:37] [I] Input inference shapes: model
+[08/25/2026-13:14:37] [I] Iterations: 10
+[08/25/2026-13:14:37] [I] Duration: 3s (+ 200ms warm up)
+[08/25/2026-13:14:37] [I] Sleep time: 0ms
+[08/25/2026-13:14:37] [I] Idle time: 0ms
+[08/25/2026-13:14:37] [I] Streams: 1
+[08/25/2026-13:14:37] [I] ExposeDMA: Disabled
+[08/25/2026-13:14:37] [I] Data transfers: Enabled
+[08/25/2026-13:14:37] [I] Spin-wait: Disabled
+[08/25/2026-13:14:37] [I] Multithreading: Disabled
+[08/25/2026-13:14:37] [I] CUDA Graph: Disabled
+[08/25/2026-13:14:37] [I] Separate profiling: Disabled
+[08/25/2026-13:14:37] [I] Time Deserialize: Disabled
+[08/25/2026-13:14:37] [I] Time Refit: Disabled
+[08/25/2026-13:14:37] [I] Skip inference: Enabled
+[08/25/2026-13:14:37] [I] Inputs:
+[08/25/2026-13:14:37] [I] === Reporting Options ===
+[08/25/2026-13:14:37] [I] Verbose: Disabled
+[08/25/2026-13:14:37] [I] Averages: 10 inferences
+[08/25/2026-13:14:37] [I] Percentile: 99
+[08/25/2026-13:14:37] [I] Dump refittable layers:Disabled
+[08/25/2026-13:14:37] [I] Dump output: Disabled
+[08/25/2026-13:14:37] [I] Profile: Disabled
+[08/25/2026-13:14:37] [I] Export timing to JSON file: 
+[08/25/2026-13:14:37] [I] Export output to JSON file: 
+[08/25/2026-13:14:37] [I] Export profile to JSON file: 
+[08/25/2026-13:14:37] [I] 
+[08/25/2026-13:14:37] [I] === Device Information ===
+[08/25/2026-13:14:37] [I] Selected Device: NVIDIA Tegra X1
+[08/25/2026-13:14:37] [I] Compute Capability: 5.3
+[08/25/2026-13:14:37] [I] SMs: 1
+[08/25/2026-13:14:37] [I] Compute Clock Rate: 0.9216 GHz
+[08/25/2026-13:14:37] [I] Device Global Memory: 3963 MiB
+[08/25/2026-13:14:37] [I] Shared Memory per SM: 64 KiB
+[08/25/2026-13:14:37] [I] Memory Bus Width: 64 bits (ECC disabled)
+[08/25/2026-13:14:37] [I] Memory Clock Rate: 0.01275 GHz
+[08/25/2026-13:14:37] [I] 
+[08/25/2026-13:14:37] [I] TensorRT version: 8.2.1
+[08/25/2026-13:14:39] [I] [TRT] [MemUsageChange] Init CUDA: CPU +229, GPU +0, now: CPU 248, GPU 2673 (MiB)
+[08/25/2026-13:14:39] [I] [TRT] [MemUsageSnapshot] Begin constructing builder kernel library: CPU 248 MiB, GPU 2673 MiB
+[08/25/2026-13:14:39] [I] [TRT] [MemUsageSnapshot] End constructing builder kernel library: CPU 278 MiB, GPU 2701 MiB
+[08/25/2026-13:14:39] [I] Start parsing network model
+[08/25/2026-13:14:39] [I] [TRT] ----------------------------------------------------------------
+[08/25/2026-13:14:39] [I] [TRT] Input filename:   experiments/dataset_01_run_06_corrected/carla_mlp/deployment/model.onnx
+[08/25/2026-13:14:39] [I] [TRT] ONNX IR version:  0.0.7
+[08/25/2026-13:14:39] [I] [TRT] Opset version:    13
+[08/25/2026-13:14:39] [I] [TRT] Producer name:    tf2onnx
+[08/25/2026-13:14:39] [I] [TRT] Producer version: 1.12.1 b6d590
+[08/25/2026-13:14:39] [I] [TRT] Domain:           
+[08/25/2026-13:14:39] [I] [TRT] Model version:    0
+[08/25/2026-13:14:39] [I] [TRT] Doc string:       
+[08/25/2026-13:14:39] [I] [TRT] ----------------------------------------------------------------
+[08/25/2026-13:14:39] [W] [TRT] onnx2trt_utils.cpp:366: Your ONNX model has been generated with INT64 weights, while TensorRT does not natively support INT64. Attempting to cast down to INT32.
+[08/25/2026-13:14:39] [W] [TRT] ShapedWeights.cpp:173: Weights carla_embedding_detector/encoder/enc_mlp_0/MatMul/ReadVariableOp:0 has been transposed with permutation of (1, 0)! If you plan on overwriting the weights with the Refitter API, the new weights must be pre-transposed.
+[08/25/2026-13:14:39] [W] [TRT] ShapedWeights.cpp:173: Weights carla_embedding_detector/encoder/enc_mlp_1/MatMul/ReadVariableOp:0 has been transposed with permutation of (1, 0)! If you plan on overwriting the weights with the Refitter API, the new weights must be pre-transposed.
+[08/25/2026-13:14:39] [W] [TRT] ShapedWeights.cpp:173: Weights carla_embedding_detector/encoder/enc_mlp_2/MatMul/ReadVariableOp:0 has been transposed with permutation of (1, 0)! If you plan on overwriting the weights with the Refitter API, the new weights must be pre-transposed.
+[08/25/2026-13:14:39] [W] [TRT] ShapedWeights.cpp:173: Weights carla_embedding_detector/encoder/latent/MatMul/ReadVariableOp:0 has been transposed with permutation of (1, 0)! If you plan on overwriting the weights with the Refitter API, the new weights must be pre-transposed.
+[08/25/2026-13:14:39] [W] [TRT] ShapedWeights.cpp:173: Weights carla_embedding_detector/projection_head/projection_head/dense/MatMul/ReadVariableOp:0 has been transposed with permutation of (1, 0)! If you plan on overwriting the weights with the Refitter API, the new weights must be pre-transposed.
+[08/25/2026-13:14:39] [W] [TRT] ShapedWeights.cpp:173: Weights carla_embedding_detector/projection_head/projection_head/dense_1/MatMul/ReadVariableOp:0 has been transposed with permutation of (1, 0)! If you plan on overwriting the weights with the Refitter API, the new weights must be pre-transposed.
+[08/25/2026-13:14:39] [I] Finish parsing network model
+[08/25/2026-13:14:39] [I] [TRT] ---------- Layers Running on DLA ----------
+[08/25/2026-13:14:39] [I] [TRT] ---------- Layers Running on GPU ----------
+[08/25/2026-13:14:39] [I] [TRT] [GpuLayer] carla_embedding_detector/encoder/flatten/Reshape + (Unnamed Layer* 1) [Shuffle]
+[08/25/2026-13:14:39] [I] [TRT] [GpuLayer] carla_embedding_detector/encoder/enc_mlp_0/MatMul_Gemm__6 + carla_embedding_detector/encoder/batch_normalization/batchnorm/mul:0 + (Unnamed Layer* 5) [Shuffle] + unsqueeze_node_after_carla_embedding_detector/encoder/batch_normalization/batchnorm/mul:0 + (Unnamed Layer* 5) [Shuffle]_(Unnamed Layer* 5) [Shuffle]_output + carla_embedding_detector/encoder/batch_normalization/batchnorm/mul_1 + carla_embedding_detector/encoder/batch_normalization/batchnorm/sub:0 + (Unnamed Layer* 8) [Shuffle] + unsqueeze_node_after_carla_embedding_detector/encoder/batch_normalization/batchnorm/sub:0 + (Unnamed Layer* 8) [Shuffle]_(Unnamed Layer* 8) [Shuffle]_output + carla_embedding_detector/encoder/batch_normalization/batchnorm/add_1 + carla_embedding_detector/encoder/re_lu/Relu
+[08/25/2026-13:14:39] [I] [TRT] [GpuLayer] carla_embedding_detector/encoder/enc_mlp_1/MatMul_Gemm__7 + carla_embedding_detector/encoder/batch_normalization_1/batchnorm/mul:0 + (Unnamed Layer* 15) [Shuffle] + unsqueeze_node_after_carla_embedding_detector/encoder/batch_normalization_1/batchnorm/mul:0 + (Unnamed Layer* 15) [Shuffle]_(Unnamed Layer* 15) [Shuffle]_output + carla_embedding_detector/encoder/batch_normalization_1/batchnorm/mul_1 + carla_embedding_detector/encoder/batch_normalization_1/batchnorm/sub:0 + (Unnamed Layer* 18) [Shuffle] + unsqueeze_node_after_carla_embedding_detector/encoder/batch_normalization_1/batchnorm/sub:0 + (Unnamed Layer* 18) [Shuffle]_(Unnamed Layer* 18) [Shuffle]_output + carla_embedding_detector/encoder/batch_normalization_1/batchnorm/add_1 + carla_embedding_detector/encoder/re_lu_1/Relu
+[08/25/2026-13:14:39] [I] [TRT] [GpuLayer] carla_embedding_detector/encoder/enc_mlp_2/MatMul_Gemm__8 + carla_embedding_detector/encoder/batch_normalization_2/batchnorm/mul:0 + (Unnamed Layer* 25) [Shuffle] + unsqueeze_node_after_carla_embedding_detector/encoder/batch_normalization_2/batchnorm/mul:0 + (Unnamed Layer* 25) [Shuffle]_(Unnamed Layer* 25) [Shuffle]_output + carla_embedding_detector/encoder/batch_normalization_2/batchnorm/mul_1 + carla_embedding_detector/encoder/batch_normalization_2/batchnorm/sub:0 + (Unnamed Layer* 28) [Shuffle] + unsqueeze_node_after_carla_embedding_detector/encoder/batch_normalization_2/batchnorm/sub:0 + (Unnamed Layer* 28) [Shuffle]_(Unnamed Layer* 28) [Shuffle]_output + carla_embedding_detector/encoder/batch_normalization_2/batchnorm/add_1 + carla_embedding_detector/encoder/re_lu_2/Relu
+[08/25/2026-13:14:39] [I] [TRT] [GpuLayer] carla_embedding_detector/encoder/latent/MatMul_Gemm__9
+[08/25/2026-13:14:39] [I] [TRT] [GpuLayer] carla_embedding_detector/projection_head/projection_head/dense/MatMul_Gemm__10 + carla_embedding_detector/projection_head/projection_head/batch_normalization/batchnorm/mul:0 + (Unnamed Layer* 39) [Shuffle] + unsqueeze_node_after_carla_embedding_detector/projection_head/projection_head/batch_normalization/batchnorm/mul:0 + (Unnamed Layer* 39) [Shuffle]_(Unnamed Layer* 39) [Shuffle]_output + carla_embedding_detector/projection_head/projection_head/batch_normalization/batchnorm/mul_1 + carla_embedding_detector/projection_head/projection_head/batch_normalization/batchnorm/sub:0 + (Unnamed Layer* 42) [Shuffle] + unsqueeze_node_after_carla_embedding_detector/projection_head/projection_head/batch_normalization/batchnorm/sub:0 + (Unnamed Layer* 42) [Shuffle]_(Unnamed Layer* 42) [Shuffle]_output + carla_embedding_detector/projection_head/projection_head/batch_normalization/batchnorm/add_1 + carla_embedding_detector/projection_head/projection_head/activation/Relu
+[08/25/2026-13:14:39] [I] [TRT] [GpuLayer] carla_embedding_detector/projection_head/projection_head/dense_1/MatMul_Gemm__11
+[08/25/2026-13:14:39] [I] [TRT] [GpuLayer] (Unnamed Layer* 47) [Shuffle]
+[08/25/2026-13:14:40] [I] [TRT] [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +158, GPU +163, now: CPU 438, GPU 2867 (MiB)
+[08/25/2026-13:14:42] [I] [TRT] [MemUsageChange] Init cuDNN: CPU +240, GPU +238, now: CPU 678, GPU 3105 (MiB)
+[08/25/2026-13:14:42] [I] [TRT] Local timing cache in use. Profiling results in this builder pass will not be stored.
+[08/25/2026-13:14:59] [I] [TRT] Detected 1 inputs and 1 output network tensors.
+[08/25/2026-13:14:59] [I] [TRT] Total Host Persistent Memory: 11312
+[08/25/2026-13:14:59] [I] [TRT] Total Device Persistent Memory: 0
+[08/25/2026-13:14:59] [I] [TRT] Total Scratch Memory: 0
+[08/25/2026-13:14:59] [I] [TRT] [MemUsageStats] Peak memory usage of TRT CPU/GPU memory allocators: CPU 0 MiB, GPU 148 MiB
+[08/25/2026-13:14:59] [I] [TRT] [BlockAssignment] Algorithm ShiftNTopDown took 0.132034ms to assign 2 blocks to 9 nodes requiring 1536 bytes.
+[08/25/2026-13:14:59] [I] [TRT] Total Activation Memory: 1536
+[08/25/2026-13:14:59] [I] [TRT] [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +0, GPU +0, now: CPU 920, GPU 3367 (MiB)
+[08/25/2026-13:14:59] [I] [TRT] [MemUsageChange] Init cuDNN: CPU +0, GPU +0, now: CPU 920, GPU 3367 (MiB)
+[08/25/2026-13:14:59] [I] [TRT] [MemUsageChange] TensorRT-managed allocation in building engine: CPU +0, GPU +4, now: CPU 0, GPU 4 (MiB)
+[08/25/2026-13:14:59] [I] [TRT] [MemUsageChange] Init CUDA: CPU +0, GPU +0, now: CPU 919, GPU 3367 (MiB)
+[08/25/2026-13:14:59] [I] [TRT] Loaded engine size: 0 MiB
+[08/25/2026-13:14:59] [I] [TRT] [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +0, GPU +0, now: CPU 920, GPU 3367 (MiB)
+[08/25/2026-13:14:59] [I] [TRT] [MemUsageChange] Init cuDNN: CPU +0, GPU +0, now: CPU 920, GPU 3367 (MiB)
+[08/25/2026-13:14:59] [I] [TRT] [MemUsageChange] TensorRT-managed allocation in engine deserialization: CPU +0, GPU +0, now: CPU 0, GPU 0 (MiB)
+[08/25/2026-13:14:59] [I] Engine built in 21.2861 sec.
+[08/25/2026-13:14:59] [I] Layer Information:
+[08/25/2026-13:14:59] [I] [TRT] [MemUsageChange] Init CUDA: CPU +0, GPU +0, now: CPU 888, GPU 3367 (MiB)
+[08/25/2026-13:14:59] [I] Layers:
+Name: carla_embedding_detector/encoder/flatten/Reshape + (Unnamed Layer* 1) [Shuffle], LayerType: NoOp, Inputs: [ { Name: input_1, Dimensions: [1,101,2], Format/Datatype: Row major linear FP32 }], Outputs: [ { Name: (Unnamed Layer* 1) [Shuffle]_output, Dimensions: [1,202,1,1], Format/Datatype: Row major linear FP32 }], TacticValue: 0x0
+Name: carla_embedding_detector/encoder/enc_mlp_0/MatMul_Gemm__6 + carla_embedding_detector/encoder/batch_normalization/batchnorm/mul:0 + (Unnamed Layer* 5) [Shuffle] + unsqueeze_node_after_carla_embedding_detector/encoder/batch_normalization/batchnorm/mul:0 + (Unnamed Layer* 5) [Shuffle]_(Unnamed Layer* 5) [Shuffle]_output + carla_embedding_detector/encoder/batch_normalization/batchnorm/mul_1 + carla_embedding_detector/encoder/batch_normalization/batchnorm/sub:0 + (Unnamed Layer* 8) [Shuffle] + unsqueeze_node_after_carla_embedding_detector/encoder/batch_normalization/batchnorm/sub:0 + (Unnamed Layer* 8) [Shuffle]_(Unnamed Layer* 8) [Shuffle]_output + carla_embedding_detector/encoder/batch_normalization/batchnorm/add_1 + carla_embedding_detector/encoder/re_lu/Relu, LayerType: CublasConvolution, Inputs: [ { Name: (Unnamed Layer* 1) [Shuffle]_output, Dimensions: [1,202,1,1], Format/Datatype: Row major linear FP32 }], Outputs: [ { Name: carla_embedding_detector/encoder/re_lu/Relu_out_tensor, Dimensions: [1,256,1,1], Format/Datatype: Row major linear FP32 }], ParameterType: Convolution, Kernel: [1,1], PaddingMode: kEXPLICIT_ROUND_DOWN, PrePadding: [0,0], PostPadding: [0,0], Stride: [1,1], Dilation: [1,1], OutMaps: 256, Groups: 1, Weights: {"Type": "Float", "Count": 51712}, Bias: {"Type": "Float", "Count": 256}, AllowSparse: 0, Activation: RELU, HasBias: 1, CublasConvolutionTacticIndex: 0, TacticValue: 0x0
+Name: Reformatting CopyNode for Input Tensor 0 to carla_embedding_detector/encoder/enc_mlp_1/MatMul_Gemm__7 + carla_embedding_detector/encoder/batch_normalization_1/batchnorm/mul:0 + (Unnamed Layer* 15) [Shuffle] + unsqueeze_node_after_carla_embedding_detector/encoder/batch_normalization_1/batchnorm/mul:0 + (Unnamed Layer* 15) [Shuffle]_(Unnamed Layer* 15) [Shuffle]_output + carla_embedding_detector/encoder/batch_normalization_1/batchnorm/mul_1 + carla_embedding_detector/encoder/batch_normalization_1/batchnorm/sub:0 + (Unnamed Layer* 18) [Shuffle] + unsqueeze_node_after_carla_embedding_detector/encoder/batch_normalization_1/batchnorm/sub:0 + (Unnamed Layer* 18) [Shuffle]_(Unnamed Layer* 18) [Shuffle]_output + carla_embedding_detector/encoder/batch_normalization_1/batchnorm/add_1 + carla_embedding_detector/encoder/re_lu_1/Relu, LayerType: Reformat, Inputs: [ { Name: carla_embedding_detector/encoder/re_lu/Relu_out_tensor, Dimensions: [1,256,1,1], Format/Datatype: Row major linear FP32 }], Outputs: [ { Name: Reformatted Input Tensor 0 to carla_embedding_detector/encoder/enc_mlp_1/MatMul_Gemm__7 + carla_embedding_detector/encoder/batch_normalization_1/batchnorm/mul:0 + (Unnamed Layer* 15) [Shuffle] + unsqueeze_node_after_carla_embedding_detector/encoder/batch_normalization_1/batchnorm/mul:0 + (Unnamed Layer* 15) [Shuffle]_(Unnamed Layer* 15) [Shuffle]_output + carla_embedding_detector/encoder/batch_normalization_1/batchnorm/mul_1 + carla_embedding_detector/encoder/batch_normalization_1/batchnorm/sub:0 + (Unnamed Layer* 18) [Shuffle] + unsqueeze_node_after_carla_embedding_detector/encoder/batch_normalization_1/batchnorm/sub:0 + (Unnamed Layer* 18) [Shuffle]_(Unnamed Layer* 18) [Shuffle]_output + carla_embedding_detector/encoder/batch_normalization_1/batchnorm/add_1 + carla_embedding_detector/encoder/re_lu_1/Relu, Dimensions: [1,256,1,1], Format/Datatype: Two wide channel vectorized row major FP16 format }], ParameterType: Reformat, Origin: REFORMAT, TacticValue: 0x0
+Name: carla_embedding_detector/encoder/enc_mlp_1/MatMul_Gemm__7 + carla_embedding_detector/encoder/batch_normalization_1/batchnorm/mul:0 + (Unnamed Layer* 15) [Shuffle] + unsqueeze_node_after_carla_embedding_detector/encoder/batch_normalization_1/batchnorm/mul:0 + (Unnamed Layer* 15) [Shuffle]_(Unnamed Layer* 15) [Shuffle]_output + carla_embedding_detector/encoder/batch_normalization_1/batchnorm/mul_1 + carla_embedding_detector/encoder/batch_normalization_1/batchnorm/sub:0 + (Unnamed Layer* 18) [Shuffle] + unsqueeze_node_after_carla_embedding_detector/encoder/batch_normalization_1/batchnorm/sub:0 + (Unnamed Layer* 18) [Shuffle]_(Unnamed Layer* 18) [Shuffle]_output + carla_embedding_detector/encoder/batch_normalization_1/batchnorm/add_1 + carla_embedding_detector/encoder/re_lu_1/Relu, LayerType: FusedConvActConvolution, Inputs: [ { Name: Reformatted Input Tensor 0 to carla_embedding_detector/encoder/enc_mlp_1/MatMul_Gemm__7 + carla_embedding_detector/encoder/batch_normalization_1/batchnorm/mul:0 + (Unnamed Layer* 15) [Shuffle] + unsqueeze_node_after_carla_embedding_detector/encoder/batch_normalization_1/batchnorm/mul:0 + (Unnamed Layer* 15) [Shuffle]_(Unnamed Layer* 15) [Shuffle]_output + carla_embedding_detector/encoder/batch_normalization_1/batchnorm/mul_1 + carla_embedding_detector/encoder/batch_normalization_1/batchnorm/sub:0 + (Unnamed Layer* 18) [Shuffle] + unsqueeze_node_after_carla_embedding_detector/encoder/batch_normalization_1/batchnorm/sub:0 + (Unnamed Layer* 18) [Shuffle]_(Unnamed Layer* 18) [Shuffle]_output + carla_embedding_detector/encoder/batch_normalization_1/batchnorm/add_1 + carla_embedding_detector/encoder/re_lu_1/Relu, Dimensions: [1,256,1,1], Format/Datatype: Two wide channel vectorized row major FP16 format }], Outputs: [ { Name: carla_embedding_detector/encoder/re_lu_1/Relu_out_tensor, Dimensions: [1,128,1,1], Format/Datatype: Two wide channel vectorized row major FP16 format }], ParameterType: Convolution, Kernel: [1,1], PaddingMode: kEXPLICIT_ROUND_DOWN, PrePadding: [0,0], PostPadding: [0,0], Stride: [1,1], Dilation: [1,1], OutMaps: 128, Groups: 1, Weights: {"Type": "Half", "Count": 32768}, Bias: {"Type": "Half", "Count": 128}, AllowSparse: 0, Activation: RELU, HasBias: 1, ConvolutionTacticIndex: 95, TacticValue: 0x5fffff
+Name: carla_embedding_detector/encoder/enc_mlp_2/MatMul_Gemm__8 + carla_embedding_detector/encoder/batch_normalization_2/batchnorm/mul:0 + (Unnamed Layer* 25) [Shuffle] + unsqueeze_node_after_carla_embedding_detector/encoder/batch_normalization_2/batchnorm/mul:0 + (Unnamed Layer* 25) [Shuffle]_(Unnamed Layer* 25) [Shuffle]_output + carla_embedding_detector/encoder/batch_normalization_2/batchnorm/mul_1 + carla_embedding_detector/encoder/batch_normalization_2/batchnorm/sub:0 + (Unnamed Layer* 28) [Shuffle] + unsqueeze_node_after_carla_embedding_detector/encoder/batch_normalization_2/batchnorm/sub:0 + (Unnamed Layer* 28) [Shuffle]_(Unnamed Layer* 28) [Shuffle]_output + carla_embedding_detector/encoder/batch_normalization_2/batchnorm/add_1 + carla_embedding_detector/encoder/re_lu_2/Relu, LayerType: FusedConvActConvolution, Inputs: [ { Name: carla_embedding_detector/encoder/re_lu_1/Relu_out_tensor, Dimensions: [1,128,1,1], Format/Datatype: Two wide channel vectorized row major FP16 format }], Outputs: [ { Name: carla_embedding_detector/encoder/re_lu_2/Relu_out_tensor, Dimensions: [1,64,1,1], Format/Datatype: Two wide channel vectorized row major FP16 format }], ParameterType: Convolution, Kernel: [1,1], PaddingMode: kEXPLICIT_ROUND_DOWN, PrePadding: [0,0], PostPadding: [0,0], Stride: [1,1], Dilation: [1,1], OutMaps: 64, Groups: 1, Weights: {"Type": "Half", "Count": 8192}, Bias: {"Type": "Half", "Count": 64}, AllowSparse: 0, Activation: RELU, HasBias: 1, ConvolutionTacticIndex: 95, TacticValue: 0x5fffff
+Name: carla_embedding_detector/encoder/latent/MatMul_Gemm__9, LayerType: FusedConvActConvolution, Inputs: [ { Name: carla_embedding_detector/encoder/re_lu_2/Relu_out_tensor, Dimensions: [1,64,1,1], Format/Datatype: Two wide channel vectorized row major FP16 format }], Outputs: [ { Name: (Unnamed Layer* 33) [Fully Connected]_output, Dimensions: [1,64,1,1], Format/Datatype: Two wide channel vectorized row major FP16 format }], ParameterType: Convolution, Kernel: [1,1], PaddingMode: kEXPLICIT_ROUND_DOWN, PrePadding: [0,0], PostPadding: [0,0], Stride: [1,1], Dilation: [1,1], OutMaps: 64, Groups: 1, Weights: {"Type": "Half", "Count": 4096}, Bias: {"Type": "Half", "Count": 64}, AllowSparse: 0, Activation: NONE, HasBias: 1, ConvolutionTacticIndex: 81, TacticValue: 0x51ffff
+Name: carla_embedding_detector/projection_head/projection_head/dense/MatMul_Gemm__10 + carla_embedding_detector/projection_head/projection_head/batch_normalization/batchnorm/mul:0 + (Unnamed Layer* 39) [Shuffle] + unsqueeze_node_after_carla_embedding_detector/projection_head/projection_head/batch_normalization/batchnorm/mul:0 + (Unnamed Layer* 39) [Shuffle]_(Unnamed Layer* 39) [Shuffle]_output + carla_embedding_detector/projection_head/projection_head/batch_normalization/batchnorm/mul_1 + carla_embedding_detector/projection_head/projection_head/batch_normalization/batchnorm/sub:0 + (Unnamed Layer* 42) [Shuffle] + unsqueeze_node_after_carla_embedding_detector/projection_head/projection_head/batch_normalization/batchnorm/sub:0 + (Unnamed Layer* 42) [Shuffle]_(Unnamed Layer* 42) [Shuffle]_output + carla_embedding_detector/projection_head/projection_head/batch_normalization/batchnorm/add_1 + carla_embedding_detector/projection_head/projection_head/activation/Relu, LayerType: FusedConvActConvolution, Inputs: [ { Name: (Unnamed Layer* 33) [Fully Connected]_output, Dimensions: [1,64,1,1], Format/Datatype: Two wide channel vectorized row major FP16 format }], Outputs: [ { Name: carla_embedding_detector/projection_head/projection_head/activation/Relu_out_tensor, Dimensions: [1,128,1,1], Format/Datatype: Two wide channel vectorized row major FP16 format }], ParameterType: Convolution, Kernel: [1,1], PaddingMode: kEXPLICIT_ROUND_DOWN, PrePadding: [0,0], PostPadding: [0,0], Stride: [1,1], Dilation: [1,1], OutMaps: 128, Groups: 1, Weights: {"Type": "Half", "Count": 8192}, Bias: {"Type": "Half", "Count": 128}, AllowSparse: 0, Activation: RELU, HasBias: 1, ConvolutionTacticIndex: 17, TacticValue: 0x11ffff
+Name: carla_embedding_detector/projection_head/projection_head/dense_1/MatMul_Gemm__11, LayerType: FusedConvActConvolution, Inputs: [ { Name: carla_embedding_detector/projection_head/projection_head/activation/Relu_out_tensor, Dimensions: [1,128,1,1], Format/Datatype: Two wide channel vectorized row major FP16 format }], Outputs: [ { Name: (Unnamed Layer* 46) [Fully Connected]_output, Dimensions: [1,512,1,1], Format/Datatype: Two wide channel vectorized row major FP16 format }], ParameterType: Convolution, Kernel: [1,1], PaddingMode: kEXPLICIT_ROUND_DOWN, PrePadding: [0,0], PostPadding: [0,0], Stride: [1,1], Dilation: [1,1], OutMaps: 512, Groups: 1, Weights: {"Type": "Half", "Count": 65536}, Bias: {"Type": "Half", "Count": 512}, AllowSparse: 0, Activation: NONE, HasBias: 1, ConvolutionTacticIndex: 59, TacticValue: 0x3bffff
+Name: Reformatting CopyNode for Input Tensor 0 to (Unnamed Layer* 47) [Shuffle], LayerType: Reformat, Inputs: [ { Name: (Unnamed Layer* 46) [Fully Connected]_output, Dimensions: [1,512,1,1], Format/Datatype: Two wide channel vectorized row major FP16 format }], Outputs: [ { Name: Reformatted Input Tensor 0 to (Unnamed Layer* 47) [Shuffle], Dimensions: [1,512,1,1], Format/Datatype: Row major linear FP32 }], ParameterType: Reformat, Origin: REFORMAT, TacticValue: 0x0
+Name: (Unnamed Layer* 47) [Shuffle], LayerType: NoOp, Inputs: [ { Name: Reformatted Input Tensor 0 to (Unnamed Layer* 47) [Shuffle], Dimensions: [1,512,1,1], Format/Datatype: Row major linear FP32 }], Outputs: [ { Name: projection_head, Dimensions: [1,512], Format/Datatype: Row major linear FP32 }], TacticValue: 0x0
+
+Bindings:
+input_1
+projection_head
+[08/25/2026-13:14:59] [I] [TRT] [MemUsageChange] Init CUDA: CPU +0, GPU +0, now: CPU 888, GPU 3367 (MiB)
+&&&& PASSED TensorRT.trtexec [TensorRT v8201] # /usr/src/tensorrt/bin/trtexec --onnx=experiments/dataset_01_run_06_corrected/carla_mlp/deployment/model.onnx --saveEngine=experiments/dataset_01_run_06_corrected/carla_mlp/deployment/model_fp16.engine.building.24722 --workspace=512 --buildOnly --profilingVerbosity=detailed --dumpLayerInfo --exportLayerInfo=experiments/dataset_01_run_06_corrected/carla_mlp/deployment/model_fp16.engine.layers.json.building.24722 --fp16

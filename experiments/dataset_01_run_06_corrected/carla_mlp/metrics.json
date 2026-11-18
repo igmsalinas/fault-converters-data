@@ -1,0 +1,78 @@
+{
+  "precision": 0.9591194968553459,
+  "recall": 0.8155080213903744,
+  "f1": 0.8815028901734104,
+  "accuracy": 0.8706624605678234,
+  "auc_roc": 0.9161121966269024,
+  "auc_pr": 0.9562512080732619,
+  "average_precision": 0.9562512080732619,
+  "true_positives": 610,
+  "true_negatives": 494,
+  "false_positives": 26,
+  "false_negatives": 138,
+  "mean_normal_error": 0.01812529495299637,
+  "mean_anomaly_error": 0.36974397411681575,
+  "std_normal_error": 0.01625724248262646,
+  "std_anomaly_error": 0.5288690450604847,
+  "separability": 0.0,
+  "evaluation_host": "jetson",
+  "evaluation_machine": "aarch64",
+  "threshold": 15.371030759811399,
+  "threshold_method": "mahalanobis_p95_k5",
+  "bootstrap_95_ci": {
+    "precision": {
+      "lower": 0.9436828734966878,
+      "upper": 0.9738863287250384
+    },
+    "recall": {
+      "lower": 0.7874331550802139,
+      "upper": 0.8422459893048129
+    },
+    "f1": {
+      "lower": 0.8624246818335398,
+      "upper": 0.8988639955745218
+    },
+    "accuracy": {
+      "lower": 0.8517350157728707,
+      "upper": 0.88801261829653
+    },
+    "auc_roc": {
+      "lower": 0.9005132918552037,
+      "upper": 0.9315824249280131
+    },
+    "auc_pr": {
+      "lower": 0.948140907969406,
+      "upper": 0.964311528638481
+    }
+  },
+  "bootstrap_protocol": {
+    "method": "stratified nonparametric test-set bootstrap",
+    "resamples": 2000,
+    "confidence": 0.95,
+    "seed": 42,
+    "threshold_refitted": false
+  },
+  "all_thresholds": {
+    "mahalanobis_p95_k5": {
+      "threshold": 15.371030759811399,
+      "metrics": {
+        "precision": 0.9591194968553459,
+        "recall": 0.8155080213903744,
+        "f1": 0.8815028901734104,
+        "accuracy": 0.8706624605678234,
+        "auc_roc": 0.9161121966269024,
+        "auc_pr": 0.9562512080732619,
+        "average_precision": 0.9562512080732619,
+        "true_positives": 610,
+        "true_negatives": 494,
+        "false_positives": 26,
+        "false_negatives": 138,
+        "mean_normal_error": 0.01812529495299637,
+        "mean_anomaly_error": 0.36974397411681575,
+        "std_normal_error": 0.01625724248262646,
+        "std_anomaly_error": 0.5288690450604847,
+        "separability": 0.0
+      }
+    }
+  }
+}
