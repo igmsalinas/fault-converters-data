@@ -1,0 +1,14 @@
+README.md
+  h_21790d4369ad5d 3
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.6",
+  "base_commit_sha": "e515e042aa77ede04fbb79160271570cf3a78d06",
+  "prompts": {},
+  "humans": {
+    "h_21790d4369ad5d": {
+      "author": "Ignacio Martin Salinas <ignacioms@inditex.com>"
+    }
+  }
+}
