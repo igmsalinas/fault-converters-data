@@ -1,6 +1,6 @@
 # Fault-converter datasets and experiment archive
 
-Data and archived runs for the [fault-converter experiment code](https://github.com/igmsalinas/fault-converters-code) and the [variable-load FRA manuscript](https://github.com/igmsalinas/variable-load-fra-paper). Repository access requires GitHub permissions. The publication snapshot used in the joint audit is [4950ecf](https://github.com/igmsalinas/fault-converters-data/tree/4950ecf604fab8b63395201b2d4a28af88fae8e8), paired with [code snapshot 9e13ccd](https://github.com/igmsalinas/fault-converters-code/tree/9e13ccdd263346e2eadd15102fe096393a64d38a).
+Data and archived runs for the [fault-converter experiment code](https://github.com/igmsalinas/fault-converters-code) and the [variable-load FRA manuscript](https://github.com/igmsalinas/variable-load-fra-paper). Repository access requires GitHub permissions. The publication snapshot used in the variable-load reproducibility review is [4950ecf](https://github.com/igmsalinas/fault-converters-data/tree/4950ecf604fab8b63395201b2d4a28af88fae8e8), paired with [code snapshot 9e13ccd](https://github.com/igmsalinas/fault-converters-code/tree/9e13ccdd263346e2eadd15102fe096393a64d38a).
 
 ## Variable-load benchmark
 
@@ -15,11 +15,11 @@ Data and archived runs for the [fault-converter experiment code](https://github.
 
 There are 161 single-component and 139 compound faults in the full dataset. The healthy-only validation subset consists of the 100 healthy fit-validation rows. In the test partition, 113 faulty sweeps have one degraded component and 97 have multiple degraded components. The split indices refer to the loader's sorted sweep order. Use the accompanying manifest and pinned loader when joining them to file identities. The Dataset 02 copy in the audited code snapshot matches these files after normalizing line endings.
 
-## Fixed-load and deployment records
+The [variable-load experiment archive](experiments/dataset_02_mlwa_study) contains the saved split, preprocessing state, checkpoints and intermediate evaluation artifacts. The paper's final ten-seed results are in the [code repository's publication records](https://github.com/igmsalinas/fault-converters-code/tree/9e13ccdd263346e2eadd15102fe096393a64d38a/papers/results/mlwa_study_dataset02).
 
-- [Corrected Dataset 01 campaign](experiments/dataset_01_run_06_corrected) contains per-model test results, weights, thresholds, split and evaluation provenance, negative-sampler ablation records, and Jetson reports. The full saved test cohort consists of 520 healthy and 748 faulty states. Excluding the 82 cases with only low-side switch degradation leaves 520 healthy and 666 faulty states.
-- [Variable-load experiment archive](experiments/dataset_02_mlwa_study) contains the saved split, training checkpoints, preprocessing state and intermediate evaluation artifacts. For the paper's final zero-label ten-seed results, use the [code repository's publication records](https://github.com/igmsalinas/fault-converters-code/tree/9e13ccdd263346e2eadd15102fe096393a64d38a/papers/results/mlwa_study_dataset02).
-- The simulation-results ZIP under `data/buck` is a legacy sweep archive. The original raw Dataset 01 cohort with its filename manifest remains to be archived alongside the saved test records.
+## Fixed-load comparison in the manuscript
+
+The [corrected Dataset 01 campaign](experiments/dataset_01_run_06_corrected) contains saved predictions and evaluation provenance for the comparison. Its full test cohort consists of 520 healthy and 748 faulty states. Excluding the 82 cases with only low-side switch degradation leaves 520 healthy and 666 faulty states. The simulation-results ZIP under `data/buck` contains a separate legacy sweep grid. The exact raw Dataset 01 cohort and its filename manifest remain to be archived.
 
 ## Download the needed files
 
