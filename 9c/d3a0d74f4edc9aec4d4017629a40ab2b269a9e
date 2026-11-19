@@ -1,0 +1,19 @@
+README.md
+  s_066a1cbbd1b060::t_8d9de30e578232 3,18,20-22
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.6",
+  "base_commit_sha": "9cd3a0d74f4edc9aec4d4017629a40ab2b269a9e",
+  "prompts": {},
+  "sessions": {
+    "s_066a1cbbd1b060": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1ede1-6a93-7d00-b934-9f7cce57ac7d",
+        "model": "gpt-6.2-sol"
+      },
+      "human_author": "Ignacio Martin Salinas <ignacioms@inditex.com>"
+    }
+  }
+}
