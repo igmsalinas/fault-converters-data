@@ -1,6 +1,6 @@
 # Fault-converter datasets and experiment archive
 
-Data and archived runs for the [fault-converter experiment code](https://github.com/igmsalinas/fault-converters-code) and the [variable-load FRA manuscript](https://github.com/igmsalinas/variable-load-fra-paper). Repository access requires GitHub permissions. The publication snapshot used in the variable-load reproducibility review is [4950ecf](https://github.com/igmsalinas/fault-converters-data/tree/4950ecf604fab8b63395201b2d4a28af88fae8e8), paired with [code snapshot 9e13ccd](https://github.com/igmsalinas/fault-converters-code/tree/9e13ccdd263346e2eadd15102fe096393a64d38a).
+Data and archived runs for the [fault-converter experiment code](https://github.com/igmsalinas/fault-converters-code) and the [variable-load FRA manuscript](https://github.com/igmsalinas/variable-load-fra-paper). The publication snapshot used in the variable-load reproducibility review is [4950ecf](https://github.com/igmsalinas/fault-converters-data/tree/4950ecf604fab8b63395201b2d4a28af88fae8e8), paired with [code snapshot 9e13ccd](https://github.com/igmsalinas/fault-converters-code/tree/9e13ccdd263346e2eadd15102fe096393a64d38a).
 
 ## Variable-load benchmark
 
